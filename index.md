@@ -40,11 +40,11 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
     *Brandone Fonya*, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken <br>
     *Accepted at [European Public Health Conference (EPH) 2025](https://ephconference.eu/)*
 
-- [Low-cost Tuberculosis screening with deep learning using solicitated cough sounds] <br>
+- Low-cost Tuberculosis screening with deep learning using solicitated cough sounds <br>
     *Carnegie Mellon-Africa - MakCHS joint research partnership* <br>
     *Work in progress*
 
-- [Multi-defense framework against adversarial attacks on deep learning medical imaging models] <br>
+- Multi-defense framework against adversarial attacks on deep learning medical imaging models <br>
     *Brandone Fonya*, Prasenjit Mitra. <br>
     *Work in progress*
 
@@ -55,18 +55,18 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ---
 
 ## <span style="font-family:'Candara Light';">Projects</span>
-- Real-Time Sign Language Recognition and Speech Transcription using Deep Learning
-  *Spervised by [Clarence Worrell](https://insights.sei.cmu.edu/authors/clarence-worrell/): This project addresses the challenges faced by visually impaired communicating with their environment by designing and implementing a real-time assistive system that leverages deep learning techniques to translate static sign language gestures into both textual and auditory outputs. Specifically, the system employs a Convolutional Neural Network (CNN) trained on the Sign Language MNIST dataset to classify American Sign Language (ASL) hand signs from live video input. The classified gestures are then converted into spoken words using a text-to-speech engine, enabling real-time audio feedback.*
+- Real-Time Sign Language Recognition and Speech Transcription using Deep Learning <br>
+  *Spervised by [Clarence Worrell](https://insights.sei.cmu.edu/authors/clarence-worrell/): This project employs a Convolutional Neural Network (CNN) trained on the Sign Language MNIST dataset to classify American Sign Language (ASL) hand signs from live video input via Mediapipe. The classified gestures are then converted into spoken words using a text-to-speech engine, enabling real-time audio feedback.* <br>
   *Januray 2025 - May 2025* [Code](https://github.com/FonyaBrandone/Sign-language-project-deep-learning)
 
 
-- ClimateSmart: Smart Agriculture for a greater harvest
-  *This project uses real time location and environmental data to provide best farm practices, recommended fertilizers and seasons for a better harvest to farmers based on their farm location and crop types*
- *December 2023 - May 2024* [Website](https://climatesmart.000webhostapp.com/)
+- ClimateSmart: Smart Agriculture for a greater harvest <br>
+  *This project uses real time location and environmental data to provide best farm practices, recommended fertilizers and seasons for a better harvest to farmers based on their farm location and crop types* <br>
+  *December 2023 - May 2024* [Website](https://climatesmart.000webhostapp.com/)
 
 
-- Eschools LMS
-  *This project tackles the challenges faced by crisis affected Cameroonian high school students to attend physical classes, by creating a typical online learning environment for students. From AI study bot and live classes to Attendance tracking, class recordings, note Sharing, assignment and Examination coordination by both students and teachers, under the supervision of their school administration.*
+- Eschools LMS <br>
+  *This project tackles the challenges faced by crisis affected Cameroonian high school students to attend physical classes, by creating a typical online learning environment for students. From AI study bot and live classes to Attendance tracking, class recordings, note Sharing, assignment and Examination coordination by both students and teachers, under the supervision of their school administration.* <br>
   *December 2022 - July 2024* [Website](https://eschools.netlify.app/)
 
 ---
@@ -75,33 +75,39 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';"> Work Experience</span>
 
 <!-- <span style="font-family:'Candara Light';"> -->
-- Graduate Research Intern - AI for Healthcare @Carnegie Mellon University, under the supervision of [Conrad Tucker](https://engineering.cmu.edu/directory/bios/tucker-conrad.html) and [Edwin Mugume](https://scholars.cmu.edu/6761-edwin-mugume/publications)
- *Summer 2025*
+- Graduate Research Intern - AI for Healthcare @Carnegie Mellon University, under the supervision of [Conrad Tucker](https://engineering.cmu.edu/directory/bios/tucker-conrad.html) and [Edwin Mugume](https://scholars.cmu.edu/6761-edwin-mugume/publications) <br>
+ *Full time* <br>
  *May 2025 - Present*
 
-- Graduate IT Associate @Carnegie Mellon University 
- *Part time*
+- Graduate IT Associate @Carnegie Mellon University <br>
+ *Part time* <br>
  *August 2024 - May 2025*
 
 <!-- </span> -->
 
  ---
 
-## <span style="font-family:'Candara Light';"> Teaching & Service </span>
-
+## <span style="font-family:'Candara Light';">Education</span>
 <!-- <span style="font-family:'Candara Light';"> -->
-- Instructor for CS355: Advanced Cryptography, Spring 2024. Co-taught with Wilson Nguyen and Trisha Datta \[[site](https://crypto.stanford.edu/cs355/24sp/)\].
-- External reviewer for EuroCrypt 2025 and Crypto 2023-25, AsiaCrypt and Theory of Cryptography (TCC) 2024 conferences.
-- Co-organizer of Graduate CS Women's Lunch at Stanford University.
-- Designed a puzzle for ZK-Hacks III, based on the Cheon attack, that can break the security of zk-SNARKs. Used arkworks to develop the [puzzle](https://zkhack.dev/zkhackIII/puzzleT2.html).
-<!-- - Among Top 100 students selected from universities across Europe, Asia & the Americas to attend the Cornell, Maryland, Max Planck Pre-doctoral Research School (CMMRS), 2018.  -->
-- Co-chaired the Programmable networks session at HotNets'20.
-- Undergraduate Teaching Assistant for Programming Languages course during Spring, 2018 and Data Structures & Algorithms course during Fall, 2017.
+
+
+
+<!-- </span> -->
+
+ ---
+
+## <span style="font-family:'Candara Light';"> Teaching & Service </span>
+<!-- <span style="font-family:'Candara Light';"> -->
+- Graduate Teaching Assistant for [(18-661) Introduction to Machine Learning for Engineers](https://courses.ece.cmu.edu/18661) under [Carlee Joe-Wong](https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html), *Fall 2025*
+
+- Graduate Teaching Assistant for [(04-701) Research Methods in Engineering](https://www.africa.engineering.cmu.edu/academics/courses/04-701.html), under [Ismaila Dabo](https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html), *Fall 2025* <br>
+
+- IEEE Student Member, *2024 - present*
 <!-- </span> -->
 
 ---
 
-## <span style="font-family:'Candara Light';">Education</span>
+
 
 
 
