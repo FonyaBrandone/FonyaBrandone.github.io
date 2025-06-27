@@ -79,7 +79,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
  *Full time* <br>
  *May 2025 - Present*
 
-- Graduate IT Associate @Carnegie Mellon University <br>
+- Graduate IT Associate - Full Stack developer @Carnegie Mellon University <br>
  *Part time* <br>
  *August 2024 - May 2025*
 
