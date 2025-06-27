@@ -11,7 +11,7 @@ description: Brandone Fonya's website
 ---
 
 <span style="font-family:'Candara Light';">
-I am a final year Masters student in Engineering Artificial Intelligence under the college of engineering at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Dan Boneh](https://crypto.stanford.edu/~dabo/). My current focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
+I am a final year Masters student in Engineering Artificial Intelligence under the College of engineering at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Dan Boneh](https://crypto.stanford.edu/~dabo/). My current focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
 </span>
 
 <span style="font-family:'Candara Light';">
