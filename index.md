@@ -21,7 +21,7 @@ Prior to joining CMU, I completed my Bachelors (Hons) in Software Engineering, M
 Apart from work, I enjoy travelling, reading and watching documentaries.
 </span>
 
-\[[CV](/static/brandone-cv-march2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
+\[[CV](/static/brandone-cv-march2025.pdf)\] \[[Google Scholar](https://orcid.org/0009-0004-5793-9323)\] \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
 
 ---
 
@@ -36,21 +36,52 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ---
 
 ## <span style="font-family:'Candara Light';">Research</span>
-- [Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach](https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view) <br>
-    *Brandone Fonya*, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken <br>
-    *Accepted at [European Public Health Conference (EPH) 2025](https://ephconference.eu/)*
 
-- Low-cost Tuberculosis screening with deep learning using solicitated cough sounds <br>
-    *Carnegie Mellon-Africa - MakCHS joint research partnership* <br>
-    *Work in progress*
+<table>
+  <tr>
+    <td><img src="static/output-shap.png" alt="AI in Healthcare Image" width="160"></td>
+    <td style="padding-left: 20px;">
+      <b><a href="https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view" target="_blank">
+      Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach</a></b><br>
+      <i>Brandone Fonya</i>, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken<br>
+      <i>Accepted at <a href="https://ephconference.eu/" target="_blank">European Public Health Conference (EPH)</a>, 2025</i>
+    </td>
+  </tr>
 
-- Multi-defense framework against adversarial attacks on deep learning medical imaging models <br>
-    *Brandone Fonya*, Prasenjit Mitra. <br>
-    *Work in progress*
+  <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
-- [Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities](https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view) <br>
-    *Victor Miene*, Brandone Fonya, Joshua Momo, Ozan Tonguz <br>
-    *Preprint*
+  <tr>
+    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="160"></td>
+    <td style="padding-left: 20px;">
+      <b>Low-cost Tuberculosis screening with deep learning using solicitated cough sounds</b><br>
+      Carnegie Mellon-Africa – MakCHS joint research partnership<br>
+      <i>Work in progress</i>
+    </td>
+  </tr>
+
+  <tr><td colspan="2" style="padding: 10px;"></td></tr>
+
+  <tr>
+    <td><img src="static/adversarial.png" alt="Adversarial Attack Image" width="160"></td>
+    <td style="padding-left: 20px;">
+      <b>Multi-defense framework against adversarial attacks on deep learning medical imaging models</b><br>
+      <i>Brandone Fonya</i>, Prasenjit Mitra<br>
+      <i>Work in progress</i>
+    </td>
+  </tr>
+
+  <tr><td colspan="2" style="padding: 10px;"></td></tr>
+
+  <tr>
+    <td><img src="static/pedestrian-modelling.webp" alt="Uncertainty-aware Autonomous Driving Image" width="160"></td>
+    <td style="padding-left: 20px;">
+      <b><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view" target="_blank">
+      Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities</a></b><br>
+      Victor Miene, <i>Brandone Fonya</i>, Joshua Momo, Ozan Tonguz<br>
+      <i>Preprint</i>
+    </td>
+  </tr>
+</table>
 
 ---
 
