@@ -5,7 +5,7 @@ description: Brandone Fonya's website
 ---
 
 # <span style="font-family:'Candara Light';"> Brandone Fonya </span>
-<img src="/static/profile.jpg" alt="Brandone" style="width: 220px; height: 210px; float: right; margin: 10px"/>
+<img src="/static/profile-crop.jpg" alt="Brandone" style="width: 220px; height: 210px; float: right; margin: 10px"/>
 ---
 
 <span style="font-family:'Candara Light';">
