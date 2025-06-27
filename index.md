@@ -99,7 +99,6 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       <b>Carnegie Mellon University</b><br>
       August 2024 – May 2026 (Expected)<br>
       Master of Science in Engineering Artificial Intelligence (<b>MSEAI</b>)<br>
-      GPA: 4.11 / 4.3
     </td>
   </tr>
 
