@@ -90,6 +90,32 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';">Education</span>
 <!-- <span style="font-family:'Candara Light';"> -->
 
+<table>
+  <tr>
+    <td>
+      <img src="static/cmu.png" alt="CMU Logo" width="120">
+    </td>
+    <td style="padding-left: 20px; vertical-align: middle;">
+      <b>Carnegie Mellon University</b><br>
+      August 2024 – May 2026 (Expected)<br>
+      Master of Science in Engineering Artificial Intelligence (<b>MSEAI</b>)<br>
+      GPA: 4.11 / 4.3
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+      <img src="static/ICTULogoNew.png" alt="ICTU Logo" width="120">
+    </td>
+    <td style="padding-left: 20px; vertical-align: middle;">
+      <b>The ICT University</b><br>
+      September 2020 – May 2024 <br>
+      Bachelor of Science (Hons) in Software Engineering <br>
+      GPA: 3.65 / 4.0, ranked 1st in department
+    </td>
+  </tr>
+</table>
+
 
 
 <!-- </span> -->
