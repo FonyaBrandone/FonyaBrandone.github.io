@@ -6,29 +6,22 @@ description: Brandone Fonya's website
 
 # <span style="font-family:'Candara Light';"> Brandone Fonya </span>
 <img src="/static/profile.jpg" alt="Brandone" style="width: 220px; height: 210px; float: right; margin: 10px"/>
-<!-- ![Kapil](/static/profile.jpg) -->
-<!-- Screen Shot 2021-10-10 at 11.17.23 PM.png -->
 ---
 
 <span style="font-family:'Candara Light';">
-I am a final year Masters student in Engineering Artificial Intelligence under the College of engineering at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Dan Boneh](https://crypto.stanford.edu/~dabo/). My current focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
+I am a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
 </span>
 
 <span style="font-family:'Candara Light';">
-Prior to joining CMU, I completed my Bachelors (Hons) in Software Engineering May 2024 from The ICT University In Cameroon. 
-<!-- where I built Catan, a CPU scheduling framework for Robotics & AR/VR. I was advised by [Radhika Mittal](http://radhikam.web.illinois.edu/) and [Brighten Godfrey](https://pbg.cs.illinois.edu/). In the summer of 2021, I interned at Microsoft Research with the [RFI](https://www.microsoft.com/en-us/research/group/research-for-industry/) group, where I worked with [Ranveer Chandra](https://www.microsoft.com/en-us/research/people/ranveer/) and [Anirudh Badam](https://www.microsoft.com/en-us/research/people/anbadam/).  -->
+Prior to joining CMU, I completed my Bachelors (Hons) in Software Engineering, May 2024 from The ICT University In Cameroon. 
 </span>
 
-<!-- <span style="font-family:'Candara Light';">
-A little more history - I received my bachelors degree in Computer Science from IIT Delhi in 2018. I pursued an internship with [Dina Katabi](https://www.csail.mit.edu/person/dina-katabi) in the summer of 2018, during which I worked on 
-[Emerald](https://www.emeraldinno.com/).
-</span> -->
 
 <span style="font-family:'Candara Light';">
 Apart from work, I enjoy travelling, reading and watching documentaries.
 </span>
 
-\[[CV](/static/branodone-cv-march2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
+\[[CV](/static/brandone-cv-march2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
 
 ---
 
@@ -38,32 +31,43 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 **Email:** bfonya at andrew.cmu.edu
 </span>
 
-\[[Twitter](https://twitter.com/AditiPartap97)\] \[[LinkedIn](https://www.linkedin.com/in/aditi-partap-28611ab2/)\] \[[Github](https://github.com/aditi741997)\]  
+\[[Twitter](https://twitter.com/princebrandone)\] \[[LinkedIn](https://www.linkedin.com/in/brandone-fonya-217654240/)\] \[[Github](https://github.com/fonyabrandone)\]  
 
 ---
 
 ## <span style="font-family:'Candara Light';">Research</span>
-- [Traceable Verifiable Random Functions](https://eprint.iacr.org/2025/312) <br>
-    Dan Boneh, *Aditi Partap*, Lior Rotem. <br>
-    *Accepted at European Public Health Conference (EPH) 2025*
+- [Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach](https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view) <br>
+    *Brandone Fonya*, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken <br>
+    *Accepted at [European Public Health Conference (EPH) 2025](https://ephconference.eu/)*
 
-- [Accountable Multi-Signatures with Constant Size Public Keys](https://eprint.iacr.org/2023/1793) <br>
-    Dan Boneh, *Aditi Partap*, Brent Waters. <br>
-    *Accepted at Machine Learning for health (ML4H) 2025*
+- [Low-cost Tuberculosis screening with deep learning using solicitated cough sounds] <br>
+    *Carnegie Mellon-Africa - MakCHS joint research partnership* <br>
+    *Work in progress*
 
-- [Memory Tagging: A Memory Efficient Design](https://arxiv.org/abs/2209.00307) <br>
-    *Aditi Partap*, Dan Boneh. <br>
+- [Multi-defense framework against adversarial attacks on deep learning medical imaging models] <br>
+    *Brandone Fonya*, Prasenjit Mitra. <br>
+    *Work in progress*
+
+- [Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities](https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view) <br>
+    *Victor Miene*, Brandone Fonya, Joshua Momo, Ozan Tonguz <br>
+    *Preprint*
 
 ---
 
 ## <span style="font-family:'Candara Light';">Projects</span>
-- Traceable Secret Sharing: Strong Security and Efficient Constructions \[[Slides](/static/CryptoDay_TraceableSS.pptx)\]
-  * at University of California, Los Angeles Crypto Reading group: April 2025
-  * at Bay Area Crypto Day: April 2024
+- Real-Time Sign Language Recognition and Speech Transcription using Deep Learning
+  *Spervised by [Clarence Worrell](https://insights.sei.cmu.edu/authors/clarence-worrell/): This project addresses the challenges faced by visually impaired communicating with their environment by designing and implementing a real-time assistive system that leverages deep learning techniques to translate static sign language gestures into both textual and auditory outputs. Specifically, the system employs a Convolutional Neural Network (CNN) trained on the Sign Language MNIST dataset to classify American Sign Language (ASL) hand signs from live video input. The classified gestures are then converted into spoken words using a text-to-speech engine, enabling real-time audio feedback.*
+  *Januray 2025 - May 2025* [Code](https://github.com/FonyaBrandone/Sign-language-project-deep-learning)
 
-- Traceable Secret Sharing: Strong Security and Efficient Constructions \[[Slides](/static/CryptoDay_TraceableSS.pptx)\]
-  * at University of California, Los Angeles Crypto Reading group: April 2025
-  * at Bay Area Crypto Day: April 2024
+
+- ClimateSmart: Smart Agriculture for a greater harvest
+  *This project uses real time location and environmental data to provide best farm practices, recommended fertilizers and seasons for a better harvest to farmers based on their farm location and crop types*
+ *December 2023 - May 2024* [Website](https://climatesmart.000webhostapp.com/)
+
+
+- Eschools LMS
+  *This project tackles the challenges faced by crisis affected Cameroonian high school students to attend physical classes, by creating a typical online learning environment for students. From AI study bot and live classes to Attendance tracking, class recordings, note Sharing, assignment and Examination coordination by both students and teachers, under the supervision of their school administration.*
+  *December 2022 - July 2024* [Website](https://eschools.netlify.app/)
 
 ---
 
@@ -71,8 +75,14 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';"> Work Experience</span>
 
 <!-- <span style="font-family:'Candara Light';"> -->
-- Research Intern at the Andreessen Horowitz Capital Management (a16z) Crypto Group, Summer 2024 
-- Research Intern at the RFI group @Microsoft Research, Summer 2021
+- Graduate Research Intern - AI for Healthcare @Carnegie Mellon University, under the supervision of [Conrad Tucker](https://engineering.cmu.edu/directory/bios/tucker-conrad.html) and [Edwin Mugume](https://scholars.cmu.edu/6761-edwin-mugume/publications)
+ *Summer 2025*
+ *May 2025 - Present*
+
+- Graduate IT Associate @Carnegie Mellon University 
+ *Part time*
+ *August 2024 - May 2025*
+
 <!-- </span> -->
 
  ---
@@ -91,25 +101,8 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ---
 
-## <span style="font-family:'Candara Light';">Work Experience</span>
-- [Optimizing video analytics with declarative model relationships](https://dl.acm.org/doi/abs/10.14778/3570690.3570695) <br>
-    Francisco Romero, Johann Hauswald, *Aditi Partap*, Daniel Kang, Matei Zaharia, Christos Kozyrakis
-    *In Proceedings of the VLDB Endowment, 2022*
+## <span style="font-family:'Candara Light';">Education</span>
 
-- [DeepG2P: Fusing Multi-Modal Data to Improve Crop Production](https://arxiv.org/abs/2211.05986) <br>
-    Swati Sharma, *Aditi Partap*, Maria Angels de Luis Balaguer, Sara Malvar, Ranveer Chandra. <br>
-    *In submission at AISTATS'23*
 
-- [Fast and efficient lookups via data-driven FIB designs](https://dl.acm.org/doi/10.1145/3527974.3545728) <br>
-    Sachin Ashok, *Aditi Partap*, Ammar Tahir. <br>
-    *In Proceedings of the ACM SIGCOMM Workshop on Future of Internet Routing \& Addressing (FIRA), 2022*
-
-- [On-Device CPU Scheduling for Sense-React Systems](https://arxiv.org/abs/2207.13280) <br>
-    *Aditi Partap*,Samuel Grayson, Muhammad Huzaifa, Sarita V. Adve, Brighten Godfrey, Saurabh Gupta, Kris Hauser, Radhika Mittal. <br>
-    *In International Conference on Intelligent Robots and Systems (IROS), 2022*
-
-- [Answering POI-recommendation Questions using Tourism Reviews](https://dl.acm.org/doi/10.1145/3459637.3482320) <br>
-    Danish Contractor, Krunal Shah, *Aditi Partap*, Parag Singla, Mausam. <br>
-    *In Proceedings of the 30th ACM International Conference on Information \& Knowledge Management (CIKM), 2021*
 
 
