@@ -57,17 +57,17 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';">Projects</span>
 - Real-Time Sign Language Recognition and Speech Transcription using Deep Learning <br>
   *Spervised by [Clarence Worrell](https://insights.sei.cmu.edu/authors/clarence-worrell/): This project employs a Convolutional Neural Network (CNN) trained on the Sign Language MNIST dataset to classify American Sign Language (ASL) hand signs from live video input via Mediapipe. The classified gestures are then converted into spoken words using a text-to-speech engine, enabling real-time audio feedback.* <br>
-  *Januray 2025 - May 2025* [Code](https://github.com/FonyaBrandone/Sign-language-project-deep-learning)
+  *Januray 2025 - May 2025* [[Code]](https://github.com/FonyaBrandone/Sign-language-project-deep-learning)
 
 
 - ClimateSmart: Smart Agriculture for a greater harvest <br>
   *This project uses real time location and environmental data to provide best farm practices, recommended fertilizers and seasons for a better harvest to farmers based on their farm location and crop types* <br>
-  *December 2023 - May 2024* [Website](https://climatesmart.000webhostapp.com/)
+  *December 2023 - May 2024* [[Website]](https://climatesmart.000webhostapp.com/)
 
 
 - Eschools LMS <br>
   *This project tackles the challenges faced by crisis affected Cameroonian high school students to attend physical classes, by creating a typical online learning environment for students. From AI study bot and live classes to Attendance tracking, class recordings, note Sharing, assignment and Examination coordination by both students and teachers, under the supervision of their school administration.* <br>
-  *December 2022 - July 2024* [Website](https://eschools.netlify.app/)
+  *December 2022 - July 2024* [[Website]](https://eschools.netlify.app/)
 
 ---
 
