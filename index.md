@@ -39,12 +39,14 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <table>
   <tr>
-    <td><img src="static/output-shap.png" alt="AI in Healthcare Image" width="160"></td>
+    <td><img src="static/output-shap.png" alt="AI in Healthcare Image"></td>
     <td style="padding-left: 20px;">
       <b><a href="https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view" target="_blank">
       Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach</a></b><br>
       <i>Brandone Fonya</i>, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken<br>
       <i>Accepted at <a href="https://ephconference.eu/" target="_blank">European Public Health Conference (EPH)</a>, 2025</i>
+      <p style='margin-top: 20px;'>Lorem ipsum</p>
+    
     </td>
   </tr>
 
