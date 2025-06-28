@@ -39,7 +39,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <table>
   <tr>
-    <td><img src="static/output-shap.png" alt="AI in Healthcare Image" width="400"></td>
+    <td><img src="static/output-shap.png" alt="AI in Healthcare Image" width="400px"></td>
     <td style="padding-left: 20px;">
       <b><a href="https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view" target="_blank">
       Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach</a></b><br>
@@ -52,7 +52,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="300"></td>
+    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="200px"></td>
     <td style="padding-left: 20px;">
       <b>Low-cost Tuberculosis screening with deep learning using solicitated cough sounds</b><br>
       Carnegie Mellon-Africa – MakCHS joint research partnership<br>
