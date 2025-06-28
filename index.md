@@ -45,7 +45,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach</a></b><br>
       <i>Brandone Fonya</i>, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken<br>
       <i>Accepted at <a href="https://ephconference.eu/" target="_blank">European Public Health Conference (EPH)</a>, 2025</i>
-      <p style='margin-top: 20px; margin-bottom: 30px;'>This project analyzes the geographic distribution of health facilities across Rwanda in relation to the prevalence of major diseases such as malaria, tuberculosis, and HIV at the district level. Using geospatial mapping, national health survey data, and machine learning models, it identifies mismatches between disease burden and healthcare access. The goal is to propose data-driven strategies for more equitable and efficient allocation of health resources in developing countries.</p>
+      <p style='margin-top: 20px; margin-bottom: 30px;'>This paper analyzes the geographic distribution of health facilities across Rwanda in relation to the prevalence of major diseases such as malaria, tuberculosis, and HIV at the district level. Using geospatial mapping, national health survey data, and machine learning models, it identifies mismatches between disease burden and healthcare access. The goal is to propose data-driven strategies for more equitable and efficient allocation of health resources in developing countries.</p>
     </td>
   </tr>
 
@@ -57,7 +57,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       <b>Low-cost Tuberculosis screening with deep learning using solicitated cough sounds</b><br>
       Carnegie Mellon-Africa – MakCHS joint research partnership<br>
       <i>Work in progress</i>
-      <p style='margin-top: 20px; margin-bottom: 30px;'>This project explores the use of deep learning models to enable low-cost, non-invasive tuberculosis (TB) screening by analyzing solicited cough sounds. By training classifiers on acoustic features extracted from labeled cough audio, it aims to distinguish TB-positive cases from healthy individuals. The approach is designed to support early detection in low-resource settings where traditional diagnostics are limited.</p>
+      <p style='margin-top: 20px; margin-bottom: 30px;'>We are exploring the use of deep learning models to enable low-cost, non-invasive tuberculosis (TB) screening by analyzing solicited cough sounds. By training classifiers on acoustic features extracted from labeled cough audio, it aims to distinguish TB-positive cases from healthy individuals. The approach is designed to support early detection in low-resource settings where traditional diagnostics are limited.</p>
     </td>
   </tr>
 
@@ -69,7 +69,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       <b>Multi-defense framework against adversarial attacks on deep learning medical imaging models</b><br>
       <i>Brandone Fonya</i>, Prasenjit Mitra<br>
       <i>Work in progress</i> 
-      <p style='margin-top: 20px; margin-bottom: 30px;'>This project proposes a multi-defense framework for deep learning medical imaging models (ResNet18 and VGG16) against PGD and DeepFool adversarial attacks. It combines adversarial training, input preprocessing, and model ensembling to improve model robustness.  Evaluated on the Breast Cancer histopathology dataset, our approach aims at offering a more resilient defense against a broader range of attack vectors, addressing both security and clinical applicability. </p>
+      <p style='margin-top: 20px; margin-bottom: 30px;'>Here we're proposing a multi-defense framework for deep learning medical imaging models (ResNet18 and VGG16) against PGD and DeepFool adversarial attacks. It combines adversarial training, input preprocessing, and model ensembling to improve model robustness.  Evaluated on the Breast Cancer histopathology dataset, our approach aims at offering a more resilient defense against a broader range of attack vectors, addressing both security and clinical applicability. </p>
     </td>
   </tr>
 
