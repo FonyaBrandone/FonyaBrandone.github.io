@@ -76,7 +76,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/pedestrian-modelling.webp" alt="Uncertainty-aware Autonomous Driving Image" style='padding-right: 5px;'></td>
+    <td><img src="static/pedestrian-modelling.webp" alt="Uncertainty-aware Autonomous Driving Image"></td>
     <td style="padding-left: 20px;">
       <b><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view" target="_blank">
       Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities</a></b><br>
