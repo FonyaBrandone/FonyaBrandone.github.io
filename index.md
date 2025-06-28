@@ -52,7 +52,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="500"></td>
+    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="900"></td>
     <td style="padding-left: 20px;">
       <b>Low-cost Tuberculosis screening with deep learning using solicitated cough sounds</b><br>
       Carnegie Mellon-Africa – MakCHS joint research partnership<br>
