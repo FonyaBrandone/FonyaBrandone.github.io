@@ -45,49 +45,51 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       Evaluating Health Facility Distribution and District-Level Disease Prevalence in Rwanda: A Data-driven Approach</a></b><br>
       <i>Brandone Fonya</i>, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken<br>
       <i>Accepted at <a href="https://ephconference.eu/" target="_blank">European Public Health Conference (EPH)</a>, 2025</i>
-      <p style='margin-top: 20px;'>Lorem ipsum</p>
-    
+      <p style='margin-top: 20px; margin-bottom: 30px;'>This project analyzes the geographic distribution of health facilities across Rwanda in relation to the prevalence of major diseases such as malaria, tuberculosis, and HIV at the district level. Using geospatial mapping, national health survey data, and machine learning models, it identifies mismatches between disease burden and healthcare access. The goal is to propose data-driven strategies for more equitable and efficient allocation of health resources in developing countries.</p>
     </td>
   </tr>
 
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="160"></td>
+    <td><img src="static/tb-screening.png" alt="Tubercolusis Screening research Image" width="200"></td>
     <td style="padding-left: 20px;">
       <b>Low-cost Tuberculosis screening with deep learning using solicitated cough sounds</b><br>
       Carnegie Mellon-Africa – MakCHS joint research partnership<br>
       <i>Work in progress</i>
+      <p style='margin-top: 20px; margin-bottom: 30px;'>This project explores the use of deep learning models to enable low-cost, non-invasive tuberculosis (TB) screening by analyzing solicited cough sounds. By training classifiers on acoustic features extracted from labeled cough audio, it aims to distinguish TB-positive cases from healthy individuals. The approach is designed to support early detection in low-resource settings where traditional diagnostics are limited.</p>
     </td>
   </tr>
 
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/adversarial.png" alt="Adversarial Attack Image" width="160"></td>
+    <td><img src="static/adversarial.png" alt="Adversarial Attack Image"></td>
     <td style="padding-left: 20px;">
       <b>Multi-defense framework against adversarial attacks on deep learning medical imaging models</b><br>
       <i>Brandone Fonya</i>, Prasenjit Mitra<br>
-      <i>Work in progress</i>
+      <i>Work in progress</i> 
+      <p style='margin-top: 20px; margin-bottom: 30px;'>This project proposes a multi-defense framework for deep learning medical imaging models (ResNet18 and VGG16) against PGD and DeepFool adversarial attacks. It combines adversarial training, input preprocessing, and model ensembling to improve model robustness.  Evaluated on the Breast Cancer histopathology dataset, our approach aims at offering a more resilient defense against a broader range of attack vectors, addressing both security and clinical applicability. </p>
     </td>
   </tr>
 
   <tr><td colspan="2" style="padding: 10px;"></td></tr>
 
   <tr>
-    <td><img src="static/pedestrian-modelling.webp" alt="Uncertainty-aware Autonomous Driving Image" width="160"></td>
+    <td><img src="static/pedestrian-modelling.webp" alt="Uncertainty-aware Autonomous Driving Image"></td>
     <td style="padding-left: 20px;">
       <b><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view" target="_blank">
       Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities</a></b><br>
       Victor Miene, <i>Brandone Fonya</i>, Joshua Momo, Ozan Tonguz<br>
       <i>Preprint</i>
+       <p style='margin-top: 20px; margin-bottom: 30px;'>This course-related research focuses on developing an uncertainty-aware autonomous driving system tailored for highly unstructured urban environments in African metropolitan cities. Using deep learning models like ConvLSTM, it models and predicts pedestrian behaviors under high variability and limited infrastructure conditions. The goal is to enhance safety and decision-making for autonomous vehicles and systems navigating complex, unpredictable urban scenarios. </p>
     </td>
   </tr>
 </table>
 
 ---
 
-## <span style="font-family:'Candara Light';">Projects</span>
+## <span style="font-family:'Candara Light'; margin-top: 20px;">Projects</span>
 - Real-Time Sign Language Recognition and Speech Transcription using Deep Learning <br>
   *Spervised by [Clarence Worrell](https://insights.sei.cmu.edu/authors/clarence-worrell/): This project employs a Convolutional Neural Network (CNN) trained on the Sign Language MNIST dataset to classify American Sign Language (ASL) hand signs from live video input via Mediapipe. The classified gestures are then converted into spoken words using a text-to-speech engine, enabling real-time audio feedback.* <br>
   *Januray 2025 - May 2025* [[Code]](https://github.com/FonyaBrandone/Sign-language-project-deep-learning)
