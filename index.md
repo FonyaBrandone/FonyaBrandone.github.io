@@ -9,11 +9,11 @@ description: Brandone Fonya's website
 ---
 
 <span style="font-family:'Candara Light';">
-I am a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
+I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning for computer vision and its applications in medical imaging and Healthcare.
 </span>
 
 <span style="font-family:'Candara Light';">
-Prior to joining CMU, I completed my Bachelors (Hons) in Software Engineering, May 2024 from The ICT University In Cameroon. 
+Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Engineering, May 2024 from The ICT University In Cameroon, ranked 1st in my department.
 </span>
 
 
@@ -21,7 +21,7 @@ Prior to joining CMU, I completed my Bachelors (Hons) in Software Engineering, M
 Apart from work, I enjoy travelling, reading and watching documentaries.
 </span>
 
-\[[CV](/static/brandone-cv-march2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
+\[[CV](/static/brandone-cv-summer2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
 
 ---
 
@@ -31,7 +31,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 **Email:** bfonya at andrew.cmu.edu
 </span>
 
-\[[Twitter](https://twitter.com/princebrandone)\] \[[LinkedIn](https://www.linkedin.com/in/brandone-fonya-217654240/)\] \[[Github](https://github.com/fonyabrandone)\]  
+\[[[LinkedIn](https://www.linkedin.com/in/brandone-fonya-217654240/)\] \[[Github](https://github.com/fonyabrandone)\] \[[Twitter](https://twitter.com/princebrandone)\]
 
 ---
 
