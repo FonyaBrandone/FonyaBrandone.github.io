@@ -1,5 +1,5 @@
 ---
-#layout: default
+layout: default
 title: Brandone Fonya
 description: Brandone Fonya's website
 ---
