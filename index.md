@@ -37,7 +37,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ## <span style="font-family:'Candara Light';">Research</span>
 
-<table>
+<table width='80%'>
   <tr>
     <td><img src="static/heatmap.png" alt="AI in Healthcare Image"></td>
     <td style="padding-left: 20px;">
