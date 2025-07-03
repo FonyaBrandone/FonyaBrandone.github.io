@@ -31,7 +31,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 **Email:** bfonya at andrew.cmu.edu
 </span>
 
-\[[[LinkedIn](https://www.linkedin.com/in/brandone-fonya-217654240/)\] \[[Github](https://github.com/fonyabrandone)\] \[[Twitter](https://twitter.com/princebrandone)\]
+\[[LinkedIn](https://www.linkedin.com/in/brandone-fonya-217654240/)\] \[[Github](https://github.com/fonyabrandone)\] \[[Twitter](https://twitter.com/princebrandone)\]
 
 ---
 
@@ -82,7 +82,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       Uncertainty-aware Autonomous Driving for Unstructured Urban Environments: Modelling Pedestrian Behaviors in African Metropolitan Cities</a></b><br>
       Victor Miene, <i>Brandone Fonya</i>, Joshua Momo, Ozan Tonguz<br>
       <i><b>Course research</b></i>
-       <p style='margin-top: 20px; margin-bottom: 30px;'>This course-related research focuses on developing an uncertainty-aware autonomous driving system tailored for highly unstructured urban environments in African metropolitan cities. Using deep learning models like ConvLSTM, it models and predicts pedestrian behaviors under high variability and limited infrastructure conditions. The goal is to enhance safety and decision-making for autonomous vehicles and systems navigating complex, unpredictable urban scenarios. </p>
+       <p style='margin-top: 20px; margin-bottom: 30px;'>This course-related research focuses on developing an uncertainty-aware autonomous driving system tailored for highly unstructured urban environments in African metropolitan cities. Using ConvLSTM, it models and predicts pedestrian behaviors under high variability and limited infrastructure conditions. The goal is to enhance safety and decision-making for autonomous vehicles and systems navigating complex, unpredictable urban scenarios. </p>
     </td>
   </tr>
 </table>
