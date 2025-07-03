@@ -9,7 +9,7 @@ description: Brandone Fonya's website
 ---
 
 <span style="font-family:'Candara Light';">
-I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning for computer vision and its applications in medical imaging, Healthcare and autonomous systems.
+I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University, where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning and computer vision with applications in medical imaging, Healthcare and autonomous systems.
 </span>
 
 <span style="font-family:'Candara Light';">
