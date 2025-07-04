@@ -168,6 +168,8 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ---
 
+<footer>© Brandone Fonya | Last updated: July 2025</footer>
+
 
 
 
