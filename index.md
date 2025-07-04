@@ -41,7 +41,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <span style="font-family:'Candara Light';">
 
-**07/2025** – Canrnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory @EPFL on Low-cost tuberculosis screening using sollicitated cough sounds, insights from their work at EPFL and Lausanne University Hospital. <br>
+**07/2025** – Canrnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory @EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
 
 **06/2025** – Paper accepted for presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
