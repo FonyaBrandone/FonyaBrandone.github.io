@@ -45,7 +45,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 **06/2025** – Paper accepted for presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
-**06/2025** – Attended the 2025 <a href='https://engineering.cmu.edu/afretec/index.html'>Afritech</a> Network's Annual Conference in Kigali, Rwanda.<br>
+**06/2025** – Attended the 2025 <a href='https://engineering.cmu.edu/afretec/index.html'>Afretech</a> Network's Annual Conference in Kigali, Rwanda.<br>
 
 **04/2025** – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
