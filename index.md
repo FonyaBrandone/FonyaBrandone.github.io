@@ -13,7 +13,7 @@ I am a graduate research assistant and a final year Masters student in Engineeri
 </span>
 
 <span style="font-family:'Candara Light';">
-Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Engineering, May 2024 from The ICT University In Cameroon, ranked 1st in my department.
+Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Engineering, May 2024 from <a href='https://ictuniversity.org/'>The ICT University</a> In Cameroon, ranked 1st in my department.
 </span>
 
 
