@@ -49,9 +49,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 **04/2025** – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
-**02/2025** – One-on-one with Prof. Mary-Anne “Annie” Hartley of LiGHT Laboratory on AI models and tool for resource constraiend communities.<br>
-
-</span>
+**02/2025** – One-on-one with Prof. Mary-Anne “Annie” Hartley of LiGHT Laboratory on AI models and tool for resource constraiend communities.<br></span>
 
 ---
 
