@@ -35,6 +35,20 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ---
 
+---
+
+## <span style="font-family:'Candara Light';">Recent Updates</span>
+
+<span style="font-family:'Candara Light';">
+**06/2025** – Meeting with prof. Marry-Anne "Annie" Hartley of LiGHT | EPFL on Low-cost tuberculosis screening using sollicitated cough sounds
+**06/2025** – Paper accepted for presentation at the European Public Health Conference 2025, Helsinki, Finland.
+**06/2025* – Attended the 2025 Afritech Network's Annual Conference in Kigali, Rwanda.
+**04/2025** – Round table discussion with Trevor Mundel, president of Global Health at the Gates Foundation: Data-driven approaches to smart medical resource allocation in SSA.
+**02/2025** – One-on-one with Prof. Mary-Anne “Annie” Hartley of LiGHT Laboratory on AI models and tool for resource constraiend communities.
+</span>
+
+---
+
 ## <span style="font-family:'Candara Light';">Research</span>
 
 <table width='100%'>
