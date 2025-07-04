@@ -40,7 +40,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <span style="font-family:'Candara Light';">
 
-##### **07/2025** – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory @EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
+##### **07/2025** – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
 
 ##### **06/2025** – Paper accepted for presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
@@ -50,7 +50,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ##### **04/2025** – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
-##### **02/2025** – One-on-one with Prof. Mary-Anne “Annie” Hartley of LiGHT Laboratory on AI models and tool for resource constraiend communities.<br>
+##### **02/2025** – One-on-one with <a href='https://people.epfl.ch/mary-anne.hartley?lang=en'>Prof. Mary-Anne “Annie” Hartley</a> of LiGHT Laboratory at EPFL, on AI models and tool for resource constraiend communities.<br>
 
 ##### **01/2025** – Attended the <a href='https://events.dell.com/event/ce14c9e1-18e7-4347-aa04-f0e2ce851129/summary'>Dell Technologies AI Forum 2025</a>, Dubai at the Coca-Cola Arena by Microsoft, Dell, Intel and Nvidia. <br>
 
