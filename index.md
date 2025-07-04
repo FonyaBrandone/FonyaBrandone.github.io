@@ -35,7 +35,6 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ---
 
----
 
 ## <span style="font-family:'Candara Light';">Recent Updates</span>
 
