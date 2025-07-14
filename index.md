@@ -40,7 +40,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <span style="font-family:'Candara Light';">
 
-##### **07/2025** – Research intern at the Autonomous Intelligence laboratory under <a href='https://www.light-laboratory.org/'>Prof. Kaicheng Yu</a> at Westlake University, Zhejiang, China. <br>
+##### **07/2025** – Research intern at the Autonomous Intelligence laboratory under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> at Westlake University, Zhejiang, China. <br>
 
 ##### **07/2025** – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
 
