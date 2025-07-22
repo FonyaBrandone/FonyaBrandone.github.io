@@ -40,11 +40,11 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 <span style="font-family:'Candara Light';">
 
-##### **07/2025** – Research intern at the Autonomous Intelligence laboratory under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> at Westlake University, Zhejiang, China. <br>
+##### **07/2025** – Research intern at the Autonomous Intelligence lab under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> School of Engineering, Westlake University, Zhejiang, China. <br>
 
 ##### **07/2025** – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
 
-##### **06/2025** – Paper accepted for presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
+##### **06/2025** – Paper accepted for poster presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
 ##### **06/2025** – Accepted for the <a href='https://dighum.kcrc.rw/'>Digital Humanism Summer School 2025</a>.<br>
 
@@ -182,10 +182,11 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ## <span style="font-family:'Candara Light';"> Teaching & Service </span>
 <!-- <span style="font-family:'Candara Light';"> -->
+<!--
 - Graduate Teaching Assistant for [(18-661) Introduction to Machine Learning for Engineers](https://courses.ece.cmu.edu/18661) under [Carlee Joe-Wong](https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html), *Fall 2025*
 
 - Graduate Teaching Assistant for [(04-701) Research Methods in Engineering](https://www.africa.engineering.cmu.edu/academics/courses/04-701.html), under [Ismaila Dabo](https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html), *Fall 2025* <br>
-
+-->
 - IEEE Student Member, *2024 - present*
 <!-- </span> -->
 
