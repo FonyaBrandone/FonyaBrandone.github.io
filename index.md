@@ -21,7 +21,7 @@ Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Enginee
 Apart from work, I enjoy travelling, reading and watching documentaries.
 </span>
 
-\[[CV](/static/brandone-cv-summer2025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
+\[[CV](/static/Brandone%20Fonya%20CV%20-%20Summer%202025.pdf)\]  \[[ORCID](https://orcid.org/0009-0004-5793-9323)\]
 
 ---
 
