@@ -17,7 +17,7 @@ Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Enginee
 </span>
 
 
-<span style="font-family:'Candara Light';">
+<span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';">
 Apart from work, I enjoy travelling, reading and watching documentaries.
 </span>
 
@@ -38,19 +38,19 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ## <span style="font-family:'Candara Light';">Recent Updates</span>
 
-<span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';">
+<span>
 
-### _07/2025_ – Research intern at the Autonomous Intelligence lab under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> School of Engineering, Westlake University, Zhejiang, China. <br>
+ _07/2025_ – Research intern at the Autonomous Intelligence lab under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> School of Engineering, Westlake University, Zhejiang, China. <br>
 
-#### _07/2025_ – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
+ _07/2025_ – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
 
-#### _06/2025_ – Paper accepted for poster presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
+ _06/2025_ – Paper accepted for poster presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
-#### _06/2025_ – Accepted for the <a href='https://dighum.kcrc.rw/'>Digital Humanism Summer School 2025</a>.<br>
+ _06/2025_ – Accepted for the <a href='https://dighum.kcrc.rw/'>Digital Humanism Summer School 2025</a>.<br>
 
-#### _06/2025_ – Attended the 2025 <a href='https://engineering.cmu.edu/afretec/index.html'>Afretech</a> Network's Annual Conference in Kigali, Rwanda.<br>
+ _06/2025_ – Attended the 2025 <a href='https://engineering.cmu.edu/afretec/index.html'>Afretech</a> Network's Annual Conference in Kigali, Rwanda.<br>
 
-#### _04/2025_ – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
+ _04/2025_ – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
 #### _02/2025_ – One-on-one with <a href='https://people.epfl.ch/mary-anne.hartley?lang=en'>Prof. Mary-Anne “Annie” Hartley</a> of LiGHT Laboratory at EPFL, on AI models and tool for resource constraiend communities.<br>
 
