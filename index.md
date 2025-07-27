@@ -4,7 +4,7 @@ title: Brandone Fonya
 description: Brandone Fonya's website
 ---
 
-# <span style="font-family:'Candara Light';"> Brandone Fonya </span>
+# <span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';"> Brandone Fonya </span>
 <img src="/static/profile.jpg" alt="Brandone" style="width: 200px; height: 270px; float: right; margin: 10px"/>
 ---
 
@@ -12,7 +12,7 @@ description: Brandone Fonya's website
 I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University (CMU), where I focus on machine learning and computer vision. I am advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning and computer vision with applications in medical imaging, Healthcare and autonomous systems.
 </span>
 
-<span style="font-family:'Candara Light';">
+<span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';">
 Prior to joining CMU, I completed my Bachelors degree (Hons) in Software Engineering, May 2024 from <a href='https://ictuniversity.org/'>The ICT University</a> In Cameroon, ranked 1st in my department.
 </span>
 
@@ -38,7 +38,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 ## <span style="font-family:'Candara Light';">Recent Updates</span>
 
-<span style="font-family:'Candara Light';">
+<span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';">
 
 ##### **07/2025** – Research intern at the Autonomous Intelligence lab under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> School of Engineering, Westlake University, Zhejiang, China. <br>
 
