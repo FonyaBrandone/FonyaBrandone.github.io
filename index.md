@@ -8,7 +8,7 @@ description: Brandone Fonya's website
 <img src="/static/profile.jpg" alt="Brandone" style="width: 200px; height: 270px; float: right; margin: 10px"/>
 ---
 
-<span style="font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';">
+<span style="font-size: 24px;">
 I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence under the [College of Engineering](https://engineering.cmu.edu/) at Carnegie Mellon University (CMU), where I focus on machine learning and computer vision. My capstone is advised by [Prasenjit Mitra](https://www.africa.engineering.cmu.edu/news/2025/02/25-mitra-announcement.html). My research focus is on Deep Learning and computer vision with applications in medical imaging, Healthcare and autonomous systems.
 </span>
 
@@ -52,9 +52,9 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
  _04/2025_ – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
-#### _02/2025_ – One-on-one with <a href='https://people.epfl.ch/mary-anne.hartley?lang=en'>Prof. Mary-Anne “Annie” Hartley</a> of LiGHT Laboratory at EPFL, on AI models and tool for resource constraiend communities.<br>
+ _02/2025_ – One-on-one with <a href='https://people.epfl.ch/mary-anne.hartley?lang=en'>Prof. Mary-Anne “Annie” Hartley</a> of LiGHT Laboratory at EPFL, on AI models and tool for resource constraiend communities.<br>
 
-#### _01/2025_ – Attended the <a href='https://events.dell.com/event/ce14c9e1-18e7-4347-aa04-f0e2ce851129/summary'>Dell Technologies AI Forum 2025</a>, Dubai at the Coca-Cola Arena by Microsoft, Dell, Intel and Nvidia. <br>
+ _01/2025_ – Attended the <a href='https://events.dell.com/event/ce14c9e1-18e7-4347-aa04-f0e2ce851129/summary'>Dell Technologies AI Forum 2025</a>, Dubai at the Coca-Cola Arena by Microsoft, Dell, Intel and Nvidia. <br>
 
 ---
 
