@@ -42,7 +42,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
  _07/2025_ – Research intern at the Autonomous Intelligence lab under <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Prof. Kaicheng Yu</a> School of Engineering, Westlake University, Hangzhou, China. <br>
 
- _07/2025_ – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their Tuberculosis research at EPFL and Lausanne University Hospital. <br>
+ _07/2025_ – Led the Carnegie Mellon - MakCHS research team meeting with prof. Marry-Anne "Annie" Hartley of <a href='https://www.light-laboratory.org/'>LiGHT</a> laboratory at EPFL, insights from their <a href='https://ai.epfl.ch/ai-making-it-easier-to-diagnose-tuberculosis-in-sub-saharan-africa/'>Tuberculosis research at EPFL and Lausanne University Hospital</a><br>
 
  _06/2025_ – Paper accepted for poster presentation at the <a href='https://ephconference.eu/'>European Public Health Conference 2025, Helsinki, Finland.</a><br>
 
