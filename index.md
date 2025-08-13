@@ -50,6 +50,8 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
  _06/2025_ – Attended the 2025 <a href='https://engineering.cmu.edu/afretec/index.html'>Afretech</a> Network's Annual Conference in Kigali, Rwanda.<br>
 
+ _05/2025_ – Visted the <a href='https://dighum.kcrc.rw/'>University of Cape Town</a>, Africa's #1 ranked University, very interesting AI research going on there.<br>
+
  _04/2025_ – Round table discussion with <a href='https://www.gatesfoundation.org/about/leadership/trevor-mundel'>Trevor Mundel</a>, president of Global Health at the Gates Foundation: AI applications to address healthcare challenges on the African continent.<br>
 
  _02/2025_ – One-on-one with <a href='https://people.epfl.ch/mary-anne.hartley?lang=en'>Prof. Mary-Anne “Annie” Hartley</a> of LiGHT Laboratory at EPFL, on AI models and tool for resource constraiend communities.<br>
@@ -69,6 +71,17 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
       <i>Brandone Fonya</i>, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken<br>
       <i><b>Accepted at <a href="https://ephconference.eu/" target="_blank">European Public Health Conference (EPH)</a>, 2025</b></i>
       <p style='margin-top: 20px; margin-bottom: 30px;'>This paper analyzes the geographic distribution of health facilities across Rwanda in relation to the prevalence of major diseases such as malaria, tuberculosis, and HIV at the district level. Using geospatial mapping, national health survey data, and machine learning models, it identifies mismatches between disease burden and healthcare access. The goal is to propose data-driven strategies for more equitable and efficient allocation of health resources in developing countries.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="static/heatmap.png" alt="VLM on MRI prostate"></td>
+    <td style="padding-left: 20px;">
+      <b><a href="https://github.com/FonyaBrandone/medblipnet3d/" target="_blank">
+      MedBLIPNet3D: Text Prompt-Guided vision language foundation model for 3D MRI Prostrate segmentation</a></b><br>
+      <i>Brandone Fonya</i>, Kaicheng Yu<br>
+      <i><b>(Work in progress) Submitted to <a href="https://ml4h.cc/" target="_blank">ML4H and NeurIPS 2025 workshops</a></b></i>
+      <p style='margin-top: 20px; margin-bottom: 30px;'>This paper proposes  a novel framework for text-prompted segmentation of 3D medical scans, demonstrated on multi-site T2-weighted prostate MRI data. Our MedBLIPNet3D architecture leverages transfer learning through a pretrained MedicalNet 3D ResNet-18 for image encoding and PubMedBERT for semantic prompt embeddings, combined via a cross-attention fusion module (MedQFormer) and a prompt-conditioned segmentation head. We evaluate the model for multi-class segmentation (whole gland, peripheral zone, transitional zone) using Dice score and Hausdorff distance on a test set of the CVPR-BiomedSegFM Prostate T2 volumetric data.</p>
     </td>
   </tr>
 
@@ -134,7 +147,11 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';"> Work Experience</span>
 
 <!-- <span style="font-family:'Candara Light';"> -->
-- Graduate Research Intern - AI for Healthcare @Carnegie Mellon University, under the supervision of [Conrad Tucker](https://engineering.cmu.edu/directory/bios/tucker-conrad.html) and [Edwin Mugume](https://scholars.cmu.edu/6761-edwin-mugume/publications) <br>
+- Research Intern - Autonomous Intelligence Lab @Westlake University, under the supervision of [Kaicheng Yu](https://en.westlake.edu.cn/faculty/kaicheng-yu.html) <br>
+ *Full time* <br>
+ *July 2025 - Present*
+
+- Graduate Research Assistant - AI for Healthcare @Carnegie Mellon University, under the supervision of [Conrad Tucker](https://engineering.cmu.edu/directory/bios/tucker-conrad.html) and [Edwin Mugume](https://scholars.cmu.edu/6761-edwin-mugume/publications) <br>
  *Full time* <br>
  *May 2025 - Present*
 
