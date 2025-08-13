@@ -75,7 +75,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
   </tr>
 
   <tr>
-    <td><img src="static/heatmap.png" alt="VLM on MRI prostate"></td>
+    <td><img src="static/medblipnet3d_pipeline.png" alt="VLM on MRI prostate"></td>
     <td style="padding-left: 20px;">
       <b><a href="https://github.com/FonyaBrandone/medblipnet3d/" target="_blank">
       MedBLIPNet3D: Text Prompt-Guided vision language foundation model for 3D MRI Prostrate segmentation</a></b><br>
