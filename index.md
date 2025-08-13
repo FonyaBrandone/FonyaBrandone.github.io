@@ -147,7 +147,7 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 ## <span style="font-family:'Candara Light';"> Work Experience</span>
 
 <!-- <span style="font-family:'Candara Light';"> -->
-- Research Intern - Autonomous Intelligence Lab @Westlake University, under the supervision of [Kaicheng Yu](https://en.westlake.edu.cn/faculty/kaicheng-yu.html) <br>
+<!-- - Research Intern - Autonomous Intelligence Lab @Westlake University, under the supervision of [Kaicheng Yu](https://en.westlake.edu.cn/faculty/kaicheng-yu.html) <br>
  *Full time* <br>
  *July 2025 - Present*
 
@@ -157,7 +157,45 @@ Apart from work, I enjoy travelling, reading and watching documentaries.
 
 - Graduate IT Associate - Full Stack developer @Carnegie Mellon University <br>
  *Part time* <br>
- *August 2024 - May 2025*
+ *August 2024 - May 2025* <br> -->
+
+<table>
+  <tr>
+    <td>
+      <img src="static/westlake-logo.jpg" alt="Westlake Logo" width="120">
+    </td>
+    <td style="padding-left: 20px; vertical-align: middle;">
+      <b>Research Intern</b><br>
+      Autonomous Intelligence Lab, Westlake University (Full time)<br>
+      Supervisor: <a href='https://en.westlake.edu.cn/faculty/kaicheng-yu.html'>Kaicheng Yu</a> <br>
+      <i> July 2025 - Present </i><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="static/cmu.png" alt="CMU Logo" width="120">
+    </td>
+    <td style="padding-left: 20px; vertical-align: middle;">
+      <b>Graduate Research Assitant</b><br>
+      Carnegie Mellon-MakCHS Joint research, Carnegie Mellon University (Full time)<br>
+      Supervisor: <a href='https://engineering.cmu.edu/directory/bios/tucker-conrad.html'>Conrad Tucker</a> and <a href='https://scholars.cmu.edu/6761-edwin-mugume/publications'>Edwin Mugume</a> <br>
+      <i> May 2025 - Present </i><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="static/cmu.png" alt="CMU Logo" width="120">
+    </td>
+    <td style="padding-left: 20px; vertical-align: middle;">
+      <b>Graduate IT Associate - Full Stack developer</b><br>
+      IT office, Carnegie Mellon University (Part time) <br>
+      <i> August 2024 - May 2025 </i><br>
+    </td>
+  </tr>
+
+</table>
 
 <!-- </span> -->
 
