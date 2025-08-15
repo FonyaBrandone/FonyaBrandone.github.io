@@ -184,5 +184,5 @@ description: Brandone Fonya's website
     </ul>
   </section>
 
-  <footer>© Brandone Fonya | Last updated: July 2025</footer>
+  <footer>© Brandone Fonya | Last updated: August 2025</footer>
 </div>
