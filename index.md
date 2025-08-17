@@ -21,7 +21,7 @@ description: Brandone Fonya's website
     <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
 
     <div class="links">
-      <a href="/static/Brandone%20Fonya%20CV%20-%20Summer%202025.pdf">CV</a> | 
+      <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
       <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
     </div>
   </section>
@@ -178,6 +178,7 @@ description: Brandone Fonya's website
   <section class="teaching-service">
     <h2>Teaching & Service</h2>
     <ul>
+      <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a>
       <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
       <li>Graduate Teaching Assistant, <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-701.html">Research Methods in Engineering (04-701)</a>, under <a href="https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html">Ismaila Dabo</a>, <em>Fall 2025</em></li>
       <li>IEEE Student Member, <em>2024 - Present</em></li>
