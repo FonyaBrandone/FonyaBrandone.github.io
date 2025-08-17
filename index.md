@@ -131,7 +131,7 @@ description: Brandone Fonya's website
       <div class="work-content">
         <h3>Research Intern, Autonomous Intelligence Lab</h3>
         <p>Westlake University (Full-time)<br>
-        Supervisor: <a href="https://en.westlake.edu.cn/faculty/kaicheng-yu.html">Kaicheng Yu</a><br>
+        Supervisor: <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a><br>
         <em>July 2025 - Present</em></p>
       </div>
     </div>
@@ -178,7 +178,7 @@ description: Brandone Fonya's website
   <section class="teaching-service">
     <h2>Teaching & Service</h2>
     <ul>
-      <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a>
+      <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a></li>
       <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
       <li>Graduate Teaching Assistant, <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-701.html">Research Methods in Engineering (04-701)</a>, under <a href="https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html">Ismaila Dabo</a>, <em>Fall 2025</em></li>
       <li>IEEE Student Member, <em>2024 - Present</em></li>
