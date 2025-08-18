@@ -58,7 +58,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
         <p><em>Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
-        <strong>Accepted at <a href="https://ephconference.eu/">European Public Health Conference 2025</a></strong></p>
+        <strong>Accepted for poster presentation at <a href="https://ephconference.eu/">European Public Health Conference 2025</a></strong></p>
         <p>This paper analyzes health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies.</p>
       </div>
     </div>
