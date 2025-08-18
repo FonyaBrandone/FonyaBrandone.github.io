@@ -56,7 +56,7 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
       <div class="research-content">
-        <h3><a href="https://drive.google.com/file/d/1S-NYIZbBHkzcAabAO3HTMByy7EejmolS/view">Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
+        <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
         <p><em>Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
         <strong>Accepted at <a href="https://ephconference.eu/">European Public Health Conference 2025</a></strong></p>
         <p>This paper analyzes health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies.</p>
@@ -66,7 +66,7 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/medblipnet3d_pipeline.png" alt="MedBLIPNet3D" class="research-img"/>
       <div class="research-content">
-        <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/">MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
+        <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>Brandone Fonya, Kaicheng Yu</em><br>
         <strong>Submitted to <a href="https://ml4h.cc/">ML4H and NeurIPS 2025 Workshops</a></strong></p>
         <p>A novel framework for text-prompted 3D medical scan segmentation, evaluated on prostate MRI data using Dice score and Hausdorff distance.</p>
@@ -96,7 +96,7 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/pesdestrian-modeling.gif" alt="Autonomous Driving" class="research-img"/>
       <div class="research-content">
-        <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view">Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
+        <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
         <p><em>Victor Miene, Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
         <strong>Course Research</strong></p>
         <p>Develops an uncertainty-aware system using ConvLSTM to model pedestrian behaviors in unstructured urban environments.</p>
