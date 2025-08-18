@@ -16,7 +16,7 @@ description: Brandone Fonya's website
   <section class="about">
     <p>I am a graduate research assistant and a final-year Master's student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on efficient deep learning and computer vision applications in medical image analysis, healthcare, and autonomous intelligence.</p>
 
-    <p>Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department.</p>
+    <p>Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering</p>
 
     <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
 
@@ -179,8 +179,8 @@ description: Brandone Fonya's website
     <h2>Teaching & Service</h2>
     <ul>
       <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a></li>
-      <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
-      <li>Graduate Teaching Assistant, <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-701.html">Research Methods in Engineering (04-701)</a>, under <a href="https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html">Ismaila Dabo</a>, <em>Fall 2025</em></li>
+      <!-- <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
+      <li>Graduate Teaching Assistant, <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-701.html">Research Methods in Engineering (04-701)</a>, under <a href="https://mse.engineering.cmu.edu/directory/bios/dabo-ismaila.html">Ismaila Dabo</a>, <em>Fall 2025</em></li> -->
       <li>IEEE Student Member, <em>2024 - Present</em></li>
     </ul>
   </section>
