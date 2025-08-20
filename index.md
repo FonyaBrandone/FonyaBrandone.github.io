@@ -14,7 +14,7 @@ description: Brandone Fonya's website
   </header>
 
   <section class="about">
-    <p>I am a graduate research assistant and a final-year Master's student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on efficient deep learning and computer vision applications in medical image analysis, healthcare, and autonomous intelligence.</p>
+    <p>I am a graduate research assistant and a final-year Master's student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare.</p>
 
     <p>Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering</p>
 
