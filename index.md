@@ -80,7 +80,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <strong>Work in Progress</strong></p>
+        <strong>Summer research - (Work in Progress)</strong></p>
         <p>Explores deep learning for non-invasive TB screening using cough audio, targeting early detection in low-resource settings.</p>
       </div>
     </div>
@@ -88,10 +88,10 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/cancer-medical-imaging.gif" alt="Adversarial Attacks" class="research-img"/>
       <div class="research-content">
-        <h3>Multi-Defense Framework Against Adversarial Attacks on Medical Imaging Models</h3>
-        <p><em>Brandone Fonya, Prasenjit Mitra</em><br>
+        <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
+        <p><em>Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
         <strong>Work in Progress</strong></p>
-        <p>Proposes a defense framework combining adversarial training and model ensembling, evaluated on breast cancer histopathology data.</p>
+        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to common adversarial attacks on downstream medical imaging tasks while minimising degradation in generalization to unseen data and modalities.</p>
       </div>
     </div>
 
@@ -100,7 +100,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
         <p><em>Victor Miene, Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
-        <strong>Course Research</strong></p>
+        <strong>Spring 2025 - Course Research</strong></p>
         <p>Develops an uncertainty-aware system using ConvLSTM to model pedestrian behaviors in unstructured urban environments.</p>
       </div>
     </div>
