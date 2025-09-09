@@ -40,7 +40,8 @@ description: Brandone Fonya's website
   <section class="updates">
     <h2>Recent Updates</h2>
     <ul>
-      <li><strong>07/2025</strong> – Joined the Autonomous Intelligence Lab as a research intern under <a href="https://en.westlake.edu.cn/faculty/kaicheng-yu.html">Prof. Kaicheng Yu</a> at Westlake University, Hangzhou, China.</li>
+      <li><strong>09/2025</strong> – Started role as Graduate Teaching Assistant for <a href="https://courses.ece.cmu.edu/18751">(18-751) Applied Stochastic Processes</a>, Fall 2025</li>
+      <li><strong>07/2025</strong> – Joined the <a href='https://westlake-autolab.github.io/' target='_blank'>Autonomous Intelligence Lab (AutoLab)</a> as a research intern under <a href="https://en.westlake.edu.cn/faculty/kaicheng-yu.html">Prof. Kaicheng Yu</a> at Westlake University, Hangzhou, China.</li>
       <li><strong>07/2025</strong> – Led the Carnegie Mellon-MakCHS research team meeting with Prof. Mary-Anne Hartley of <a href="https://www.light-laboratory.org/">LiGHT Laboratory</a> at EPFL, discussing <a href="https://ai.epfl.ch/ai-making-it-easier-to-diagnose-tuberculosis-in-sub-saharan-africa/">tuberculosis research</a>.</li>
       <li><strong>06/2025</strong> – Paper accepted for poster presentation at the <a href="https://ephconference.eu/">European Public Health Conference 2025</a>, Helsinki, Finland.</li>
       <li><strong>06/2025</strong> – Accepted to the <a href="https://dighum.kcrc.rw/">Digital Humanism Summer School 2025</a>.</li>
