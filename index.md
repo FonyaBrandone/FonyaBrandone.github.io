@@ -70,7 +70,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>Brandone Fonya, Kaicheng Yu</em><br>
-        <strong>Submitted to <a href="https://ml4h.cc/">ML4H and NeurIPS 2025 Workshops</a></strong></p>
+        <strong>Submitted to <a href="https://ml4h.cc/">Machine Learning for Health (ML4H) 2025</a></strong></p>
         <p>A novel framework for text-prompted 3D medical scan segmentation, evaluated on prostate MRI data using Dice score and Hausdorff distance.</p>
       </div>
     </div>
