@@ -59,7 +59,7 @@ description: Brandone Fonya's website
       <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
-        <p><em>Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
+        <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
         <strong>Accepted for poster presentation at <a href="https://ephconference.eu/">European Public Health Conference 2025</a></strong></p>
         <p>This paper analyzes health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies.</p>
       </div>
@@ -69,7 +69,7 @@ description: Brandone Fonya's website
       <img src="/static/medblipnet3d_pipeline.png" alt="MedBLIPNet3D" class="research-img"/>
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
-        <p><em>Brandone Fonya, Kaicheng Yu</em><br>
+        <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
         <strong>Submitted to <a href="https://ml4h.cc/">Machine Learning for Health (ML4H) 2025</a></strong></p>
         <p>A novel framework for text-prompted 3D medical scan segmentation, evaluated on prostate MRI data using Dice score and Hausdorff distance.</p>
       </div>
@@ -89,8 +89,8 @@ description: Brandone Fonya's website
       <img src="/static/cancer-medical-imaging.gif" alt="Adversarial Attacks" class="research-img"/>
       <div class="research-content">
         <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
-        <p><em>Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <strong>Work in Progress</strong></p>
+        <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
+        <strong>Capestone - Work in progress</strong></p>
         <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to common adversarial attacks on downstream medical imaging tasks while minimising degradation in generalization to unseen data and modalities.</p>
       </div>
     </div>
@@ -99,7 +99,7 @@ description: Brandone Fonya's website
       <img src="/static/pesdestrian-modeling.gif" alt="Autonomous Driving" class="research-img"/>
       <div class="research-content">
         <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
-        <p><em>Victor Miene, Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
+        <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
         <strong>Spring 2025 - Course Research</strong></p>
         <p>Develops an uncertainty-aware system using ConvLSTM to model pedestrian behaviors in unstructured urban environments.</p>
       </div>
