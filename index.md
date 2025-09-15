@@ -60,7 +60,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
         <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
-        <strong>Accepted for poster presentation at <a href="https://ephconference.eu/">European Public Health Conference 2025</a></strong></p>
+        <strong>Accepted for poster presentation at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025, under the <i>"Health services and systems research"</i> section</a></strong></p>
         <p>This paper analyzes health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies.</p>
       </div>
     </div>
@@ -80,7 +80,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <strong>Summer research - (Work in Progress)</strong></p>
+        <strong>Summer research - (In Progress)</strong></p>
         <p>Explores deep learning for non-invasive TB screening using cough audio, targeting early detection in low-resource settings.</p>
       </div>
     </div>
@@ -90,7 +90,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
         <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <strong>Capestone - Work in progress</strong></p>
+        <strong>Capstone - In progress</strong></p>
         <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to common adversarial attacks on downstream medical imaging tasks while minimising degradation in generalization to unseen data and modalities.</p>
       </div>
     </div>
