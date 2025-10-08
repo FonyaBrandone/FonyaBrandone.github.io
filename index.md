@@ -110,20 +110,20 @@ description: Brandone Fonya's website
   <section class="projects">
     <h2>Projects</h2>
     <div class="project-item">
-      <h3>Real-Time Sign Language Recognition and Speech Transcription</h3>
+      <h3>Real-Time Sign Language Gestures to Speech Transcription using Deep Learning</h3>
       <p><em>Supervised by <a href="https://insights.sei.cmu.edu/authors/clarence-worrell/">Clarence Worrell</a></em><br>
       Uses CNNs and Mediapipe for real-time ASL gesture recognition and text-to-speech conversion.<br>
-      <em>January 2025 - May 2025</em> | <a href="http://arxiv.org/abs/2508.12713">arxiv</a> | <a href="https://github.com/FonyaBrandone/Sign-language-project-deep-learning">code</a></p>
-    </div>
-    <div class="project-item">
-      <h3>ClimateSmart: Smart Agriculture</h3>
-      <p>Provides data-driven farming recommendations based on location and environmental data.<br>
-      <em>December 2023 - May 2024</em> | <a href="https://climatesmart.000webhostapp.com/">website</a></p>
+      <em>January 2025 - May 2025</em> | <a href="https://arxiv.org/abs/2508.12713v1">arXiv preprint</a> | <a href="https://github.com/FonyaBrandone/Sign-language-project-deep-learning">code</a></p>
     </div>
     <div class="project-item">
       <h3>Eschools LMS</h3>
       <p>Online learning platform for crisis-affected Cameroonian students, featuring AI study bots and live classes.<br>
       <em>December 2022 - July 2024</em> | <a href="https://eschools.netlify.app/">website</a></p>
+    </div>
+    <div class="project-item">
+      <h3>ClimateSmart: AI driven Smart Agriculture application</h3>
+      <p>Provides data-driven farming recommendations based on location and environmental data.<br>
+      <em>December 2023 - May 2024</em> | <a href="https://climatesmart.000webhostapp.com/">website</a></p>
     </div>
   </section>
 
