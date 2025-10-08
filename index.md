@@ -70,7 +70,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <strong><a href="https://arxiv.org">Arxiv (Coming soon)</a></strong></p>
+        <strong><a href="https://arxiv.org">arXiv preprint (published soon)</a></strong></p>
         <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
       </div>
     </div>
@@ -90,8 +90,8 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
         <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <strong>Capstone - In progress</strong></p>
-        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework while exploring other approaches for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to adversarial attacks on downstream medical imaging tasks while minimising degradation in model generalization to unseen data and modalities.</p>
+        <strong>Masters Capstone (In progress)</strong></p>
+        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework while exploring other approaches for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to adversarial attacks on downstream medical imaging tasks while minimizing degradation in model generalization to unseen data and modalities.</p>
       </div>
     </div>
 
@@ -100,6 +100,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
         <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
+        <strong><a href='https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view?usp=sharing&usp=embed_facebook' target='_blank'>preprint</a></strong>
         <strong>Spring 2025 - Course Research</strong></p>
         <p>Our study developed a pipeline to quantify uncertainty-aware driving scenarios using pedestrian visual cues in dense traffic and highly chaotic cities around Africa. We were focused on modeling a cross and not cross intent of pedestrians at any point in time. Using ConvLSTM and other architectures we model pedestrian behaviors in unstructured urban environments, enabling behaviorial planning for autonomous vehicles.</p>
       </div>
