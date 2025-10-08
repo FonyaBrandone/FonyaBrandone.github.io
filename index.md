@@ -61,7 +61,7 @@ description: Brandone Fonya's website
         <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
         <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
         <strong>Accepted for poster presentation at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025, under the <i>"Health services and systems research"</i> section</a></strong></p>
-        <p>This paper analyzes health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies.</p>
+        <p>This paper analyzed health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies. In this paper we showed that allocating healthcare facilities (Hospitals, reseasrch centers, clinics, pharmacies) relative to population distribution and density does not meet the need compared to using disease prevalence. We ended up by building and comparing regression models able at predicting healthcare facility needs in various districts of Rwanda, our case study</p>
       </div>
     </div>
 
@@ -70,8 +70,8 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <strong>Submitted to <a href="https://ml4h.cc/">Machine Learning for Health (ML4H) 2025</a></strong></p>
-        <p>A novel framework for text-prompted 3D medical scan segmentation, evaluated on prostate MRI data using Dice score and Hausdorff distance.</p>
+        <strong>Submitted to <a href="arxiv.org">Arxiv</a></strong></p>
+        <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
       </div>
     </div>
 
@@ -81,7 +81,7 @@ description: Brandone Fonya's website
         <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
         <strong>Summer research - (In Progress)</strong></p>
-        <p>Explores deep learning for non-invasive TB screening using cough audio, targeting early detection in low-resource settings.</p>
+        <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We are building Web/Mobile together with IOT systems to implement the solution in resource constraint settings.</p>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ description: Brandone Fonya's website
         <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
         <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
         <strong>Capstone - In progress</strong></p>
-        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to common adversarial attacks on downstream medical imaging tasks while minimising degradation in generalization to unseen data and modalities.</p>
+        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework while exploring other approaches for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to adversarial attacks on downstream medical imaging tasks while minimising degradation in model generalization to unseen data and modalities.</p>
       </div>
     </div>
 
@@ -101,7 +101,7 @@ description: Brandone Fonya's website
         <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
         <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
         <strong>Spring 2025 - Course Research</strong></p>
-        <p>Develops an uncertainty-aware system using ConvLSTM to model pedestrian behaviors in unstructured urban environments.</p>
+        <p>Our study developed a pipeline to quantify uncertainty-aware driving scenarios using pedestrian visual cues in dense traffic and highly chaotic cities around Africa. We were focused on modeling a cross and not cross intent of pedestrians at any point in time. Using ConvLSTM and other architectures we model pedestrian behaviors in unstructured urban environments, enabling behaviorial planning for autonomous vehicles.</p>
       </div>
     </div>
   </section>
