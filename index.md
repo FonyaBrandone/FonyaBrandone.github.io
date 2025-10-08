@@ -70,7 +70,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <strong>Submitted to <a href="arxiv.org">Arxiv</a></strong></p>
+        <strong><a href="https://arxiv.org">Arxiv (Coming soon)</a></strong></p>
         <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
       </div>
     </div>
