@@ -9,64 +9,64 @@ description: Brandone Fonya's website
 
 <!-- Base styles -->
 <style>
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-
   body {
     font-family: 'Inter', sans-serif;
-    background-color: #fafafa;
+    background-color: #f3f4f6;
     color: #1e1e1e;
     line-height: 1.7;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: flex-start;
+    min-height: 100vh;
   }
 
   .container {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
+    width: 90%;
+    max-width: 900px;
+    background: #fff;
+    margin: 4rem auto;
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-    color: #111;
-    margin-bottom: 0.4rem;
-  }
-
-  h1 {
-    font-size: 2.6rem;
-    font-weight: 700;
+    justify-content: center; /* ensures centered layout */
     text-align: center;
-  }
-
-  h3 {
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: #444;
-    text-align: center;
-    margin-top: 0.3rem;
   }
 
   .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* centers image + text */
     gap: 3rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
-    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  h1, h3 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 0.5rem;
   }
 
   .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 14px;
     object-fit: cover;
     border: 1px solid #ddd;
@@ -76,6 +76,7 @@ description: Brandone Fonya's website
   .about {
     text-align: justify;
     max-width: 700px;
+    margin-top: 1.5rem;
   }
 
   a {
@@ -89,16 +90,6 @@ description: Brandone Fonya's website
     text-decoration: underline;
   }
 
-  .links {
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  .links a {
-    margin: 0 0.5rem;
-    font-weight: 500;
-  }
-
   footer {
     text-align: center;
     font-size: 0.9rem;
@@ -108,17 +99,20 @@ description: Brandone Fonya's website
     padding-top: 1rem;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
-      text-align: center;
+    }
+    .container {
+      width: 94%;
+      padding: 2rem 1.5rem;
     }
     .about {
       text-align: left;
     }
   }
 </style>
+
 
 
 <link href="/static/css/styles.css" rel="stylesheet">
