@@ -19,9 +19,12 @@ description: Brandone Fonya's website
   }
 
   .container {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1, h2, h3 {
@@ -31,15 +34,42 @@ description: Brandone Fonya's website
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-top: 0;
+    text-align: center;
   }
 
-  h2 {
-    border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 0.4rem;
-    margin-top: 2.5rem;
+  h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+    margin-top: 0.3rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  .about {
+    text-align: justify;
+    max-width: 700px;
   }
 
   a {
@@ -53,62 +83,14 @@ description: Brandone Fonya's website
     text-decoration: underline;
   }
 
-  p {
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
-
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .profile-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  }
-
-  .header h3 {
-    font-weight: 400;
-    font-size: 1.1rem;
-    margin-top: 0.3rem;
-    color: #444;
+  .links {
+    text-align: center;
+    margin-top: 1rem;
   }
 
   .links a {
-    margin-right: 0.5rem;
-  }
-
-  ul {
-    padding-left: 1.2rem;
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  .research-item, .project-item, .work-item, .education-item {
-    display: flex;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-    align-items: flex-start;
-  }
-
-  .research-img, .work-img, .education-img {
-    width: 120px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .research-content, .work-content, .education-content {
-    flex: 1;
+    margin: 0 0.5rem;
+    font-weight: 500;
   }
 
   footer {
@@ -121,24 +103,17 @@ description: Brandone Fonya's website
   }
 
   /* Responsive adjustments */
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .header {
       flex-direction: column;
       text-align: center;
     }
-    .profile-img {
-      margin-top: 1rem;
-    }
-    .research-item, .work-item, .education-item {
-      flex-direction: column;
-      align-items: center;
-    }
-    .research-img, .work-img, .education-img {
-      width: 100%;
-      max-width: 400px;
+    .about {
+      text-align: left;
     }
   }
 </style>
+
 
 <link href="/static/css/styles.css" rel="stylesheet">
 
