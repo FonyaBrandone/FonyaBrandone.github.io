@@ -4,24 +4,163 @@ title: Brandone Fonya
 description: Brandone Fonya's website
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Font pairing: modern academic style -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- Base styles -->
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #1e1e1e;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #111;
+    margin-bottom: 0.4rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  h2 {
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+  }
+
+  a {
+    color: #0056d6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: #003a8c;
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .header h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    color: #444;
+  }
+
+  .links a {
+    margin-right: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .research-item, .project-item, .work-item, .education-item {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    align-items: flex-start;
+  }
+
+  .research-img, .work-img, .education-img {
+    width: 120px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .research-content, .work-content, .education-content {
+    flex: 1;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 3rem;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 700px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-img {
+      margin-top: 1rem;
+    }
+    .research-item, .work-item, .education-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    .research-img, .work-img, .education-img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+</style>
 
 <link href="/static/css/styles.css" rel="stylesheet">
 
 <div class="container">
   <header class="header">
-    <h1>Brandone Fonya <br><i>MEng. Artificial Intelligence</i></h1>
-    <img src="/static/profile.jpg" alt="Brandone Fonya" class="profile-img"/>
+    <div>
+      <h1>Brandone Fonya</h1>
+      <h3><i>MEng. Artificial Intelligence</i></h3>
+    </div>
+    <img src="/static/profile.jpg" alt="Portrait of Brandone Fonya" class="profile-img"/>
   </header>
 
   <section class="about">
-    <p>I am a graduate research assistant and a final year Master student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare. Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering. I am currently working with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> AI research team on advancing precision oncology through a generative pipeline for breast cancer generation for Africa. Our work integrates multi-omics, clinical and environmental data from Africa for a larger synthetic dataset generation using Variational Autoencoders (VAE), Bayesian networks and diffusion models.</p>
+    <p>I am a graduate research assistant and a final-year Master’s student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University</a>, specializing in machine learning and computer vision. My research focuses on deep learning for medical imaging and healthcare. Before CMU, I earned a Bachelor's (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a>, Cameroon (May 2024), graduating first in my department. I also obtained a Higher National Diploma (HND) in 2022, ranked 3rd nationwide in Software Engineering.</p>
 
-    <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
+    <p>Currently, I work with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> on generative models for precision oncology in Africa, integrating multi-omics, clinical, and environmental data using Variational Autoencoders (VAE), Bayesian networks, and diffusion models.</p>
+
+    <p>Beyond research, I enjoy traveling, reading, and watching documentaries.</p>
 
     <div class="links">
       <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
-      <a href="https://orcid.org/0009-0004-5793-9323">Google Scholar</a> |
+      <a href="https://scholar.google.com/">Google Scholar</a> |
       <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
     </div>
   </section>
@@ -200,5 +339,42 @@ description: Brandone Fonya's website
     </ul>
   </section>
 
+
   <footer>© Brandone Fonya | Last updated: August 2025</footer>
 </div>
+
+
+
+
+<!-- 
+---
+layout: default
+title: Brandone Fonya
+description: Brandone Fonya's website
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link href="/static/css/styles.css" rel="stylesheet">
+
+<div class="container">
+  <header class="header">
+    <h1>Brandone Fonya <br><i>MEng. Artificial Intelligence</i></h1>
+    <img src="/static/profile.jpg" alt="Brandone Fonya" class="profile-img"/>
+  </header>
+
+  <section class="about">
+    <p>I am a graduate research assistant and a final year Master student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare. Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering. I am currently working with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> AI research team on advancing precision oncology through a generative pipeline for breast cancer generation for Africa. Our work integrates multi-omics, clinical and environmental data from Africa for a larger synthetic dataset generation using Variational Autoencoders (VAE), Bayesian networks and diffusion models.</p>
+
+    <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
+
+    <div class="links">
+      <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
+      <a href="https://orcid.org/0009-0004-5793-9323">Google Scholar</a> |
+      <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
+    </div>
+  </section>
+
+  
+  <footer>© Brandone Fonya | Last updated: August 2025</footer>
+</div> -->
