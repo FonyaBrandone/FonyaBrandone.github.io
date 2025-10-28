@@ -16,6 +16,9 @@ description: Brandone Fonya's website
     line-height: 1.7;
     margin: 0;
     padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container {
@@ -152,9 +155,7 @@ description: Brandone Fonya's website
   </header>
 
   <section class="about">
-    <p>I am a graduate research assistant and a final-year Master’s student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University</a>, specializing in machine learning and computer vision. My research focuses on deep learning for medical imaging and healthcare. Before CMU, I earned a Bachelor's (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a>, Cameroon (May 2024), graduating first in my department. I also obtained a Higher National Diploma (HND) in 2022, ranked 3rd nationwide in Software Engineering.</p>
-
-    <p>Currently, I work with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> on generative models for precision oncology in Africa, integrating multi-omics, clinical, and environmental data using Variational Autoencoders (VAE), Bayesian networks, and diffusion models.</p>
+    <p>I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for medical imaging and healthcare. Before CMU, I earned a Bachelor's (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a>, Cameroon (May 2024), graduating first in my department. I also obtained a Higher National Diploma (HND) in 2022, ranked 3rd nationwide in Software Engineering. Currently, I work with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> on generative models for precision oncology in Africa, integrating multi-omics, clinical, and environmental data using Variational Autoencoders (VAE), Bayesian networks, and diffusion models.</p>
 
     <p>Beyond research, I enjoy traveling, reading, and watching documentaries.</p>
 
