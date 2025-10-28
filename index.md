@@ -134,7 +134,7 @@ description: Brandone Fonya's website
       <img src="/static/cylabafrica_logo.jpg" alt="Upanzi Network logo" class="work-img"/>
       <div class="work-content">
         <h3>Research Intern, Upanzi Network</h3>
-        <p>Westlake University (Full-time)<br>
+        <p>Upanzi Network (Part-time)<br>
         Supervisor: <a href="https://ece.cmu.edu/directory/bios/gueye-assane.html">Assane Gueye</a><br>
         <em>September 2025 - Present</em></p>
       </div>
