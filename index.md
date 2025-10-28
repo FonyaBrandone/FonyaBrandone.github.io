@@ -14,9 +14,7 @@ description: Brandone Fonya's website
   </header>
 
   <section class="about">
-    <p>I am a graduate research assistant and a final-year Master's student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare.</p>
-
-    <p>Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering</p>
+    <p>I am a graduate research assistant and a final year Master student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare. Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering. I am currently working with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> AI research team on advancing precision oncology through a generative pipeline for breast cancer generation for Africa. Our work integrates multi-omics, clinical and environmental data from Africa for a larger synthetic dataset generation using Variational Autoencoders (VAE), Bayesian networks and diffusion models.</p>
 
     <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
 
@@ -33,7 +31,7 @@ description: Brandone Fonya's website
     <div class="links">
       <a href="https://www.linkedin.com/in/brandone-fonya-217654240/">LinkedIn</a> | 
       <a href="https://github.com/fonyabrandone">GitHub</a> | 
-      <a href="https://twitter.com/princebrandone">Twitter</a>
+      <a href="https://twitter.com/princebrandone">Twitter (X)</a>
     </div>
   </section>
 
@@ -55,6 +53,7 @@ description: Brandone Fonya's website
 
   <section class="research">
     <h2>Research</h2>
+    <p>I am committed towards research that ensures that AI benefits the society, specifically in the healthcare sector. I am focused on developing efficient deep learning models for computer vision applications with particular interest in medical imaging and analysis. My long-term goal is to build intelligent systems that can perceive, understand and continually learn from the ever-changing dynamics of the world we live in</p>
     <div class="research-item">
       <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
       <div class="research-content">
@@ -70,7 +69,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <strong><a href="https://arxiv.org">arXiv preprint (published soon)</a></strong></p>
+        <strong><a href="https://arxiv.org">arXiv preprint (coming soon)</a></strong></p>
         <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
       </div>
     </div>
@@ -130,12 +129,21 @@ description: Brandone Fonya's website
   <section class="work-experience">
     <h2>Work Experience</h2>
     <div class="work-item">
+      <img src="/static/cylabafrica_logo.jpg" alt="Upanzi Network logo" class="work-img"/>
+      <div class="work-content">
+        <h3>Research Intern, Upanzi Network</h3>
+        <p>Westlake University (Full-time)<br>
+        Supervisor: <a href="https://ece.cmu.edu/directory/bios/gueye-assane.html">Assane Gueye</a><br>
+        <em>September 2025 - Present</em></p>
+      </div>
+    </div>
+    <div class="work-item">
       <img src="/static/westlake-logo.jpg" alt="Westlake Logo" class="work-img"/>
       <div class="work-content">
         <h3>Research Intern, Autonomous Intelligence Lab</h3>
         <p>Westlake University (Full-time)<br>
         Supervisor: <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a><br>
-        <em>July 2025 - Present</em></p>
+        <em>July 2025 - September 2025</em></p>
       </div>
     </div>
     <div class="work-item">
@@ -180,6 +188,8 @@ description: Brandone Fonya's website
 
   <section class="teaching-service">
     <h2>Teaching & Service</h2>
+    <p>I am currently serving as a graduate teaching assistant for CMU Engineering’s graduate level ECE course, (18-751) Applied Stochastic Processes (https://courses.ece.cmu.edu/18751), for Fall 2025.
+    My roles include: Grading assignments and exams to assess student performance, Holding weekly office hours, lead recitations solving set of exercises and problems, Helping students understand the course concepts and problems.</p>
     <ul>
       <!-- <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
       -->
