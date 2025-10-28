@@ -11,17 +11,24 @@ description: Brandone Fonya's website
 <style>
   body {
     font-family: 'Inter', sans-serif;
-    background-color: #fafafa;
+    background-color: #f3f4f6; /* light gray backdrop */
     color: #1e1e1e;
     line-height: 1.7;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
   }
 
   .container {
     max-width: 850px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
+    background: #fff;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +77,7 @@ description: Brandone Fonya's website
   .about {
     text-align: justify;
     max-width: 700px;
+    margin-top: 1.5rem;
   }
 
   a {
@@ -85,7 +93,7 @@ description: Brandone Fonya's website
 
   .links {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .links a {
@@ -102,7 +110,6 @@ description: Brandone Fonya's website
     padding-top: 1rem;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
@@ -113,6 +120,7 @@ description: Brandone Fonya's website
     }
   }
 </style>
+
 
 
 <!-- <link href="/static/css/styles.css" rel="stylesheet"> -->
