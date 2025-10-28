@@ -11,6 +11,7 @@ description: Brandone Fonya's website
 <div class="container">
   <header class="header">
     <h1>Brandone Fonya</h1>
+    <h3>MEng. Artificial Intelligence</h3>
     <img src="/static/profile.jpg" alt="Brandone Fonya" class="profile-img"/>
   </header>
 
