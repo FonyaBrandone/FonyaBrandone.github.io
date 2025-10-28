@@ -115,7 +115,7 @@ description: Brandone Fonya's website
 </style>
 
 
-<link href="/static/css/styles.css" rel="stylesheet">
+<!-- <link href="/static/css/styles.css" rel="stylesheet"> -->
 
 <div class="container">
   <header class="header">
