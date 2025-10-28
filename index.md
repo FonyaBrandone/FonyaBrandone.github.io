@@ -4,7 +4,8 @@ title: Brandone Fonya
 description: Brandone Fonya's website
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
 <link href="/static/css/styles.css" rel="stylesheet">
 
 <div class="container">
