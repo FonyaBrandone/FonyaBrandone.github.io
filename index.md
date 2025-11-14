@@ -198,9 +198,9 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
       <div class="research-content">
-        <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Evaluating Health Facility Distribution and Disease Prevalence in Rwanda</a></h3>
+        <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Optimizing healthcare facility distribution in Rwanda: a data-driven approach</a></h3>
         <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
-        <strong>Accepted for poster presentation at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025, under the <i>"Health services and systems research"</i> section</a></strong></p>
+        <strong>Accepted at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025</a></strong><br><a href="https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1554/8302027">Journal Article</a></p>
         <p>This paper analyzed health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies. In this paper we showed that allocating healthcare facilities (Hospitals, reseasrch centers, clinics, pharmacies) relative to population distribution and density does not meet the need compared to using disease prevalence. We ended up by building and comparing regression models able at predicting healthcare facility needs in various districts of Rwanda, our case study</p>
       </div>
     </div>
