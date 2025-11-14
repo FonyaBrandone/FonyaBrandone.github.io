@@ -161,7 +161,7 @@ description: Brandone Fonya's website
 
     <div class="links">
       <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
-      <a href="https://scholar.google.com/">Google Scholar</a> |
+      <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en">Google Scholar</a> |
       <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
     </div>
   </section>
