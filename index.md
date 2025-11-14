@@ -220,7 +220,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <i>arXiv preprint - (In Progress)</i></p>
+        <i>arXiv preprint - (coming soon)</i></p>
         <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We are building Web/Mobile together with IOT systems to implement the solution in resource constraint settings.</p>
       </div>
     </div>
@@ -230,7 +230,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
         <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <strong>Masters Capstone (In progress)</strong></p>
+        <i>Masters Capstone (In progress)</i></p>
         <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework while exploring other approaches for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to adversarial attacks on downstream medical imaging tasks while minimizing degradation in model generalization to unseen data and modalities.</p>
       </div>
     </div>
