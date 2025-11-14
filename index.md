@@ -200,7 +200,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Optimizing healthcare facility distribution in Rwanda: a data-driven approach</a></h3>
         <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
-        <strong>Accepted at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025</a></strong><br><a href="https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1554/8302027">Journal Article</a></p>
+        Accepted at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025</a><br><i><a href="https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1554/8302027">Journal Article</a></i></p>
         <p>This paper analyzed health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies. In this paper we showed that allocating healthcare facilities (Hospitals, reseasrch centers, clinics, pharmacies) relative to population distribution and density does not meet the need compared to using disease prevalence. We ended up by building and comparing regression models able at predicting healthcare facility needs in various districts of Rwanda, our case study</p>
       </div>
     </div>
@@ -210,7 +210,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
         <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <strong><a href="https://arxiv.org">arXiv preprint (coming soon)</a></strong></p>
+        <i><a href="https://arxiv.org">arXiv preprint (coming soon)</a></i></p>
         <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
       </div>
     </div>
@@ -220,7 +220,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <strong>Summer research - (In Progress)</strong></p>
+        <i>arXiv preprint - (In Progress)</i></p>
         <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We are building Web/Mobile together with IOT systems to implement the solution in resource constraint settings.</p>
       </div>
     </div>
@@ -241,7 +241,7 @@ description: Brandone Fonya's website
         <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
         <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
         <strong><a href='https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view?usp=sharing&usp=embed_facebook' target='_blank'>preprint</a></strong>
-        <strong>Spring 2025 - Course Research</strong></p>
+        <i>Spring 2025 - Course Research</i></p>
         <p>Our study developed a pipeline to quantify uncertainty-aware driving scenarios using pedestrian visual cues in dense traffic and highly chaotic cities around Africa. We were focused on modeling a cross and not cross intent of pedestrians at any point in time. Using ConvLSTM and other architectures we model pedestrian behaviors in unstructured urban environments, enabling behaviorial planning for autonomous vehicles.</p>
       </div>
     </div>
