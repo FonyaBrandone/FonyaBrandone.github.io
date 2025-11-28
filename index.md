@@ -201,7 +201,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://baimamboukar.github.io/eeg-decoding-web/" target='_blank'>Zero-Shot Neural Priors for Generalizable Cross-Subject and Cross-Task EEG Decoding</a></h3>
         <p><em>Baimam Boukar, *Brandone Fonya, Nchofon Tagha, Pauline Nyaboe</em><br>
-        <a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a></i></p>
+        <i><a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a></i></p>
         <p>Our project develops a zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data. This approach enables robust cross-subject generalization and zero-shot transfer to unseen cognitive tasks without any subject-specific calibration. The work advances scalable EEG-based biomarkers and supports next-generation applications in computational psychiatry and adaptive brain-computer interfaces</p>
       </div>
     </div>
