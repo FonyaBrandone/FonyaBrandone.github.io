@@ -160,7 +160,7 @@ description: Brandone Fonya's website
     <p>Beyond research, I enjoy traveling, reading, and watching documentaries.</p>
 
     <div class="links">
-      <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
+      <a href="/static/Brandone Fonya CV - Fall (Nov) 2025.pdf">CV</a> | 
       <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en">Google Scholar</a> |
       <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
     </div>
@@ -195,6 +195,17 @@ description: Brandone Fonya's website
   <section class="research">
     <h2>Research</h2>
     <p>I am committed towards research that ensures that AI benefits the society, specifically in the healthcare sector. I am focused on developing efficient deep learning models for computer vision applications with particular interest in medical imaging and analysis. My long-term goal is to build intelligent systems that can perceive, understand and continually learn from the ever-changing dynamics of the world we live in</p>
+
+    <div class="research-item">
+      <img src="/static/workflow.png" alt="EEG Brain decoding" class="research-img"/>
+      <div class="research-content">
+        <h3><a href="https://baimamboukar.github.io/eeg-decoding-web/" target='_blank'>Zero-Shot Neural Priors for Generalizable Cross-Subject and Cross-Task EEG Decoding</a></h3>
+        <p><em>Baimam Boukar, *Brandone Fonya, Nchofon Tagha, Pauline Nyaboe</em><br>
+        <a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a></i></p>
+        <p>Our project develops a zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data. This approach enables robust cross-subject generalization and zero-shot transfer to unseen cognitive tasks without any subject-specific calibration. The work advances scalable EEG-based biomarkers and supports next-generation applications in computational psychiatry and adaptive brain-computer interfaces</p>
+      </div>
+    </div>
+
     <div class="research-item">
       <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
       <div class="research-content">
