@@ -396,5 +396,5 @@ description: Brandone Fonya's website
   </section>
 
   
-  <footer>© Brandone Fonya | Last updated: August 2025</footer>
+  <footer>© Brandone Fonya | Last updated: January 2026</footer>
 </div> -->
