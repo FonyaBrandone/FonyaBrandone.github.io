@@ -179,6 +179,8 @@ description: Brandone Fonya's website
   <section class="updates">
     <h2>Recent Updates</h2>
     <ul>
+      <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
+
       <li><strong>12/2025</strong> – Made the news, Carnegie Mellon University spotlighted my research journey to China. <a href="https://www.africa.engineering.cmu.edu/news/2025/12/3-fonya-feature.html">Read here</a></li>
 
       <li><strong>09/2025</strong> – Started role as Graduate Teaching Assistant for <a href="https://courses.ece.cmu.edu/18751">(18-751) Applied Stochastic Processes</a>, Fall 2025</li>
