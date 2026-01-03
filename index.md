@@ -160,7 +160,7 @@ description: Brandone Fonya's website
     <p>Beyond research, I enjoy traveling, reading, and watching documentaries.</p>
 
     <div class="links">
-      <a href="/static/Brandone Fonya CV - Fall (Nov) 2025.pdf">CV</a> | 
+      <a href="/static/Brandone Fonya - CV (Spring 2026).pdf">CV</a> | 
       <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en">Google Scholar</a> |
       <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
     </div>
@@ -309,7 +309,7 @@ description: Brandone Fonya's website
         <h3>Graduate Research Assistant, AI for Healthcare</h3>
         <p>Carnegie Mellon University (Full-time)<br>
         Supervisors: <a href="https://engineering.cmu.edu/directory/bios/tucker-conrad.html">Conrad Tucker</a>, <a href="https://scholars.cmu.edu/6761-edwin-mugume/publications">Edwin Mugume</a><br>
-        <em>May 2025 - Present</em></p>
+        <em>May 2025 - December 2025</em></p>
       </div>
     </div>
     <div class="work-item">
