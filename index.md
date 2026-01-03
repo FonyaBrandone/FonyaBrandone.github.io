@@ -345,11 +345,12 @@ description: Brandone Fonya's website
 
   <section class="teaching-service">
     <h2>Teaching & Service</h2>
-    <p>I am currently serving as a graduate teaching assistant for CMU Engineering’s graduate level ECE course, (18-751) Applied Stochastic Processes (https://courses.ece.cmu.edu/18751), for Fall 2025.
+    <p>I am currently serving as a graduate teaching assistant for CMU Engineering’s graduate level Introduction to Machine learning course (https://courses.ece.cmu.edu/18661), for Spring 2026.
     My roles include: Grading assignments and exams to assess student performance, Holding weekly office hours, lead recitations solving set of exercises and problems, Helping students understand the course concepts and problems.</p>
     <ul>
       <!-- <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
       -->
+      <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a>, <em>Spring 2026</em></li>
       <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18751">(18-751)   Applied Stochastic Processes</a>, <em>Fall 2025</em></li>
       <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a></li>
       <li>IEEE Student Member, <em>2024 - Present</em></li>
