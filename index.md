@@ -246,10 +246,10 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/cancer-medical-imaging.gif" alt="Adversarial Attacks" class="research-img"/>
       <div class="research-content">
-        <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization in Medical Imaging</h3>
+        <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization</h3>
         <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <i>Masters Capstone (In progress)</i></p>
-        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework while exploring other approaches for Robust and Generalizable Medical Imaging. CAM-FD aims at increasing robustness to adversarial attacks on downstream medical imaging tasks while minimizing degradation in model generalization to unseen data and modalities.</p>
+        <i>Masters Capstone</i></p>
+        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework. CAM-FD aims at increasing robustness to adversarial attacks on downstream imaging tasks while minimizing degradation in model generalization to unseen data and modalities. Overall, the framework reduces the performance drop in adversarial training with better out-of-sample generalization.</p>
       </div>
     </div>
 
