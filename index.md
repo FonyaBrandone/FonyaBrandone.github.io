@@ -352,7 +352,7 @@ description: Brandone Fonya's website
     <ul>
       <!-- <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
       -->
-      <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a>, <em>Spring 2026</em></li>
+      <li>Graduate Teaching Assistant, <a href="https://www.andrew.cmu.edu/course/18-661/">(18-661) Introduction to Machine Learning for Engineers</a>, <em>Spring 2026</em></li>
       <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18751">(18-751)   Applied Stochastic Processes</a>, <em>Fall 2025</em></li>
       <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a></li>
       <li>IEEE Student Member, <em>2024 - Present</em></li>
