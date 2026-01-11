@@ -208,8 +208,8 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3><a href="https://baimamboukar.github.io/eeg-decoding-web/" target='_blank'>Zero-Shot Neural Priors for Generalizable Cross-Subject and Cross-Task EEG Decoding</a></h3>
         <p><em>Baimam Boukar, *Brandone Fonya, Nchofon Tagha, Pauline Nyaboe</em><br>
-        <i><a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a></i></p>
-        <p>Our project develops a zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data. This approach enables robust cross-subject generalization and zero-shot transfer to unseen cognitive tasks without any subject-specific calibration. The work advances scalable EEG-based biomarkers and supports next-generation applications in computational psychiatry and adaptive brain-computer interfaces</p>
+        <i><a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a> | Medical Imaging with Deep Learning (under review)</i></p>
+        <p>A zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data. This approach enables robust cross-subject generalization and zero-shot transfer to unseen cognitive tasks without any subject-specific calibration. The work advances scalable EEG-based biomarkers and supports next-generation applications in computational psychiatry and adaptive brain-computer interfaces</p>
       </div>
     </div>
 
@@ -236,10 +236,10 @@ description: Brandone Fonya's website
     <div class="research-item">
       <img src="/static/tb-screening-cough.gif" alt="Tuberculosis Screening" class="research-img"/>
       <div class="research-content">
-        <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
+        <h3>Robust Non-Invasive Tuberculosis Triage Using Audio Embeddings from Solicitated Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <i>arXiv preprint - (coming soon)</i></p>
-        <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We are building Web/Mobile together with IOT systems to implement the solution in resource constraint settings.</p>
+        <i>IEEE/CVF Winter Conference on Applications of Computer Vision (Under review)</i></p>
+        <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We present a robust, deployment-ready TB triage pipeline that leverages pretrained audio foundation model embeddings (128-D) to drive lightweight classifiers optimized for mobile edge inference. To ensure the model learns genuine acoustic pathology rather than dataset artifacts, we evaluate performance under two distinct training regimes: (1) an uncontrolled setting reflecting natural prevalence (70% TB) addressed via inverse-frequency weighting, and (2) a controlled setting utilizing strictly stratified 50/50 participant sampling. Our experiments demonstrated exceptional robustness, with the best performing models (LightweightCNN1D and NaiveBayes) achieving an Area Under the Curve (AUC) of 1.000 and F1 scores of 0.997 across both regimes.</p>
       </div>
     </div>
 
