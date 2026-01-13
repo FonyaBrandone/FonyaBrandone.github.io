@@ -179,7 +179,11 @@ description: Brandone Fonya's website
   <section class="updates">
     <h2>Recent Updates</h2>
     <ul>
+      <li><strong>01/2026</strong> – One workshop paper accepted for Oral presentation at the IEEE/CVF Winter Conference on Applications of Computer Vision 2026, Tucson, Arizona. </li>
+      
       <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
+
+      <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18662">(18-662) Principles and Engineering Applications of AI</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
 
       <li><strong>12/2025</strong> – Made the news, Carnegie Mellon University spotlighted my research journey to China. <a href="https://www.africa.engineering.cmu.edu/news/2025/12/3-fonya-feature.html">Read here</a></li>
 
@@ -238,7 +242,7 @@ description: Brandone Fonya's website
       <div class="research-content">
         <h3>Robust Non-Invasive Tuberculosis Triage Using Audio Embeddings from Solicitated Cough Sounds</h3>
         <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <i>IEEE/CVF Winter Conference on Applications of Computer Vision (Under review)</i></p>
+        <i>IEEE/CVF Winter Conference on Applications of Computer Vision 2026 (Oral presentation)</i></p>
         <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We present a robust, deployment-ready TB triage pipeline that leverages pretrained audio foundation model embeddings (128-D) to drive lightweight classifiers optimized for mobile edge inference. To ensure the model learns genuine acoustic pathology rather than dataset artifacts, we evaluate performance under two distinct training regimes: (1) an uncontrolled setting reflecting natural prevalence (70% TB) addressed via inverse-frequency weighting, and (2) a controlled setting utilizing strictly stratified 50/50 participant sampling. Our experiments demonstrated exceptional robustness, with the best performing models (LightweightCNN1D and NaiveBayes) achieving an Area Under the Curve (AUC) of 1.000 and F1 scores of 0.997 across both regimes.</p>
       </div>
     </div>
