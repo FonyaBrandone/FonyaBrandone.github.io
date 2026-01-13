@@ -179,7 +179,7 @@ description: Brandone Fonya's website
   <section class="updates">
     <h2>Recent Updates</h2>
     <ul>
-      <li><strong>01/2026</strong> – One workshop paper accepted for Oral presentation at the IEEE/CVF Winter Conference on Applications of Computer Vision 2026, Tucson, Arizona. </li>
+      <li><strong>01/2026</strong> – One paper accepted for Oral presentation at the IEEE/CVF Winter Conference on Applications of Computer Vision 2026 workshop, Tucson, Arizona. </li>
       
       <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
 
