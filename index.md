@@ -168,7 +168,7 @@ description: Brandone Fonya's website
 
   <section class="contact">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> bfonya@andrew.cmu.edu</p>
+    <p><strong>Email:</strong> bfonya[at]andrew.cmu.edu</p>
     <div class="links">
       <a href="https://www.linkedin.com/in/brandone-fonya-217654240/">LinkedIn</a> | 
       <a href="https://github.com/fonyabrandone">GitHub</a> | 
