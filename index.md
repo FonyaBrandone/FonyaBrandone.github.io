@@ -1,404 +1,708 @@
----
-layout: default
-title: Brandone Fonya
-description: Brandone Fonya's website
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandone Fonya - Academic Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f0;
+            color: #2d2d2d;
+            line-height: 1.6;
+        }
 
-<!-- Font pairing: modern academic style -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        /* Navigation */
+        nav {
+            background: #2d2d2d;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background: #404040;
+        }
 
-<!-- Base styles -->
-<style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fafafa;
-    color: #1e1e1e;
-    line-height: 1.7;
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+        /* Game Header Section */
+        .game-header {
+            background-color: #f0f0e8;
+            padding: 100px 20px 60px;
+            border-bottom: 3px solid #2d2d2d;
+        }
 
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-  }
+        .game-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-  h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-    color: #111;
-    margin-bottom: 0.4rem;
-  }
+        .game-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-  h1 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-top: 0;
-  }
+        .game-title h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
 
-  h2 {
-    border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 0.4rem;
-    margin-top: 2.5rem;
-  }
+        .game-title p {
+            color: #2d2d2d;
+            font-size: 16px;
+        }
 
-  a {
-    color: #0056d6;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
+        /* ML Quiz Cards */
+        .quiz-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: start;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
 
-  a:hover {
-    color: #003a8c;
-    text-decoration: underline;
-  }
+        .quiz-card {
+            background: white;
+            padding: 12px;
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+            border: 3px solid #2d2d2d;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 200px;
+        }
 
-  p {
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
+        .quiz-card:hover:not(.disabled) {
+            transform: translateY(-8px);
+        }
 
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+        .quiz-card.correct {
+            transform: rotate(2deg);
+        }
 
-  .profile-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  }
+        .quiz-card.incorrect {
+            transform: rotate(-2deg);
+        }
 
-  .header h3 {
-    font-weight: 400;
-    font-size: 1.1rem;
-    margin-top: 0.3rem;
-    color: #444;
-  }
+        .quiz-card.disabled {
+            cursor: not-allowed;
+        }
 
-  .links a {
-    margin-right: 0.5rem;
-  }
+        .card-content {
+            background: #e8e8e8;
+            border: 2px solid #2d2d2d;
+            min-height: 120px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            margin-bottom: 12px;
+        }
 
-  ul {
-    padding-left: 1.2rem;
-  }
+        .card-content.correct-answer {
+            background: #90ee90;
+        }
 
-  li {
-    margin-bottom: 0.5rem;
-  }
+        .card-content.incorrect-answer {
+            background: #ffb6c1;
+        }
 
-  .research-item, .project-item, .work-item, .education-item {
-    display: flex;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-    align-items: flex-start;
-  }
+        .card-bottom {
+            height: 32px;
+        }
 
-  .research-img, .work-img, .education-img {
-    width: 120px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+        .highlight {
+            background-color: #ffd700;
+            padding: 0 4px;
+        }
 
-  .research-content, .work-content, .education-content {
-    flex: 1;
-  }
+        /* Main Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
 
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 3rem;
-    border-top: 1px solid #eaeaea;
-    padding-top: 1rem;
-  }
+        .section {
+            margin-bottom: 80px;
+            background: white;
+            border: 3px solid #2d2d2d;
+            padding: 40px;
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+        }
 
-  /* Responsive adjustments */
-  @media (max-width: 700px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-    .profile-img {
-      margin-top: 1rem;
-    }
-    .research-item, .work-item, .education-item {
-      flex-direction: column;
-      align-items: center;
-    }
-    .research-img, .work-img, .education-img {
-      width: 100%;
-      max-width: 400px;
-    }
-  }
-</style>
+        /* About Section with Polaroid Photo */
+        .about-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
 
-<link href="/static/css/styles.css" rel="stylesheet">
+        .profile-polaroid {
+            background: white;
+            padding: 20px;
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+            border: 3px solid #2d2d2d;
+            margin-top: 20px;
+        }
 
-<div class="container">
-  <header class="header">
-    <div>
-      <h1>Brandone Fonya</h1>
-      <h3><i>MEng. Artificial Intelligence</i></h3>
+        .profile-photo {
+            background: #e8e8e8;
+            border: 2px solid #2d2d2d;
+            height: 280px;
+            width: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .profile-photo img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .profile-polaroid-bottom {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: #666;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #2d2d2d;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2d2d2d;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'Space Mono', monospace;
+        }
+
+        /* Research Grid */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Research Items with Images */
+        .research-item {
+            background: white;
+            border: 3px solid #2d2d2d;
+            padding: 0;
+            position: relative;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+        }
+
+        .research-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.3);
+        }
+
+        .research-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #2d2d2d;
+        }
+
+        .research-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .research-content h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+        .research-content p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .research-content p:last-of-type {
+            flex-grow: 1;
+        }
+
+        .year-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #2d2d2d;
+            color: white;
+            padding: 5px 15px;
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+        }
+
+        .research-links {
+            margin-top: 15px;
+        }
+
+        .research-links a {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            background: #2d2d2d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #2d2d2d;
+            font-size: 13px;
+            transition: all 0.2s;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .research-links a:hover {
+            background: white;
+            color: #2d2d2d;
+        }
+
+        /* News Section */
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-list li {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #2d2d2d;
+            background: #fafafa;
+            transition: all 0.2s;
+        }
+
+        .news-list li:hover {
+            background: #f0f0f0;
+            border-left-width: 8px;
+        }
+
+        .news-list strong {
+            font-family: 'Space Mono', monospace;
+            color: #2d2d2d;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #2d2d2d;
+            transition: all 0.3s;
+            background: #fafafa;
+        }
+
+        .contact-item:hover {
+            background: #2d2d2d;
+            color: white;
+        }
+
+        .contact-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+            .quiz-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-wrap: wrap;
+            }
+            nav a {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#game">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Game Header -->
+    <header id="game" class="game-header">
+        <div class="game-section">
+            <div class="game-title">
+                <h1>Quick <span class="highlight">ML Quiz</span></h1>
+                <p>Test your machine learning knowledge!</p>
+            </div>
+
+            <div class="quiz-container" id="quizContainer">
+                <!-- Quiz will be dynamically rendered here -->
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="color: #666; font-size: 14px; font-family: 'Space Mono', monospace;" id="quizQuestion">
+                    What is the primary goal of supervised learning?
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <div class="profile-polaroid">
+                    <div class="profile-photo">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                             <img src="static/profile-3.jpg" alt="👨‍💻 Profile Picture">
+                        </div>
+                    </div>
+                    <div class="profile-polaroid-bottom">
+                        Worldwide • 2025
+                    </div>
+                </div>
+                <div>
+                    <h1>Brandone Fonya</h1>
+                    <p class="subtitle">MEng. Artificial Intelligence • Carnegie Mellon University</p>
+                    
+                    <p style="font-size: 16px; margin: 20px 0;">
+                        I am a graduate research assistant and final year Master's student in Engineering Artificial Intelligence at <strong>Carnegie Mellon University's College of Engineering</strong>, specializing in machine learning and computer vision. My research focuses on deep learning for medical imaging and healthcare.
+                    </p>
+                    
+                    <p style="font-size: 16px; margin: 20px 0;">
+                        Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <strong>The ICT University</strong> in Cameroon (May 2024), graduating first in my department. I am currently working with <strong>Upanzi Network</strong> AI research team on advancing precision oncology through generative models for breast cancer in Africa.
+                    </p>
+                    
+                    <p style="font-size: 16px; margin: 20px 0;">
+                        Beyond work, I enjoy traveling, reading, and watching documentaries.
+                    </p>
+                    
+                    <p style="font-size: 16px; margin: 20px 0;">
+                        <strong>Email:</strong> bfonya [at] andrew [dot] cmu [dot] edu
+                    </p>
+                    
+                    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="/static/Brandone Fonya CV - Spring 2026.pdf" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">📄 Download CV</a>
+                        
+                        <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en" target="_blank" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">🎓 Google Scholar</a>
+                        
+                        <a href="https://orcid.org/0009-0004-5793-9323" target="_blank" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">🔗 ORCID</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section">
+            <h2><span class="highlight">Recent News</span></h2>
+            <ul class="news-list">
+                <li><strong>01/2026</strong> – One paper accepted for Oral presentation at IEEE/CVF WACV 2026 workshop, Tucson, Arizona.</li>
+                <li><strong>01/2026</strong> – Joined CMU's (18-661) Introduction to Machine Learning for Engineers as Graduate TA for Spring 2026.</li>
+                <li><strong>12/2025</strong> – Featured by Carnegie Mellon University for research journey to China. <a href="https://www.africa.engineering.cmu.edu/news/2025/12/3-fonya-feature.html">Read here</a></li>
+                <li><strong>09/2025</strong> – Started as Graduate TA for (18-751) Applied Stochastic Processes, Fall 2025.</li>
+                <li><strong>07/2025</strong> – Joined Autonomous Intelligence Lab as research intern at Westlake University, China.</li>
+                <li><strong>06/2025</strong> – Paper accepted at European Public Health Conference 2025, Helsinki, Finland.</li>
+                <li><strong>05/2025</strong> – Visited University of Cape Town to explore AI research opportunities.</li>
+            </ul>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h2><span class="highlight">Research</span></h2>
+            <p style="margin-bottom: 30px;">I am committed to research that ensures AI benefits society, specifically in healthcare. I focus on developing efficient deep learning models for computer vision applications with particular interest in medical imaging and analysis.</p>
+
+            <div class="research-grid">
+                <div class="research-item">
+                    <img src="/static/workflow.png" alt="EEG Brain decoding" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <h3>Zero-Shot Neural Priors for Generalizable Cross-Subject and Cross-Task EEG Decoding</h3>
+                        <p><em>Baimam Boukar, *Brandone Fonya, Nchofon Tagha, Pauline Nyaboe</em></p>
+                        <p>A zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data, enabling robust cross-subject generalization without calibration.</p>
+                        <div class="research-links">
+                            <a href="https://baimamboukar.github.io/eeg-decoding-web/">Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <h3>Optimizing healthcare facility distribution in Rwanda: a data-driven approach</h3>
+                        <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em></p>
+                        <p>Analyzed health facility distribution in Rwanda using geospatial mapping and ML to propose equitable resource allocation based on disease prevalence.</p>
+                        <div class="research-links">
+                            <a href="https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1554/8302027">Paper</a>
+                            <a href="https://github.com/FonyaBrandone/MBDA_Research">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <img src="/static/medblipnet3d_pipeline.png" alt="MedBLIPNet3D" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <h3>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</h3>
+                        <p><em>*Brandone Fonya, Kaicheng Yu</em></p>
+                        <p>Novel framework for text prompt-guided 3D medical image segmentation using cross-fusion of visual and text encodings.</p>
+                        <div class="research-links">
+                            <a href="https://github.com/FonyaBrandone/medblipnet3d/">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <img src="/static/tb-screening-cough.gif" alt="TB Screening" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <span class="year-badge">WACV 2026</span>
+                        <h3>Robust Non-Invasive Tuberculosis Triage Using Audio Embeddings from Solicitated Cough Sounds</h3>
+                        <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em></p>
+                        <p>Audio-based TB screening using pretrained foundation models achieving AUC of 1.000, optimized for mobile edge inference.</p>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <img src="/static/cancer-medical-imaging.gif" alt="Adversarial Attacks" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization</h3>
+                        <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em></p>
+                        <p>Curriculum Adversarial Mixup with Feature Denoising framework for increasing robustness while maintaining generalization.</p>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <img src="/static/pesdestrian-modeling.gif" alt="Autonomous Driving" class="research-img" onerror="this.style.display='none'"/>
+                    <div class="research-content">
+                        <h3>Uncertainty-Aware Autonomous Driving in African Cities</h3>
+                        <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em></p>
+                        <p>Modeling pedestrian behaviors in unstructured urban environments using ConvLSTM, enabling behavioral planning for autonomous vehicles.</p>
+                        <div class="research-links">
+                            <a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view">Preprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <h2><span class="highlight">Teaching & Service</span></h2>
+            
+            <div style="background: #fafafa; border: 2px solid #2d2d2d; padding: 25px; margin-bottom: 25px;">
+                <h3>Carnegie Mellon University</h3>
+                <p><strong>(18-661) Introduction to Machine Learning for Engineers</strong> - Graduate TA (Spring 2026)</p>
+                <p><strong>(18-662) Principles and Engineering Applications of AI</strong> - Graduate TA (Spring 2026)</p>
+                <p><strong>(18-751) Applied Stochastic Processes</strong> - Graduate TA (Fall 2025)</p>
+            </div>
+            
+            <div style="background: #fafafa; border: 2px solid #2d2d2d; padding: 25px;">
+                <h3>Service</h3>
+                <p>Conference Reviewer, Applied Machine Learning Days (AMLD) Africa 2026</p>
+                <p>IEEE Student Member (2024 - Present)</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2><span class="highlight">Contact</span></h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="mailto:bfonya@andrew.cmu.edu">
+                        <strong>Email</strong><br>
+                        bfonya@andrew.cmu.edu
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/brandone-fonya-217654240/" target="_blank">
+                        <strong>LinkedIn</strong><br>
+                        Brandone Fonya
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/fonyabrandone" target="_blank">
+                        <strong>GitHub</strong><br>
+                        fonyabrandone
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en" target="_blank">
+                        <strong>Google Scholar</strong><br>
+                        Brandone Fonya
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
-    <img src="/static/profile.jpg" alt="Portrait of Brandone Fonya" class="profile-img"/>
-  </header>
 
-  <section class="about">
-    <p>I am a graduate research assistant and a final year Masters student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for medical imaging and healthcare. Before CMU, I earned a Bachelor's (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a>, Cameroon (May 2024), graduating first in my department. I also obtained a Higher National Diploma (HND) in 2022, ranked 3rd nationwide in Software Engineering. Currently, I work with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> on generative models for precision oncology in Africa, integrating multi-omics, clinical, and environmental data using Variational Autoencoders (VAE), Bayesian networks, and diffusion models.</p>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Brandone Fonya | Last updated: January 2026</p>
+    </footer>
 
-    <p>Beyond research, I enjoy traveling, reading, and watching documentaries.</p>
+    <script>
+        // Simple ML Quiz
+        const quizData = {
+            question: "What is the primary goal of supervised learning?",
+            options: [
+                { text: "Classify data", correct: true },
+                { text: "Cluster data", correct: false },
+                { text: "Reduce dimensions", correct: false },
+                { text: "Generate data", correct: false }
+            ],
+            selectedAnswer: null
+        };
 
-    <div class="links">
-      <a href="/static/Brandone Fonya CV - Spring 2026.pdf">CV</a> | 
-      <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en">Google Scholar</a> |
-      <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
-    </div>
-  </section>
+        function renderQuiz() {
+            const container = document.getElementById('quizContainer');
+            
+            container.innerHTML = quizData.options.map((option, index) => `
+                <div class="quiz-card ${quizData.selectedAnswer !== null ? 'disabled' : ''}" 
+                     onclick="selectAnswer(${index})"
+                     id="card-${index}">
+                    <div class="card-content" id="content-${index}">
+                        ${option.text}
+                    </div>
+                    <div class="card-bottom"></div>
+                </div>
+            `).join('');
+        }
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> bfonya[at]andrew.cmu.edu</p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/brandone-fonya-217654240/">LinkedIn</a> | 
-      <a href="https://github.com/fonyabrandone">GitHub</a> | 
-      <a href="https://twitter.com/princebrandone">Twitter (X)</a>
-    </div>
-  </section>
+        function selectAnswer(index) {
+            if (quizData.selectedAnswer !== null) return;
+            
+            quizData.selectedAnswer = index;
+            const option = quizData.options[index];
+            
+            const card = document.getElementById(`card-${index}`);
+            const content = document.getElementById(`content-${index}`);
+            
+            if (option.correct) {
+                card.classList.add('correct');
+                content.classList.add('correct-answer');
+            } else {
+                card.classList.add('incorrect');
+                content.classList.add('incorrect-answer');
+            }
+            
+            setTimeout(() => {
+                quizData.selectedAnswer = null;
+                renderQuiz();
+            }, 2000);
+        }
 
-  <section class="updates">
-    <h2>Recent Updates</h2>
-    <ul>
-      <li><strong>01/2026</strong> – One paper accepted for Oral presentation at the IEEE/CVF Winter Conference on Applications of Computer Vision 2026 workshop, Tucson, Arizona. </li>
-      
-      <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18661">(18-661) Introduction to Machine Learning for Engineers</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderQuiz();
+        });
 
-      <li><strong>01/2026</strong> – Joined CMU Engineering's <a href="https://courses.ece.cmu.edu/18662">(18-662) Principles and Engineering Applications of AI</a> teaching team, as a Graduate Teaching Assistant for Spring 2026</li>
-
-      <li><strong>12/2025</strong> – Made the news, Carnegie Mellon University spotlighted my research journey to China. <a href="https://www.africa.engineering.cmu.edu/news/2025/12/3-fonya-feature.html">Read here</a></li>
-
-      <li><strong>09/2025</strong> – Started role as Graduate Teaching Assistant for <a href="https://courses.ece.cmu.edu/18751">(18-751) Applied Stochastic Processes</a>, Fall 2025</li>
-
-      <li><strong>08/2025</strong> – Highlights of my summer research at AutoLab, China. <a href="https://mp.weixin.qq.com/s/C5NlUEWbFy9yRJGseO3iog">More here</a></li>
-      
-      <li><strong>07/2025</strong> – Joined the <a href='https://westlake-autolab.github.io/' target='_blank'>Autonomous Intelligence Lab (AutoLab)</a> as a research intern under <a href="https://en.westlake.edu.cn/faculty/kaicheng-yu.html">Prof. Kaicheng Yu</a> at Westlake University, Hangzhou, China.</li>
-      <li><strong>07/2025</strong> – Led the Carnegie Mellon-MakCHS research team meeting with Prof. Mary-Anne Hartley of <a href="https://www.light-laboratory.org/">LiGHT Laboratory</a> at EPFL, discussing <a href="https://ai.epfl.ch/ai-making-it-easier-to-diagnose-tuberculosis-in-sub-saharan-africa/">tuberculosis research</a>.</li>
-      <li><strong>06/2025</strong> – Paper accepted for poster presentation at the <a href="https://ephconference.eu/">European Public Health Conference 2025</a>, Helsinki, Finland.</li>
-      <li><strong>06/2025</strong> – Accepted to the <a href="https://dighum.kcrc.rw/">Digital Humanism Summer School 2025</a>.</li>
-      <li><strong>06/2025</strong> – Attended the 2025 <a href="https://engineering.cmu.edu/afretec/index.html">Afretech</a> Network's Annual Conference in Kigali, Rwanda.</li>
-      <li><strong>05/2025</strong> – Visited <a href="https://www.uct.ac.za/">University of Cape Town</a>, Africa's top-ranked university, to explore AI research.</li>
-      <li><strong>04/2025</strong> – Roundtable discussion with <a href="https://www.gatesfoundation.org/about/leadership/trevor-mundel">Trevor Mundel</a>, President of Global Health at the Gates Foundation, on AI for African healthcare challenges.</li>
-      <li><strong>02/2025</strong> – One-on-one with <a href="https://people.epfl.ch/mary-anne.hartley?lang=en">Prof. Mary-Anne Hartley</a> of LiGHT Laboratory at EPFL on AI tools for resource-constrained communities.</li>
-      <li><strong>01/2025</strong> – Attended the <a href="https://events.dell.com/event/ce14c9e1-18e7-4347-aa04-f0e2ce851129/summary">Dell Technologies AI Forum 2025</a>, Dubai.</li>
-    </ul>
-  </section>
-
-  <section class="research">
-    <h2>Research</h2>
-    <p>I am committed towards research that ensures that AI benefits the society, specifically in the healthcare sector. I am focused on developing efficient deep learning models for computer vision applications with particular interest in medical imaging and analysis. My long-term goal is to build intelligent systems that can perceive, understand and continually learn from the ever-changing dynamics of the world we live in</p>
-
-    <div class="research-item">
-      <img src="/static/workflow.png" alt="EEG Brain decoding" class="research-img"/>
-      <div class="research-content">
-        <h3><a href="https://baimamboukar.github.io/eeg-decoding-web/" target='_blank'>Zero-Shot Neural Priors for Generalizable Cross-Subject and Cross-Task EEG Decoding</a></h3>
-        <p><em>Baimam Boukar, *Brandone Fonya, Nchofon Tagha, Pauline Nyaboe</em><br>
-        <i><a href="https://baimamboukar.github.io/eeg-decoding-web/">Project website</a> | Medical Imaging with Deep Learning (under review)</i></p>
-        <p>A zero-shot EEG decoding framework that learns subject and task-invariant neural priors from large-scale HBN data. This approach enables robust cross-subject generalization and zero-shot transfer to unseen cognitive tasks without any subject-specific calibration. The work advances scalable EEG-based biomarkers and supports next-generation applications in computational psychiatry and adaptive brain-computer interfaces</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="/static/heatmap.png" alt="Health Facility Distribution" class="research-img"/>
-      <div class="research-content">
-        <h3><a href="https://github.com/FonyaBrandone/MBDA_Research" target='_blank'>Optimizing healthcare facility distribution in Rwanda: a data-driven approach</a></h3>
-        <p><em>*Brandone Fonya, Irene Busah, Michaella Rugumbira, Nchofon Tagha, Emily Aiken</em><br>
-        Accepted at <a href="https://ephconference.eu/app/programme/programme.php?d=displays">European Public Health Conference 2025</a><br><i><a href="https://academic.oup.com/eurpub/article/35/Supplement_4/ckaf161.1554/8302027">Journal Article</a></i></p>
-        <p>This paper analyzed health facility distribution in Rwanda relative to disease prevalence (malaria, tuberculosis, HIV) using geospatial mapping and machine learning to propose equitable resource allocation strategies. In this paper we showed that allocating healthcare facilities (Hospitals, reseasrch centers, clinics, pharmacies) relative to population distribution and density does not meet the need compared to using disease prevalence. We ended up by building and comparing regression models able at predicting healthcare facility needs in various districts of Rwanda, our case study</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="/static/medblipnet3d_pipeline.png" alt="MedBLIPNet3D" class="research-img"/>
-      <div class="research-content">
-        <h3><a href="https://github.com/FonyaBrandone/medblipnet3d/"  target='_blank'>MedBLIPNet3D: Text Prompt-Guided Vision-Language Model for 3D MRI Prostate Segmentation</a></h3>
-        <p><em>*Brandone Fonya, Kaicheng Yu</em><br>
-        <i><a href="https://arxiv.org">arXiv preprint (coming soon)</a></i></p>
-        <p>A novel framework for text prompt guided 3D medical image segmentation, evaluated on cross-site 3D prostate MRI data using Dice score and Hausdorff distance as evaluation metric. Our framework combined both visual and text encodings from our encoder layers through our architecture. Both encodings were fused via cross-fusion, achieving a single encoded feature matrix passed to the decoder to generate segmentation mask over the region of interest.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="/static/tb-screening-cough.gif" alt="Tuberculosis Screening" class="research-img"/>
-      <div class="research-content">
-        <h3>Robust Non-Invasive Tuberculosis Triage Using Audio Embeddings from Solicitated Cough Sounds</h3>
-        <p><em>Carnegie Mellon-Africa – MakCHS Joint Research</em><br>
-        <i>IEEE/CVF Winter Conference on Applications of Computer Vision 2026 (Oral presentation)</i></p>
-        <p>Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recodings together with Clinical and Demographic data, targeting early detection in low-resource settings. We present a robust, deployment-ready TB triage pipeline that leverages pretrained audio foundation model embeddings (128-D) to drive lightweight classifiers optimized for mobile edge inference. To ensure the model learns genuine acoustic pathology rather than dataset artifacts, we evaluate performance under two distinct training regimes: (1) an uncontrolled setting reflecting natural prevalence (70% TB) addressed via inverse-frequency weighting, and (2) a controlled setting utilizing strictly stratified 50/50 participant sampling. Our experiments demonstrated exceptional robustness, with the best performing models (LightweightCNN1D and NaiveBayes) achieving an Area Under the Curve (AUC) of 1.000 and F1 scores of 0.997 across both regimes.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="/static/cancer-medical-imaging.gif" alt="Adversarial Attacks" class="research-img"/>
-      <div class="research-content">
-        <h3>CAM-FD: Improving Adversarial Robustness without Sacrificing Generalization</h3>
-        <p><em>*Brandone Fonya, Denis Musinguzi, Prasenjit Mitra</em><br>
-        <i>Masters Capstone</i></p>
-        <p>Developing a practical training framework called CAM-FD, a Curriculum Adversarial Mixup with Feature Denoising framework. CAM-FD aims at increasing robustness to adversarial attacks on downstream imaging tasks while minimizing degradation in model generalization to unseen data and modalities. Overall, the framework reduces the performance drop in adversarial training with better out-of-sample generalization.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="/static/pesdestrian-modeling.gif" alt="Autonomous Driving" class="research-img"/>
-      <div class="research-content">
-        <h3><a href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view"  target='_blank'>Uncertainty-Aware Autonomous Driving in African Cities</a></h3>
-        <p><em>Victor Miene, *Brandone Fonya, Joshua Momo, Ozan Tonguz</em><br>
-        <strong><a href='https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view?usp=sharing&usp=embed_facebook' target='_blank'>preprint</a></strong>
-        <i>Spring 2025 - Course Research</i></p>
-        <p>Our study developed a pipeline to quantify uncertainty-aware driving scenarios using pedestrian visual cues in dense traffic and highly chaotic cities around Africa. We were focused on modeling a cross and not cross intent of pedestrians at any point in time. Using ConvLSTM and other architectures we model pedestrian behaviors in unstructured urban environments, enabling behaviorial planning for autonomous vehicles.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Real-Time Sign Language Gestures to Speech Transcription using Deep Learning</h3>
-      <p><em>Supervised by <a href="https://insights.sei.cmu.edu/authors/clarence-worrell/">Clarence Worrell</a></em><br>
-      Uses CNNs and Mediapipe for real-time ASL gesture recognition and text-to-speech conversion.<br>
-      <em>January 2025 - May 2025</em> | <a href="https://arxiv.org/abs/2508.12713v1">arXiv preprint</a> | <a href="https://github.com/FonyaBrandone/Sign-language-project-deep-learning">code</a></p>
-    </div>
-    <div class="project-item">
-      <h3>Eschools LMS</h3>
-      <p>Online learning platform for crisis-affected Cameroonian students, featuring AI study bots and live classes.<br>
-      <em>December 2022 - July 2024</em> | <a href="https://eschools.netlify.app/">website</a></p>
-    </div>
-    <div class="project-item">
-      <h3>ClimateSmart: AI driven Smart Agriculture application</h3>
-      <p>Provides data-driven farming recommendations based on location and environmental data.<br>
-      <em>December 2023 - May 2024</em> | <a href="https://climatesmart.000webhostapp.com/">website</a></p>
-    </div>
-  </section>
-
-  <section class="work-experience">
-    <h2>Work Experience</h2>
-    <div class="work-item">
-      <img src="/static/cylabafrica_logo.jpg" alt="Upanzi Network logo" class="work-img"/>
-      <div class="work-content">
-        <h3>Research Intern, Upanzi Network</h3>
-        <p>Upanzi Network (Part-time)<br>
-        Supervisor: <a href="https://ece.cmu.edu/directory/bios/gueye-assane.html">Assane Gueye</a><br>
-        <em>September 2025 - Present</em></p>
-      </div>
-    </div>
-    <div class="work-item">
-      <img src="/static/westlake-logo.jpg" alt="Westlake Logo" class="work-img"/>
-      <div class="work-content">
-        <h3>Research Intern, Autonomous Intelligence Lab</h3>
-        <p>Westlake University (Full-time)<br>
-        Supervisor: <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a><br>
-        <em>July 2025 - September 2025</em></p>
-      </div>
-    </div>
-    <div class="work-item">
-      <img src="/static/cmu.png" alt="CMU Logo" class="work-img"/>
-      <div class="work-content">
-        <h3>Graduate Research Assistant, AI for Healthcare</h3>
-        <p>Carnegie Mellon University (Full-time)<br>
-        Supervisors: <a href="https://engineering.cmu.edu/directory/bios/tucker-conrad.html">Conrad Tucker</a>, <a href="https://scholars.cmu.edu/6761-edwin-mugume/publications">Edwin Mugume</a><br>
-        <em>May 2025 - December 2025</em></p>
-      </div>
-    </div>
-    <div class="work-item">
-      <img src="/static/cmu.png" alt="CMU Logo" class="work-img"/>
-      <div class="work-content">
-        <h3>Graduate IT Associate - Full Stack Developer</h3>
-        <p>Carnegie Mellon University (Part-time)<br>
-        <em>August 2024 - May 2025</em></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="education">
-    <h2>Education</h2>
-    <div class="education-item">
-      <img src="/static/cmu.png" alt="CMU Logo" class="education-img"/>
-      <div class="education-content">
-        <h3>Carnegie Mellon University</h3>
-        <p>Master of Science in Engineering Artificial Intelligence (MSEAI)<br>
-        <em>August 2024 – May 2026 (Expected)</em></p>
-      </div>
-    </div>
-    <div class="education-item">
-      <img src="/static/ICTULogoNew.png" alt="ICTU Logo" class="education-img"/>
-      <div class="education-content">
-        <h3>The ICT University</h3>
-        <p>Bachelor of Science (Hons) in Software Engineering<br>
-        GPA: 3.65/4.0, Ranked 1st in Department<br>
-        <em>September 2020 – May 2024</em></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="teaching-service">
-    <h2>Teaching & Service</h2>
-    <p>I am currently serving as a graduate teaching assistant for CMU Engineering’s graduate level Introduction to Machine learning course (https://courses.ece.cmu.edu/18661), for Spring 2026.
-    My roles include: Grading assignments and exams to assess student performance, Holding weekly office hours, lead recitations solving set of exercises and problems, Helping students understand the course concepts and problems.</p>
-    <ul>
-      <!-- <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18661">Introduction to Machine Learning for Engineers (18-661)</a>, under <a href="https://www.ece.cmu.edu/directory/bios/joe-wong-carlee.html">Carlee Joe-Wong</a>, <em>Fall 2025</em></li>
-      -->
-      <li>Graduate Teaching Assistant, <a href="https://www.andrew.cmu.edu/course/18-661/">(18-661) Introduction to Machine Learning for Engineers</a>, <em>Spring 2026</em></li>
-      <li>Graduate Teaching Assistant, <a href="https://courses.ece.cmu.edu/18751">(18-751)   Applied Stochastic Processes</a>, <em>Fall 2025</em></li>
-      <li>Conference Reviewer, <a href="https://appliedmldays.org/">Applied Machine Learning Days (AMLD) Africa, 2026</a></li>
-      <li>IEEE Student Member, <em>2024 - Present</em></li>
-    </ul>
-  </section>
-
-
-  <footer>© Brandone Fonya | Last updated: August 2025</footer>
-</div>
-
-
-
-
-<!-- 
----
-layout: default
-title: Brandone Fonya
-description: Brandone Fonya's website
----
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-
-<link href="/static/css/styles.css" rel="stylesheet">
-
-<div class="container">
-  <header class="header">
-    <h1>Brandone Fonya <br><i>MEng. Artificial Intelligence</i></h1>
-    <img src="/static/profile.jpg" alt="Brandone Fonya" class="profile-img"/>
-  </header>
-
-  <section class="about">
-    <p>I am a graduate research assistant and a final year Master student in Engineering Artificial Intelligence at <a href="https://engineering.cmu.edu/">Carnegie Mellon University's College of Engineering</a>, specializing in machine learning and computer vision. My research focuses on deep learning for computer vision and their applications in medical imaging and healthcare. Prior to CMU, I earned a Bachelor's degree (Hons) in Software Engineering from <a href="https://ictuniversity.org/">The ICT University</a> in Cameroon (May 2024), graduating first in my department. I also had my Higher national diploma (HND) in July 2022, ranked overall 3rd best in Cameroon for Software Engineering. I am currently working with <a href="http://www.africa.engineering.cmu.edu/upanzi">Upanzi Network</a> AI research team on advancing precision oncology through a generative pipeline for breast cancer generation for Africa. Our work integrates multi-omics, clinical and environmental data from Africa for a larger synthetic dataset generation using Variational Autoencoders (VAE), Bayesian networks and diffusion models.</p>
-
-    <p>Beyond work, I enjoy traveling, reading, and watching documentaries.</p>
-
-    <div class="links">
-      <a href="/static/Brandone Fonya CV - Fall 2025.pdf">CV</a> | 
-      <a href="https://orcid.org/0009-0004-5793-9323">Google Scholar</a> |
-      <a href="https://orcid.org/0009-0004-5793-9323">ORCID</a>
-    </div>
-  </section>
-
-  
-  <footer>© Brandone Fonya | Last updated: January 2026</footer>
-</div> -->
+        // Smooth scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
