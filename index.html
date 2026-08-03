@@ -188,6 +188,133 @@
             padding: 0 4px;
         }
 
+        /* Game HUD */
+        .game-hud {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .hud-item {
+            background: white;
+            border: 3px solid #2d2d2d;
+            box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+            padding: 10px 22px;
+            text-align: center;
+            min-width: 84px;
+        }
+
+        .hud-label {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+        }
+
+        .hud-value {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin-top: 2px;
+        }
+
+        .hud-value.pulse {
+            animation: hudPulse 0.4s ease;
+        }
+
+        @keyframes hudPulse {
+            0% { transform: scale(1.35); color: #c47f00; }
+            100% { transform: scale(1); color: #2d2d2d; }
+        }
+
+        /* Timer bar */
+        .timer-track {
+            max-width: 520px;
+            margin: 0 auto 30px;
+            height: 10px;
+            background: #e0e0d8;
+            border: 2px solid #2d2d2d;
+        }
+
+        .timer-fill {
+            height: 100%;
+            background: #ffd700;
+            width: 100%;
+        }
+
+        .timer-fill.warn {
+            background: #ff9d42;
+        }
+
+        .timer-fill.danger {
+            background: #ff5c5c;
+        }
+
+        /* Game question */
+        .game-question {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            max-width: 720px;
+            margin: 0 auto 30px;
+            min-height: 60px;
+            color: #2d2d2d;
+        }
+
+        /* End screen */
+        .game-end {
+            text-align: center;
+            background: white;
+            border: 3px solid #2d2d2d;
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 40px 30px;
+        }
+
+        .game-end h2 {
+            border: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+
+        .game-end p {
+            font-family: 'Space Mono', monospace;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.9;
+        }
+
+        .game-end p span {
+            color: #2d2d2d;
+            font-weight: 700;
+        }
+
+        .play-again-btn {
+            padding: 12px 30px;
+            background: #2d2d2d;
+            color: white;
+            border: 2px solid #2d2d2d;
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+            transition: all 0.2s;
+        }
+
+        .play-again-btn:hover {
+            background: white;
+            color: #2d2d2d;
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+        }
+
         /* Main Content Sections */
         .container {
             max-width: 1200px;
@@ -465,18 +592,41 @@
     <header id="game" class="game-header">
         <div class="game-section">
             <div class="game-title">
-                <h1>Quick <span class="highlight">ML Quiz</span></h1>
-                <p>Test your machine learning knowledge!</p>
+                <h1><span class="highlight">Neuron Sprint</span></h1>
+                <p>Beat the clock, build a streak, test your ML instincts.</p>
             </div>
+
+            <div class="game-hud">
+                <div class="hud-item">
+                    <span class="hud-label">Score</span>
+                    <span class="hud-value" id="hudScore">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">Streak</span>
+                    <span class="hud-value" id="hudStreak">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">Round</span>
+                    <span class="hud-value" id="hudRound">1/8</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">Best</span>
+                    <span class="hud-value" id="hudBest">0</span>
+                </div>
+            </div>
+
+            <div class="timer-track"><div class="timer-fill" id="timerFill"></div></div>
+
+            <p class="game-question" id="gameQuestion">Loading question...</p>
 
             <div class="quiz-container" id="quizContainer">
-                <!-- Quiz will be dynamically rendered here -->
+                <!-- Answer cards rendered here -->
             </div>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <p style="color: #666; font-size: 14px; font-family: 'Space Mono', monospace;" id="quizQuestion">
-                    What is the primary goal of supervised learning?
-                </p>
+            <div class="game-end" id="gameEnd" style="display:none;">
+                <h2><span class="highlight" id="endTitle">Run complete</span></h2>
+                <p id="endSummary"></p>
+                <button class="play-again-btn" id="playAgainBtn">Play Again</button>
             </div>
         </div>
     </header>
@@ -736,63 +886,216 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Brandone Fonya | Last updated: January 2026</p>
+        <p>© 2026 Brandone Fonya | Last updated: July 2026</p>
     </footer>
 
     <script>
-        // Simple ML Quiz
-        const quizData = {
-            question: "What is the primary goal of supervised learning?",
-            options: [
-                { text: "Classify data", correct: true },
-                { text: "Cluster data", correct: false },
-                { text: "Reduce dimensions", correct: false },
-                { text: "Generate data", correct: false }
-            ],
-            selectedAnswer: null
+        // ===== Neuron Sprint: dynamic ML trivia game =====
+        const QUESTION_BANK = [
+            { q: "Which of these is a supervised learning task?", options: ["Spam email classification", "Customer segmentation by similarity", "Reducing features with PCA", "Generating new face images"], correct: 0 },
+            { q: "What does 'overfitting' mean?", options: ["The model memorizes training data instead of generalizing", "The model is too simple to learn anything", "The model trains in one epoch", "The model has zero parameters"], correct: 0 },
+            { q: "Which technique directly helps reduce overfitting?", options: ["Adding more hidden layers", "Dropout regularization", "Deleting the validation set", "Increasing the learning rate to 10"], correct: 1 },
+            { q: "What does CNN stand for?", options: ["Convolutional Neural Network", "Continuous Number Network", "Central Node Network", "Clustered Neuron Node"], correct: 0 },
+            { q: "Which activation function squashes output between 0 and 1?", options: ["ReLU", "Sigmoid", "Softplus", "Identity"], correct: 1 },
+            { q: "What is the purpose of a loss function?", options: ["Measure how wrong the model's predictions are", "Store the model's weights on disk", "Visualize the training data", "Compress the dataset"], correct: 0 },
+            { q: "Which algorithm is commonly used to minimize a loss function?", options: ["K-means", "Gradient descent", "Principal component analysis", "Breadth-first search"], correct: 1 },
+            { q: "What is a hyperparameter?", options: ["A setting chosen before training, like learning rate", "A weight learned automatically during training", "The model's final prediction", "A type of activation function"], correct: 0 },
+            { q: "Which of these is an unsupervised learning technique?", options: ["Linear regression", "K-means clustering", "Logistic regression", "Decision tree classification"], correct: 1 },
+            { q: "What kind of data are RNNs primarily designed for?", options: ["Sequential or temporal data", "Static tabular data", "3D mesh rendering", "Lossless file compression"], correct: 0 },
+            { q: "What does backpropagation compute?", options: ["Gradients used to update the model's weights", "The train/test split ratio", "The total number of epochs", "The learning rate schedule"], correct: 0 },
+            { q: "Which metric is most informative for an imbalanced classification problem?", options: ["Raw accuracy", "F1 score", "Mean squared error", "R-squared"], correct: 1 },
+            { q: "What is 'transfer learning'?", options: ["Reusing a pretrained model as a starting point for a new task", "Moving a dataset between two servers", "Always training a model from scratch", "Converting text labels into numbers"], correct: 0 },
+            { q: "In a confusion matrix, a false positive means:", options: ["Predicted positive, actually negative", "Predicted negative, actually positive", "Predicted positive, actually positive", "Predicted negative, actually negative"], correct: 0 },
+            { q: "What does one 'epoch' mean during training?", options: ["One full pass through the entire training dataset", "One neuron firing", "One test sample being evaluated", "One layer in the network"], correct: 0 },
+            { q: "What is the core mechanism behind Transformer models?", options: ["Self-attention", "Convolution", "Recurrence", "Max pooling"], correct: 0 }
+        ];
+
+        const ROUNDS_PER_GAME = 8;
+        const TIME_LIMIT_MS = 8000;
+        const BEST_SCORE_KEY = 'neuronSprintBestScore';
+
+        const els = {
+            hudScore: document.getElementById('hudScore'),
+            hudStreak: document.getElementById('hudStreak'),
+            hudRound: document.getElementById('hudRound'),
+            hudBest: document.getElementById('hudBest'),
+            timerFill: document.getElementById('timerFill'),
+            question: document.getElementById('gameQuestion'),
+            container: document.getElementById('quizContainer'),
+            end: document.getElementById('gameEnd'),
+            endSummary: document.getElementById('endSummary'),
+            playAgainBtn: document.getElementById('playAgainBtn')
         };
 
-        function renderQuiz() {
-            const container = document.getElementById('quizContainer');
-            
-            container.innerHTML = quizData.options.map((option, index) => `
-                <div class="quiz-card ${quizData.selectedAnswer !== null ? 'disabled' : ''}" 
-                     onclick="selectAnswer(${index})"
-                     id="card-${index}">
-                    <div class="card-content" id="content-${index}">
-                        ${option.text}
-                    </div>
+        let state = null;
+
+        function shuffle(arr) {
+            const a = arr.slice();
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function getBestScore() {
+            const stored = parseInt(localStorage.getItem(BEST_SCORE_KEY), 10);
+            return Number.isFinite(stored) ? stored : 0;
+        }
+
+        function pulse(el) {
+            el.classList.remove('pulse');
+            void el.offsetWidth; // restart animation
+            el.classList.add('pulse');
+        }
+
+        function initGame() {
+            const pool = shuffle(QUESTION_BANK).slice(0, ROUNDS_PER_GAME).map(item => {
+                const optionOrder = shuffle(item.options.map((text, i) => ({ text, isCorrect: i === item.correct })));
+                return { q: item.q, options: optionOrder };
+            });
+
+            state = {
+                pool,
+                roundIndex: 0,
+                score: 0,
+                streak: 0,
+                correctCount: 0,
+                best: getBestScore(),
+                locked: false,
+                timerRAF: null,
+                roundStart: null
+            };
+
+            els.end.style.display = 'none';
+            els.container.style.display = 'flex';
+            els.question.style.display = 'block';
+            document.querySelector('.timer-track').style.display = 'block';
+
+            updateHud();
+            startRound();
+        }
+
+        function updateHud() {
+            els.hudScore.textContent = state.score;
+            els.hudStreak.textContent = state.streak >= 3 ? `${state.streak} 🔥` : state.streak;
+            els.hudRound.textContent = `${Math.min(state.roundIndex + 1, ROUNDS_PER_GAME)}/${ROUNDS_PER_GAME}`;
+            els.hudBest.textContent = state.best;
+        }
+
+        function startRound() {
+            const round = state.pool[state.roundIndex];
+            state.locked = false;
+            state.roundStart = performance.now();
+
+            els.question.textContent = round.q;
+            els.container.innerHTML = round.options.map((opt, i) => `
+                <div class="quiz-card" onclick="handleAnswer(${i})" id="card-${i}">
+                    <div class="card-content" id="content-${i}">${opt.text}</div>
                     <div class="card-bottom"></div>
                 </div>
             `).join('');
+
+            els.timerFill.style.transition = 'none';
+            els.timerFill.style.width = '100%';
+            els.timerFill.classList.remove('warn', 'danger');
+            void els.timerFill.offsetWidth;
+            els.timerFill.style.transition = 'width 0.1s linear, background-color 0.3s';
+
+            updateHud();
+            runTimer();
         }
 
-        function selectAnswer(index) {
-            if (quizData.selectedAnswer !== null) return;
-            
-            quizData.selectedAnswer = index;
-            const option = quizData.options[index];
-            
-            const card = document.getElementById(`card-${index}`);
-            const content = document.getElementById(`content-${index}`);
-            
-            if (option.correct) {
-                card.classList.add('correct');
-                content.classList.add('correct-answer');
-            } else {
-                card.classList.add('incorrect');
-                content.classList.add('incorrect-answer');
-            }
-            
-            setTimeout(() => {
-                quizData.selectedAnswer = null;
-                renderQuiz();
-            }, 2000);
+        function runTimer() {
+            const tick = (now) => {
+                if (state.locked) return;
+                const elapsed = now - state.roundStart;
+                const remaining = Math.max(0, TIME_LIMIT_MS - elapsed);
+                const pct = (remaining / TIME_LIMIT_MS) * 100;
+                els.timerFill.style.width = pct + '%';
+                els.timerFill.classList.toggle('warn', pct <= 50 && pct > 20);
+                els.timerFill.classList.toggle('danger', pct <= 20);
+
+                if (remaining <= 0) {
+                    handleAnswer(-1);
+                    return;
+                }
+                state.timerRAF = requestAnimationFrame(tick);
+            };
+            state.timerRAF = requestAnimationFrame(tick);
         }
+
+        function handleAnswer(selectedIndex) {
+            if (state.locked) return;
+            state.locked = true;
+            if (state.timerRAF) cancelAnimationFrame(state.timerRAF);
+
+            const round = state.pool[state.roundIndex];
+            const elapsed = performance.now() - state.roundStart;
+            const timeFraction = Math.max(0, 1 - elapsed / TIME_LIMIT_MS);
+            const isCorrect = selectedIndex >= 0 && round.options[selectedIndex].isCorrect;
+            const correctIndex = round.options.findIndex(o => o.isCorrect);
+
+            round.options.forEach((opt, i) => {
+                const card = document.getElementById(`card-${i}`);
+                const content = document.getElementById(`content-${i}`);
+                card.classList.add('disabled');
+                if (i === selectedIndex && isCorrect) {
+                    card.classList.add('correct');
+                    content.classList.add('correct-answer');
+                } else if (i === selectedIndex && !isCorrect) {
+                    card.classList.add('incorrect');
+                    content.classList.add('incorrect-answer');
+                } else if (i === correctIndex) {
+                    content.classList.add('correct-answer');
+                }
+            });
+
+            if (isCorrect) {
+                state.correctCount++;
+                state.streak++;
+                const bonus = Math.round(timeFraction * 50);
+                state.score += 100 + bonus;
+                pulse(els.hudScore);
+                pulse(els.hudStreak);
+            } else {
+                state.streak = 0;
+            }
+
+            updateHud();
+
+            setTimeout(() => {
+                state.roundIndex++;
+                if (state.roundIndex < ROUNDS_PER_GAME) {
+                    startRound();
+                } else {
+                    endGame();
+                }
+            }, 1300);
+        }
+
+        function endGame() {
+            document.querySelector('.timer-track').style.display = 'none';
+            els.question.style.display = 'none';
+            els.container.style.display = 'none';
+
+            const isNewBest = state.score > state.best;
+            if (isNewBest) {
+                state.best = state.score;
+                localStorage.setItem(BEST_SCORE_KEY, String(state.best));
+            }
+            els.hudBest.textContent = state.best;
+
+            document.getElementById('endTitle').textContent = isNewBest ? 'New high score!' : 'Run complete';
+            els.endSummary.innerHTML = `Score: <span>${state.score}</span> &nbsp;·&nbsp; Correct: <span>${state.correctCount}/${ROUNDS_PER_GAME}</span> &nbsp;·&nbsp; Best: <span>${state.best}</span>`;
+            els.end.style.display = 'block';
+        }
+
+        els.playAgainBtn.addEventListener('click', initGame);
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            renderQuiz();
+            initGame();
         });
 
         // Smooth scroll
