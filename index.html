@@ -267,7 +267,8 @@
             color: #2d2d2d;
         }
 
-        /* End screen */
+        /* Start & end screens */
+        .game-start,
         .game-end {
             text-align: center;
             background: white;
@@ -278,12 +279,14 @@
             padding: 40px 30px;
         }
 
+        .game-start h2,
         .game-end h2 {
             border: none;
             padding: 0;
             margin-bottom: 15px;
         }
 
+        .game-start p,
         .game-end p {
             font-family: 'Space Mono', monospace;
             font-size: 15px;
@@ -596,7 +599,7 @@
                 <p>Beat the clock, build a streak, test your ML instincts.</p>
             </div>
 
-            <div class="game-hud">
+            <div class="game-hud" id="gameHud" style="display:none;">
                 <div class="hud-item">
                     <span class="hud-label">Score</span>
                     <span class="hud-value" id="hudScore">0</span>
@@ -615,12 +618,19 @@
                 </div>
             </div>
 
-            <div class="timer-track"><div class="timer-fill" id="timerFill"></div></div>
+            <div class="timer-track" style="display:none;"><div class="timer-fill" id="timerFill"></div></div>
 
-            <p class="game-question" id="gameQuestion">Loading question...</p>
+            <p class="game-question" id="gameQuestion" style="display:none;"></p>
 
-            <div class="quiz-container" id="quizContainer">
+            <div class="quiz-container" id="quizContainer" style="display:none;">
                 <!-- Answer cards rendered here -->
+            </div>
+
+            <div class="game-start" id="gameStart">
+                <h2><span class="highlight">Ready to play?</span></h2>
+                <p>8 rounds &middot; 8 seconds a question &middot; faster answers score more.</p>
+                <p id="startBestScore" style="display:none;"></p>
+                <button class="play-again-btn" id="startBtn">Start Game</button>
             </div>
 
             <div class="game-end" id="gameEnd" style="display:none;">
@@ -979,13 +989,18 @@
         const BEST_SCORE_KEY = 'neuronSprintBestScore';
 
         const els = {
+            hud: document.getElementById('gameHud'),
             hudScore: document.getElementById('hudScore'),
             hudStreak: document.getElementById('hudStreak'),
             hudRound: document.getElementById('hudRound'),
             hudBest: document.getElementById('hudBest'),
+            timerTrack: document.querySelector('.timer-track'),
             timerFill: document.getElementById('timerFill'),
             question: document.getElementById('gameQuestion'),
             container: document.getElementById('quizContainer'),
+            start: document.getElementById('gameStart'),
+            startBestScore: document.getElementById('startBestScore'),
+            startBtn: document.getElementById('startBtn'),
             end: document.getElementById('gameEnd'),
             endSummary: document.getElementById('endSummary'),
             playAgainBtn: document.getElementById('playAgainBtn')
@@ -1013,7 +1028,26 @@
             el.classList.add('pulse');
         }
 
+        function showStartScreen() {
+            els.hud.style.display = 'none';
+            els.timerTrack.style.display = 'none';
+            els.question.style.display = 'none';
+            els.container.style.display = 'none';
+            els.end.style.display = 'none';
+
+            const best = getBestScore();
+            if (best > 0) {
+                els.startBestScore.textContent = `Your best score: ${best}`;
+                els.startBestScore.style.display = 'block';
+            } else {
+                els.startBestScore.style.display = 'none';
+            }
+            els.start.style.display = 'block';
+        }
+
         function initGame() {
+            els.start.style.display = 'none';
+
             const pool = shuffle(QUESTION_BANK).slice(0, ROUNDS_PER_GAME).map(item => {
                 const optionOrder = shuffle(item.options.map((text, i) => ({ text, isCorrect: i === item.correct })));
                 return { q: item.q, options: optionOrder };
@@ -1032,9 +1066,10 @@
             };
 
             els.end.style.display = 'none';
+            els.hud.style.display = 'flex';
+            els.timerTrack.style.display = 'block';
             els.container.style.display = 'flex';
             els.question.style.display = 'block';
-            document.querySelector('.timer-track').style.display = 'block';
 
             updateHud();
             startRound();
@@ -1139,7 +1174,7 @@
         }
 
         function endGame() {
-            document.querySelector('.timer-track').style.display = 'none';
+            els.timerTrack.style.display = 'none';
             els.question.style.display = 'none';
             els.container.style.display = 'none';
 
@@ -1155,11 +1190,12 @@
             els.end.style.display = 'block';
         }
 
+        els.startBtn.addEventListener('click', initGame);
         els.playAgainBtn.addEventListener('click', initGame);
 
-        // Initialize
+        // Initialize: show the start screen only, do not auto-start the timer
         document.addEventListener('DOMContentLoaded', function() {
-            initGame();
+            showStartScreen();
         });
 
         // Smooth scroll
