@@ -576,6 +576,24 @@
                 padding: 15px 20px;
             }
         }
+        .keyword {
+        display: inline-block;
+        padding: 7px 12px;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        background: #fafafa;
+        color: #333;
+        font-family: 'Space Mono', monospace;
+        font-size: 11px;
+        line-height: 1.4;
+        transition: all 0.2s ease;
+    }
+
+    .keyword:hover {
+        border-color: #C41230;
+        color: #C41230;
+        background: #fff;
+    }
     </style>
 </head>
 <body>
@@ -659,31 +677,98 @@
                 <div>
                     <h1>Brandone Fonya</h1>
                     <p class="subtitle">MEng. Artificial Intelligence • Carnegie Mellon University</p>
-                    
+
                     <p style="font-size: 16px; margin: 20px 0;">
-                        I am a graduate research assistant, teaching assistant and a Masters graduate in Artificial Intelligence from <a href="https://engineering.cmu.edu/" target="_blank" style="color: #C41230; text-decoration: none;"> Carnegie Mellon University's College of Engineering</a>. My research focuses on deep learning for medical imaging, computer vision and Generative AI.
+                        I am a research associate, teaching assistant, and Master's graduate in Artificial Intelligence from
+                        <a href="https://engineering.cmu.edu/" target="_blank"
+                        style="color: #C41230; text-decoration: none;">
+                            Carnegie Mellon University's College of Engineering
+                        </a>.
+                        My research focuses on using machine learning to process, understand, and make inferences from signals in the world around us, with a particular interest in visual and multimodal representations.
                     </p>
-                    
+
+                    <!-- Research Keywords -->
+                    <div style="margin: 24px 0 28px;">
+                        <div style="
+                            font-family: 'Space Mono', monospace;
+                            font-size: 12px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            margin-bottom: 12px;
+                            color: #666;
+                        ">
+                            Research Interests
+                        </div>
+
+                        <div style="
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                        ">
+                            <span class="keyword">Deep Learning</span>
+                            <span class="keyword">Representation Learning</span>
+                            <span class="keyword">Generative AI</span>
+                            <span class="keyword">Multimodal ML</span>
+                            <span class="keyword">Healthcare AI</span>
+                            <span class="keyword">AI for Social Good</span>
+                        </div>
+                    </div>
+
                     <p style="font-size: 16px; margin: 20px 0;">
-                        Prior to CMU, I earned a Bachelor's degree (First class Honors) in Software Engineering from <a href="https://ictuniversity.edu.cm/" target="_blank" style="color: #C41230; text-decoration: none;">The ICT University</a> in Cameroon, graduating first in my department. I am currently working with the <a href="https://www.africa.engineering.cmu.edu/research/ai-healthcare.html" target="_blank" style="color: #C41230; text-decoration: none;"> AI Healthcare Research lab</a> at CMU, to understand the heart and revolutionizing how cardiac health is assessed by simultaneously acquiring and analyzing electrocardiogram (ECG) and phonocardiogram (PCG) signals using machine learning.
+                        Prior to CMU, I earned a Bachelor's degree with First Class Honors in Software Engineering from
+                        <a href="https://ictuniversity.edu.cm/" target="_blank"
+                        style="color: #C41230; text-decoration: none;">
+                            The ICT University
+                        </a>
+                        in Cameroon, graduating first in my department. I currently work with the
+                        <a href="https://www.africa.engineering.cmu.edu/research/ai-healthcare.html"
+                        target="_blank"
+                        style="color: #C41230; text-decoration: none;">
+                            AI Healthcare Research Lab
+                        </a>
+                        at CMU, where I work on machine learning methods for understanding cardiac health through the joint analysis of electrocardiogram (ECG) and phonocardiogram (PCG) signals.
                     </p>
-                    
+
                     <p style="font-size: 16px; margin: 20px 0;">
                         Beyond work, I enjoy traveling, reading, and watching documentaries.
                     </p>
-                    
+
                     <p style="font-size: 16px; margin: 20px 0;">
                         <strong>Email:</strong> bfonya [at] alumni [dot] cmu [dot] edu
                     </p>
-                    
-                    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-                        <a href="https://drive.google.com/file/d/1VRxuHdbjOpzn_S8XMJWFyLw-Q3CsTRs9/view?usp=sharing" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">📄 CV</a>
-                        
-                        <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en" target="_blank" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">🎓 Google Scholar</a>
-                        
-                        <a href="https://orcid.org/0009-0004-5793-9323" target="_blank" style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);" onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'" onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">🔗 ORCID</a>
+
+                    <div style="
+                        margin-top: 25px;
+                        display: flex;
+                        gap: 15px;
+                        flex-wrap: wrap;
+                    ">
+                        <a href="https://drive.google.com/file/d/1VRxuHdbjOpzn_S8XMJWFyLw-Q3CsTRs9/view?usp=sharing"
+                        style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);"
+                        onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'"
+                        onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">
+                            📄 CV
+                        </a>
+
+                        <a href="https://scholar.google.com/citations?user=bBsCFWUAAAAJ&hl=en"
+                        target="_blank"
+                        style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);"
+                        onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'"
+                        onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">
+                            🎓 Google Scholar
+                        </a>
+
+                        <a href="https://orcid.org/0009-0004-5793-9323"
+                        target="_blank"
+                        style="display: inline-block; padding: 12px 24px; background: #2d2d2d; color: white; text-decoration: none; border: 2px solid #2d2d2d; font-family: 'Space Mono', monospace; font-size: 14px; transition: all 0.3s; box-shadow: 3px 3px 0px rgba(0,0,0,0.2);"
+                        onmouseover="this.style.background='white'; this.style.color='#2d2d2d'; this.style.transform='translateY(-2px)'; this.style.boxShadow='4px 4px 0px rgba(0,0,0,0.3)'"
+                        onmouseout="this.style.background='#2d2d2d'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='3px 3px 0px rgba(0,0,0,0.2)'">
+                            🔗 ORCID
+                        </a>
                     </div>
                 </div>
+
             </div>
         </section>
 
