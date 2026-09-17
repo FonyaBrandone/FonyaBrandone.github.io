@@ -291,6 +291,53 @@
     .service-line { padding: 7px 0; color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); }
     .service-line:first-of-type { border-top: none; }
 
+    /* ---------- Beyond the lab ---------- */
+    .beyond-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 44px; align-items: center; }
+    .beyond-text p { color: var(--ink); font-size: 16px; }
+    .beyond-text p + p { margin-top: 14px; }
+    .beyond-text .accent-note { color: var(--muted); font-size: 15.5px; }
+    .goal {
+      margin-top: 20px; display: flex; align-items: center; gap: 14px;
+      background: var(--accent-weak); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+      border-radius: 12px; padding: 14px 16px;
+    }
+    .goal .goal-num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--accent); line-height: 1; }
+    .goal .goal-txt { font-size: 14.5px; color: var(--ink); }
+    .ig-btn {
+      margin-top: 22px; display: inline-flex; align-items: center; gap: 9px; text-decoration: none;
+      font-size: 14px; font-weight: 600; padding: 11px 18px; border-radius: 10px; color: #fff;
+      border: 1px solid transparent;
+      background: linear-gradient(90deg, #f58529, #dd2a7b 55%, #8134af);
+      transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+    }
+    .ig-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); filter: brightness(1.05); }
+    .ig-btn svg { width: 17px; height: 17px; }
+
+    .slideshow {
+      position: relative; border-radius: var(--radius); overflow: hidden;
+      border: 1px solid var(--line); box-shadow: var(--shadow);
+      aspect-ratio: 3 / 2; background: var(--surface-2);
+    }
+    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
+    .slide.active { opacity: 1; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .slide-nav {
+      position: absolute; top: 50%; transform: translateY(-50%); width: 38px; height: 38px;
+      border-radius: 50%; border: none; cursor: pointer; display: grid; place-items: center;
+      background: rgba(20, 22, 28, 0.42); color: #fff; backdrop-filter: blur(2px);
+      transition: background 0.15s;
+    }
+    .slide-nav:hover { background: rgba(20, 22, 28, 0.72); }
+    .slide-nav.prev { left: 12px; }
+    .slide-nav.next { right: 12px; }
+    .slide-nav svg { width: 18px; height: 18px; }
+    .dots { position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 7px; }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%; border: none; cursor: pointer; padding: 0;
+      background: rgba(255, 255, 255, 0.5); transition: background 0.15s, transform 0.15s;
+    }
+    .dot.active { background: #fff; transform: scale(1.25); }
+
     /* ---------- Contact ---------- */
     .contacts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
     .contact-card {
@@ -361,6 +408,7 @@
       .hero-grid { grid-template-columns: 1fr; gap: 34px; }
       .portrait { max-width: 240px; }
       .papers { grid-template-columns: 1fr; }
+      .beyond-grid { grid-template-columns: 1fr; gap: 26px; }
       .contacts { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 620px) {
@@ -390,6 +438,7 @@
         <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#teaching">Teaching</a>
+        <a href="#beyond">Beyond</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
           <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -604,6 +653,38 @@
     </div>
   </section>
 
+  <!-- Beyond the lab -->
+  <section id="beyond">
+    <div class="wrap">
+      <div class="sec-head"><h2>Beyond the lab</h2><div class="rule"></div></div>
+      <div class="beyond-grid">
+        <div class="beyond-text">
+          <p>Outside of research, I mentor students in research and across the STEM fields, helping early-career scientists and engineers find their footing and build work they are proud of.</p>
+          <p class="accent-note">I am also happiest with a boarding pass in hand. I love traveling the world, meeting new people, and collecting stories from every place I land.</p>
+          <div class="goal">
+            <span class="goal-num">7</span>
+            <span class="goal-txt">On a mission to visit all seven wonders of the world by 2028.</span>
+          </div>
+          <a class="ig-btn" href="https://www.instagram.com/brandone.fonya/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+            Follow my adventures
+          </a>
+        </div>
+
+        <div class="slideshow" id="slideshow">
+          <div class="slide active"><img src="travel/pic1.jpeg" alt="Travel photo 1" loading="lazy"></div>
+          <div class="slide"><img src="travel/pic2.JPG" alt="Travel photo 2" loading="lazy"></div>
+          <div class="slide"><img src="travel/pic3.jpeg" alt="Travel photo 3" loading="lazy"></div>
+          <div class="slide"><img src="travel/pic4.jpeg" alt="Travel photo 4" loading="lazy"></div>
+          <div class="slide"><img src="travel/pic5.jpeg" alt="Travel photo 5" loading="lazy"></div>
+          <button class="slide-nav prev" id="slidePrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="slide-nav next" id="slideNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+          <div class="dots" id="slideDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section id="contact">
     <div class="wrap">
@@ -612,7 +693,7 @@
         <a class="contact-card" href="mailto:brandone@ieee.org"><div class="k">Email</div><div class="v">brandone@ieee.org</div></a>
         <a class="contact-card" href="https://www.linkedin.com/in/brandone-fonya-217654240/" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">Brandone Fonya</div></a>
         <a class="contact-card" href="https://github.com/fonyabrandone" target="_blank" rel="noopener"><div class="k">GitHub</div><div class="v">fonyabrandone</div></a>
-        <a class="contact-card" href="https://scholar.google.com/citations?user=m2KJCiEAAAAJ&hl=en" target="_blank" rel="noopener"><div class="k">Scholar</div><div class="v">Brandone Fonya</div></a>
+        <a class="contact-card" href="https://www.instagram.com/brandone.fonya/" target="_blank" rel="noopener"><div class="k">Instagram</div><div class="v">@brandone.fonya</div></a>
       </div>
     </div>
   </section>
@@ -684,6 +765,49 @@
         var open = more.classList.toggle('open');
         btn.textContent = open ? 'Show fewer updates' : 'Show earlier updates';
       });
+    })();
+
+    // ---------- Travel slideshow ----------
+    (function () {
+      var root = document.getElementById('slideshow');
+      if (!root) return;
+      var slides = root.querySelectorAll('.slide');
+      var dotsWrap = document.getElementById('slideDots');
+      var idx = 0, timer = null;
+      var DELAY = 4500;
+
+      for (var i = 0; i < slides.length; i++) {
+        var d = document.createElement('button');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+        d.dataset.i = i;
+        dotsWrap.appendChild(d);
+      }
+      var dots = dotsWrap.querySelectorAll('.dot');
+
+      function show(n) {
+        slides[idx].classList.remove('active');
+        dots[idx].classList.remove('active');
+        idx = (n + slides.length) % slides.length;
+        slides[idx].classList.add('active');
+        dots[idx].classList.add('active');
+      }
+      function next() { show(idx + 1); }
+      function prev() { show(idx - 1); }
+      function start() { stop(); timer = setInterval(next, DELAY); }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+      document.getElementById('slideNext').addEventListener('click', function () { next(); start(); });
+      document.getElementById('slidePrev').addEventListener('click', function () { prev(); start(); });
+      dotsWrap.addEventListener('click', function (e) {
+        var t = e.target.closest('.dot');
+        if (!t) return;
+        show(parseInt(t.dataset.i, 10));
+        start();
+      });
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+      start();
     })();
 
     // ---------- Neuron Sprint ----------
