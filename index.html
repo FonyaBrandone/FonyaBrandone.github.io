@@ -160,7 +160,7 @@
     html[data-theme="dark"] .theme-toggle .moon { display: block; }
 
     /* ---------- Hero ---------- */
-    .hero { padding: 76px 0 26px; }
+    .hero { padding: 76px 0 26px; position: relative; isolation: isolate; }
     .hero-grid {
       display: grid; grid-template-columns: 1fr 260px; gap: 52px; align-items: start;
     }
@@ -449,6 +449,13 @@
       .tl-date { display: block; margin-bottom: 2px; }
     }
 
+    /* Neural network animation behind the hero, fading out before the bio */
+    .hero-net {
+      position: absolute; top: 0; left: 0; z-index: -1; pointer-events: none; display: block;
+      -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 480px, transparent 760px);
+      mask-image: linear-gradient(to bottom, #000 0, #000 480px, transparent 760px);
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .signal .trace { animation: none; stroke-dashoffset: 0; }
@@ -481,6 +488,7 @@
 
   <!-- Hero / About -->
   <section class="hero" id="about" style="scroll-margin-top: 0;">
+    <canvas class="hero-net" id="heroNet" aria-hidden="true"></canvas>
     <div class="wrap">
       <div class="hero-grid">
         <div>
@@ -621,7 +629,7 @@
         </article>
 
         <article class="paper">
-          <span class="venue">NeurIPS 2026 Workshop: Africa in AI.</span>
+          <span class="venue">NeurIPS 2026 Workshop: Africa in AI (Oral)</span>
           <h3>VARET: Decomposing Robustness for Multi-Site Phonocardiogram Classification under Missing Auscultation Sites and Cohort Shift</h3>
           <p class="authors">Yvette Tuyambaze, <b>Brandone Fonya</b>, Carine Mukamakuza</p>
           <p class="desc">Introduced VARET, a valve-aware transformer that separately evaluates robustness to missing auscultation sites and shifts across patient cohorts for multi-site phonocardiogram classification. The framework demonstrates improved patient-level classification performance and reveals limitations in zero-shot cross-cohort generalization.</p>
@@ -631,7 +639,7 @@
         </article>
 
         <article class="paper">
-          <span class="venue">NeurIPS 2026 Workshop: Africa in AI (Oral).</span>
+          <span class="venue">NeurIPS 2026 Workshop: Africa in AI (Oral)</span>
           <h3>Preprocessing Filter Choice Affects Severity Calibration but Not Accuracy in Cardiac Murmur Classification</h3>
           <p class="authors">Nimat Ohunene Sadiq, <b>Brandone Fonya</b>, Carine Mukamakuza</p>
           <p class="desc">Evaluated the impact of PCG preprocessing filter choices and deep learning architectures (LSTM and CNNs) on murmur severity classification, with the aim of understanding their influence on classification performance and severity calibration. Found that filter choice had minimal impact on overall accuracy but introduced consistent severity prediction bias, while model architecture had a significantly stronger effect, highlighting important considerations for reliable cardiac screening and triage in low-resource settings.</p>
@@ -641,7 +649,7 @@
         </article>
 
         <article class="paper">
-          <span class="venue">NeurIPS 2026 Workshop: Global South AI.</span>
+          <span class="venue">NeurIPS 2026 Workshop: Global South AI</span>
           <h3>CardioSSL: When Does Self-Supervision Help Heart Sound Screening? A Controlled Benchmark</h3>
           <p class="authors"><b>Brandone Fonya</b>, Mona Aman, Godbright Nixon Uiso, Maurine Wanjiku Gatimu, Olatunji Damilare Emmanuel, Carine Mukamakuza</p>
           <p class="desc">A controlled benchmark of five SSL objectives (SimCLR, BYOL, MAE, DINO, JEPA) for heart sound screening. We showed that SSL helps only in the low label regime, when labeled data is scare: JEPA and MAE gain 9.44 and 8.89 balanced-accuracy points at 10 percent of labels, but the advantage decays to nothing at full supervision, and no method survives transfer to an external pediatric cohort.</p>
@@ -651,7 +659,7 @@
         </article>
 
         <article class="paper">
-          <span class="venue">37th Bristish Machine Vision Conference (BMVC).</span>
+          <span class="venue">37th Bristish Machine Vision Conference (BMVC) workshop</span>
           <h3>Lightweight vs. Medical Foundation Models for Pigmented-Skin Dermatology in Sub-Saharan Africa: A Patient-Level, Cross-Clinic Evaluation</h3>
           <p class="authors">Nonzunzo Sylvia Sikhosana, Ugochukwu Onyebuchi, Chima Stanislaus Okwuokei, Rohey John, Melissa Cyuzuzo Ikirezi, <b>Brandone Fonya</b></p>
           <p class="desc">We compare lightweight convolutional networks and medical foundation models for skin disease classification on pigmented skin images from four Sub-Saharan African countries. Medical Foundation models achieved higher balanced accuracy (≈80%) than CNNs (70–73%), with frozen linear probes matching the performance of LoRA finetuning. However, performance droped substantially under geographic shift, demonstrating that strong benchmark performance does not necessarily translate across clinical settings and highlighting the need for geographically robust dermatology triage models.</p>
@@ -804,6 +812,179 @@
         if (isDark) { document.documentElement.removeAttribute('data-theme'); save('light'); }
         else { document.documentElement.setAttribute('data-theme', 'dark'); save('dark'); }
       });
+    })();
+
+    // ---------- Hero neural network background ----------
+    (function () {
+      var hero = document.getElementById('about');
+      var canvas = document.getElementById('heroNet');
+      if (!hero || !canvas || !canvas.getContext) return;
+      var ctx = canvas.getContext('2d');
+      var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+      var reduce = mq ? mq.matches : false;
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var MAX_H = 760;          // same height where the grid fades out
+      var LINK = 140;           // max distance for a connection
+      var W = 0, H = 0, rgb = '196,18,47', boost = 1;
+      var nodes = [], pulses = [];
+      var mouse = { x: -9999, y: -9999 };
+      var raf = null, last = 0, nextPulse = 0, onScreen = true;
+
+      function readColor() {
+        boost = document.documentElement.getAttribute('data-theme') === 'dark' ? 1.6 : 1;
+        var hex = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim().replace('#', '');
+        if (hex.length === 3) hex = hex.replace(/./g, '$&$&');
+        if (hex.length === 6) {
+          rgb = parseInt(hex.slice(0, 2), 16) + ',' + parseInt(hex.slice(2, 4), 16) + ',' + parseInt(hex.slice(4, 6), 16);
+        }
+      }
+
+      function makeNode() {
+        return {
+          x: Math.random() * W, y: Math.random() * H,
+          vx: (Math.random() - 0.5) * 0.28, vy: (Math.random() - 0.5) * 0.28,
+          r: 1.1 + Math.random() * 1.6
+        };
+      }
+
+      function resize() {
+        W = hero.clientWidth;
+        H = Math.min(hero.clientHeight, MAX_H);
+        canvas.width = Math.round(W * dpr);
+        canvas.height = Math.round(H * dpr);
+        canvas.style.width = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        var target = Math.max(18, Math.min(90, Math.round(W * H / 12500)));
+        while (nodes.length < target) nodes.push(makeNode());
+        nodes.length = target;
+        for (var i = 0; i < nodes.length; i++) {
+          nodes[i].x = Math.min(nodes[i].x, W);
+          nodes[i].y = Math.min(nodes[i].y, H);
+        }
+        pulses = [];
+      }
+
+      function neighbour(a) {
+        var best = [];
+        for (var i = 0; i < nodes.length; i++) {
+          var b = nodes[i];
+          if (b === a) continue;
+          var dx = a.x - b.x, dy = a.y - b.y;
+          if (dx * dx + dy * dy < LINK * LINK * 0.8) best.push(b);
+        }
+        return best.length ? best[(Math.random() * best.length) | 0] : null;
+      }
+
+      function spawnPulse(from) {
+        var a = from || nodes[(Math.random() * nodes.length) | 0];
+        var b = neighbour(a);
+        if (b) pulses.push({ a: a, b: b, t: 0, hops: 0 });
+      }
+
+      function step(dt) {
+        for (var i = 0; i < nodes.length; i++) {
+          var n = nodes[i];
+          n.x += n.vx * dt; n.y += n.vy * dt;
+          if (n.x < 0 || n.x > W) { n.vx *= -1; n.x = Math.max(0, Math.min(W, n.x)); }
+          if (n.y < 0 || n.y > H) { n.vy *= -1; n.y = Math.max(0, Math.min(H, n.y)); }
+        }
+        for (var j = pulses.length - 1; j >= 0; j--) {
+          var p = pulses[j];
+          p.t += 0.018 * dt;
+          if (p.t >= 1) {
+            pulses.splice(j, 1);
+            // the signal carries on to the next neuron some of the time
+            if (p.hops < 5 && Math.random() < 0.7 && pulses.length < 14) {
+              var c = neighbour(p.b);
+              if (c) pulses.push({ a: p.b, b: c, t: 0, hops: p.hops + 1 });
+            }
+          }
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        var i, j, a, b, dx, dy, d2, L2 = LINK * LINK;
+        ctx.lineWidth = 1;
+        for (i = 0; i < nodes.length; i++) {
+          a = nodes[i];
+          for (j = i + 1; j < nodes.length; j++) {
+            b = nodes[j];
+            dx = a.x - b.x; dy = a.y - b.y; d2 = dx * dx + dy * dy;
+            if (d2 < L2) {
+              ctx.strokeStyle = 'rgba(' + rgb + ',' + (0.2 * boost * (1 - Math.sqrt(d2) / LINK)).toFixed(3) + ')';
+              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+            }
+          }
+          dx = a.x - mouse.x; dy = a.y - mouse.y; d2 = dx * dx + dy * dy;
+          if (d2 < 170 * 170) {
+            ctx.strokeStyle = 'rgba(' + rgb + ',' + (0.35 * boost * (1 - Math.sqrt(d2) / 170)).toFixed(3) + ')';
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+          }
+        }
+        for (i = 0; i < nodes.length; i++) {
+          a = nodes[i];
+          ctx.fillStyle = 'rgba(' + rgb + ',0.5)';
+          ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
+        }
+        for (i = 0; i < pulses.length; i++) {
+          var p = pulses[i];
+          var x = p.a.x + (p.b.x - p.a.x) * p.t, y = p.a.y + (p.b.y - p.a.y) * p.t;
+          ctx.fillStyle = 'rgba(' + rgb + ',0.16)';
+          ctx.beginPath(); ctx.arc(x, y, 6, 0, Math.PI * 2); ctx.fill();
+          ctx.fillStyle = 'rgba(' + rgb + ',0.9)';
+          ctx.beginPath(); ctx.arc(x, y, 2.2, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+
+      function frame(now) {
+        raf = null;
+        var dt = last ? Math.min(50, now - last) / 16.67 : 1;
+        last = now;
+        if (now > nextPulse && pulses.length < 14) { spawnPulse(); nextPulse = now + 450 + Math.random() * 700; }
+        step(dt);
+        draw();
+        start();
+      }
+
+      function start() {
+        if (reduce || raf || !onScreen || document.hidden) return;
+        raf = requestAnimationFrame(frame);
+      }
+      function stop() {
+        if (raf) { cancelAnimationFrame(raf); raf = null; }
+        last = 0;
+      }
+
+      readColor();
+      resize();
+      draw();
+      start();
+
+      var rt = null;
+      window.addEventListener('resize', function () {
+        clearTimeout(rt);
+        rt = setTimeout(function () { resize(); draw(); }, 150);
+      });
+      hero.addEventListener('mousemove', function (e) {
+        var r = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
+      });
+      hero.addEventListener('mouseleave', function () { mouse.x = mouse.y = -9999; });
+      document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          onScreen = entries[0].isIntersecting;
+          onScreen ? start() : stop();
+        }).observe(canvas);
+      }
+      // follow the light / dark toggle
+      new MutationObserver(function () { readColor(); draw(); })
+        .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      if (mq && mq.addEventListener) {
+        mq.addEventListener('change', function (e) { reduce = e.matches; reduce ? stop() : start(); draw(); });
+      }
     })();
 
     // ---------- News toggle ----------
