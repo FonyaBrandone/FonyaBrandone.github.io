@@ -344,6 +344,14 @@
       padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface);
       transition: color 0.15s, border-color 0.15s, background 0.15s;
     }
+    .project-status {
+      margin-top: 20px; display: inline-flex; align-items: center; gap: 9px;
+      font-family: var(--sans); font-size: 13.5px; font-weight: 600; color: var(--muted); line-height: 1.4;
+      padding: 9px 14px; border-radius: 10px; border: 1px dashed color-mix(in srgb, var(--accent) 45%, var(--line));
+      background: var(--accent-weak);
+    }
+    .dot-live { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--accent); animation: livePulse 1.8s ease-in-out infinite; }
+    @keyframes livePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
     .project-link svg { width: 15px; height: 15px; transition: transform 0.18s ease; }
     .project-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
     .project-link:hover svg { transform: translate(2px, -2px); }
@@ -550,6 +558,7 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .signal .trace { animation: none; stroke-dashoffset: 0; }
+      .dot-live { animation: none; }
       * { transition: none !important; }
     }
   </style>
@@ -798,8 +807,22 @@
           </div>
         </article>
 
-        <!-- Sign language to speech -->
+        <!-- TB cough screening -->
         <article class="project flip">
+          <div class="project-media">
+            <img src="/static/tb-screening-cough.gif" alt="Tuberculosis Screening" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">02</span><span class="sep"></span><span>Summer 2025 to present</span><span class="kind">Carnegie Mellon-Africa and MakCHS joint research</span></div>
+            <h3>Low-Cost Tuberculosis Screening with Deep Learning Using Solicited Cough Sounds</h3>
+            <p class="desc">Explores audio-only and multimodal approaches for non-invasive Tuberculosis screening using cough audio recordings together with clinical and demographic data, targeting early detection in low-resource settings. We are building web, mobile and IoT systems to implement the solution in resource-constrained settings.</p>
+            <div class="stack"><span>Cough audio</span><span>Multimodal</span><span>Clinical data</span><span>IoT</span></div>
+            <span class="project-status"><span class="dot-live"></span>Accepted at WACV 2026 (withdrawn), extending for journal submission</span>
+          </div>
+        </article>
+
+        <!-- Sign language to speech -->
+        <article class="project">
           <div class="project-media" aria-hidden="true">
             <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
               <defs>
@@ -845,7 +868,7 @@
             </svg>
           </div>
           <div class="project-body">
-            <div class="project-meta"><span class="num">02</span><span class="sep"></span><span>Jan 2025 to May 2025</span><span class="kind">Deep learning, accessibility</span></div>
+            <div class="project-meta"><span class="num">03</span><span class="sep"></span><span>Jan 2025 to May 2025</span><span class="kind">Deep learning, accessibility</span></div>
             <h3>Real-Time Sign Language Gestures to Speech Transcription using Deep Learning</h3>
             <p class="desc">Uses CNNs and Mediapipe for real-time ASL gesture recognition and text-to-speech conversion. MediaPipe finds the hand in each webcam frame, a CNN trained on Sign Language MNIST classifies the gesture (95.72% test accuracy across 24 letters), and the prediction is read aloud, all on a standard laptop and webcam. Supervised by <a href="https://insights.sei.cmu.edu/authors/clarence-worrell/" target="_blank" rel="noopener">Clarence Worrell</a>.</p>
             <div class="stack"><span>CNN</span><span>MediaPipe</span><span>OpenCV</span><span>Text-to-speech</span></div>
@@ -856,7 +879,7 @@
         </article>
 
         <!-- ESchools LMS -->
-        <article class="project">
+        <article class="project flip">
           <div class="project-media">
             <div class="cover cover-eschools">
               <div class="cover-inner">
@@ -866,7 +889,7 @@
             </div>
           </div>
           <div class="project-body">
-            <div class="project-meta"><span class="num">03</span><span class="sep"></span><span>Dec 2022 to Jul 2024</span><span class="kind">Founder, EdTech</span></div>
+            <div class="project-meta"><span class="num">04</span><span class="sep"></span><span>Dec 2022 to Jul 2024</span><span class="kind">Founder, EdTech</span></div>
             <h3>ESchools LMS</h3>
             <p class="desc">Online learning platform for crisis-affected Cameroonian students, featuring AI study bots and live classes. High schools, tutors and students carry on learning beyond the four walls of a classroom, with live class recordings, assignments, shared notes, exam management and a revision chatbot. Recognized at the national PremierDev Tech Innovation Challenge 2023 in Yaound&eacute;.</p>
             <div class="stack"><span>Learning management</span><span>Live classes</span><span>AI study bot</span><span>EdTech</span></div>
@@ -877,7 +900,7 @@
         </article>
 
         <!-- ClimateSmart -->
-        <article class="project flip">
+        <article class="project">
           <div class="project-media" aria-hidden="true">
             <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
               <defs>
@@ -916,7 +939,7 @@
             </svg>
           </div>
           <div class="project-body">
-            <div class="project-meta"><span class="num">04</span><span class="sep"></span><span>Dec 2023 to May 2024</span><span class="kind">AI for agriculture</span></div>
+            <div class="project-meta"><span class="num">05</span><span class="sep"></span><span>Dec 2023 to May 2024</span><span class="kind">AI for agriculture</span></div>
             <h3>ClimateSmart: AI driven Smart Agriculture application</h3>
             <p class="desc">Provides data-driven farming recommendations based on location and environmental data, helping smallholder farmers decide what and when to plant as the climate shifts around them.</p>
             <div class="stack"><span>Machine learning</span><span>Environmental data</span><span>Location-aware</span><span>Agriculture</span></div>
@@ -927,7 +950,7 @@
         </article>
 
         <!-- WatchCloud -->
-        <article class="project">
+        <article class="project flip">
           <div class="project-media" aria-hidden="true">
             <div class="cover cover-watchcloud">
               <div class="cover-inner">
@@ -957,7 +980,7 @@
             </div>
           </div>
           <div class="project-body">
-            <div class="project-meta"><span class="num">05</span><span class="sep"></span><span>Web app</span><span class="kind">Real-time data</span></div>
+            <div class="project-meta"><span class="num">06</span><span class="sep"></span><span>Web app</span><span class="kind">Real-time data</span></div>
             <h3>WatchCloud: Real-Time Weather Forecasts and Interpretation</h3>
             <p class="desc">A real-time weather system that forecasts and interprets current conditions for any city. Search a location to see its temperature, humidity, pressure, wind speed, and today's sunrise and sunset, in a light or dark theme.</p>
             <div class="stack"><span>Real-time weather</span><span>City search</span><span>Dark mode</span></div>
