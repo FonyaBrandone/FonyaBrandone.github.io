@@ -302,6 +302,90 @@
     }
     .paper-links a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-weak); }
 
+    /* ---------- Projects ---------- */
+    .project-list { display: grid; gap: 20px; }
+    .project {
+      display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; align-items: center;
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 16px; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+    .project:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    .project.flip .project-media { order: 2; }
+    .project-media {
+      position: relative; aspect-ratio: 16 / 10; border-radius: 10px; overflow: hidden;
+      border: 1px solid var(--line); background: var(--surface-2);
+    }
+    .project-media > svg, .project-media > .cover, .project-media > img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    .project-media > img { object-fit: cover; }
+    .project-media > svg, .project-media > img, .project-media .cover-inner { transition: transform 0.5s ease; }
+    .project:hover .project-media > svg, .project:hover .project-media > img, .project:hover .project-media .cover-inner { transform: scale(1.035); }
+    .project .authors { margin-top: 8px; }
+    .project-body { padding: 10px 18px 10px 0; }
+    .project.flip .project-body { padding: 10px 0 10px 18px; }
+    .project-meta {
+      font-family: var(--sans); font-size: 13.5px; font-weight: 600; color: var(--accent);
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-variant-numeric: tabular-nums;
+    }
+    .project-meta .num { color: var(--faint); font-weight: 700; }
+    .project-meta .sep { width: 18px; height: 1px; background: var(--line); }
+    .project-meta .kind { color: var(--muted); font-weight: 500; }
+    .project h3 { margin-top: 10px; font-size: 23px; font-weight: 700; line-height: 1.22; letter-spacing: -0.018em; }
+    .project p.desc { margin-top: 12px; font-size: 15.5px; line-height: 1.65; color: var(--muted); }
+    .project p.desc a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+    .project p.desc a:hover { border-bottom-color: var(--accent); }
+    .stack { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .stack span {
+      font-family: var(--sans); font-size: 12.5px; font-weight: 500; color: var(--muted);
+      padding: 3px 10px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--line);
+    }
+    .project-link {
+      margin-top: 20px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      font-family: var(--sans); font-size: 14.5px; font-weight: 600; color: var(--ink);
+      padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface);
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+    }
+    .project-link svg { width: 15px; height: 15px; transition: transform 0.18s ease; }
+    .project-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
+    .project-link:hover svg { transform: translate(2px, -2px); }
+
+    /* ESchools cover, using the logo and classroom art from eschools.netlify.app */
+    .cover-eschools { background: #e6e6e6; }
+    .cover-eschools .cover-inner {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+      padding: 8% 8% 2%;
+    }
+    .cover-eschools .logo { width: 68%; height: auto; flex: none; }
+    .cover-eschools .room {
+      flex: 1 1 0; min-height: 0; width: 100%; margin-top: 5%;
+      object-fit: contain; object-position: center bottom; mix-blend-mode: multiply;
+    }
+
+    /* WatchCloud cover, recreating the app's own branding */
+    .cover-watchcloud {
+      background:
+        radial-gradient(120% 90% at 85% 0%, rgba(139, 124, 248, 0.32), transparent 55%),
+        radial-gradient(90% 80% at 0% 100%, rgba(139, 124, 248, 0.18), transparent 60%),
+        #1e1724;
+      color: #f1edf6;
+    }
+    .cover-watchcloud .cover-inner {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7%;
+      padding: 6%;
+    }
+    .wc-brand { display: flex; align-items: center; gap: 10px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(24px, 3.4vw, 36px); letter-spacing: -0.01em; }
+    .wc-brand svg { width: 1.35em; height: auto; }
+    .wc-brand b { font-weight: 400; color: #9d90ff; }
+    .wc-card {
+      width: 84%; display: grid; grid-template-columns: repeat(4, 1fr);
+      background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px; backdrop-filter: blur(4px);
+    }
+    .wc-stat { padding: 10px 6px; text-align: center; font-family: var(--sans); }
+    .wc-stat + .wc-stat { border-left: 1px solid rgba(255, 255, 255, 0.1); }
+    .wc-stat svg { width: 18px; height: 18px; color: #9d90ff; }
+    .wc-stat .v { display: block; margin-top: 2px; font-size: clamp(13px, 1.5vw, 16px); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .wc-stat .l { display: block; font-size: 11px; color: rgba(241, 237, 246, 0.6); }
+
     /* ---------- Teaching ---------- */
     .panel {
       background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -434,11 +518,18 @@
       .hero-grid { grid-template-columns: 1fr; gap: 34px; }
       .portrait { max-width: 240px; }
       .papers { grid-template-columns: 1fr; }
+      .project { grid-template-columns: 1fr; gap: 6px; }
+      .project.flip .project-media { order: 0; }
+      .project-body, .project.flip .project-body { padding: 10px 8px 8px; }
       .beyond-grid { grid-template-columns: 1fr; gap: 26px; }
       .contacts { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 620px) {
       body { font-size: 16.5px; }
+      .project h3 { font-size: 20.5px; }
+      .wc-stat .l { display: none; }
+      .wc-card { width: 94%; }
+      .wc-stat .v { font-size: 12.5px; white-space: nowrap; }
       .wrap { padding: 0 20px; }
       .topbar-inner { padding: 0 20px; }
       .navlinks a:not(.always) { display: none; }
@@ -473,6 +564,7 @@
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#teaching">Teaching</a>
         <a href="#beyond">Beyond</a>
         <a href="#contact">Contact</a>
@@ -677,6 +769,204 @@
             <a href="https://neurips.cc/virtual/2026/loc/paris/158650">Paper</a>
           </div>
         </article> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head"><h2>Projects</h2><div class="rule"></div></div>
+      <p class="prose" style="margin-bottom: 24px;"><span style="color: var(--muted); font-size: 15.5px;">Things I have built to put machine learning and software in the hands of people who need it, from classrooms in crisis to farms and sign language users.</span></p>
+
+      <div class="project-list">
+
+        <!-- Uncertainty-aware autonomous driving -->
+        <article class="project">
+          <div class="project-media">
+            <img src="/static/pesdestrian-modeling.gif" alt="Autonomous Driving" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">01</span><span class="sep"></span><span>Spring 2025</span><span class="kind">Course research, autonomous driving</span></div>
+            <h3>Uncertainty-Aware Autonomous Driving in African Cities</h3>
+            <p class="authors">Victor Miene, <b>Brandone Fonya</b>, Joshua Momo, Ozan Tonguz</p>
+            <p class="desc">Our study developed a pipeline to quantify uncertainty-aware driving scenarios using pedestrian visual cues in dense traffic and highly chaotic cities around Africa. We were focused on modeling a cross and not cross intent of pedestrians at any point in time. Using ConvLSTM and other architectures we model pedestrian behaviors in unstructured urban environments, enabling behaviorial planning for autonomous vehicles.</p>
+            <div class="stack"><span>ConvLSTM</span><span>Pedestrian intent</span><span>Uncertainty</span><span>Autonomous vehicles</span></div>
+            <a class="project-link" href="https://drive.google.com/file/d/1wT99_8svqf21GBSp--bEycTQ9OksaFJ3/view" target="_blank" rel="noopener">Uncertainty-Aware Autonomous Driving
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sign language to speech -->
+        <article class="project flip">
+          <div class="project-media" aria-hidden="true">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="slBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2a2027"/><stop offset="1" stop-color="#110d10"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="250" fill="url(#slBg)"/>
+              <g stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="none" stroke-linecap="round">
+                <path d="M14 34V14h20M366 14h20v20M386 216v20h-20M34 236H14v-20"/>
+              </g>
+              <circle cx="340" cy="27" r="4" fill="#ff4d4d"/>
+              <text x="349" y="31" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="1">LIVE</text>
+              <!-- detection box and label -->
+              <rect x="68" y="42" width="190" height="192" fill="none" stroke="#3ddc84" stroke-width="2.5"/>
+              <text x="68" y="34" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ff5f5f">A (1.00)</text>
+              <!-- MediaPipe hand landmarks -->
+              <g stroke="#ff4d63" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M175 218 140 198 115 175 97 155 83 138"/>
+                <path d="M175 218 147 143 140 111 136 89 133 69"/>
+                <path d="M173 138 173 101 173 77 173 55"/>
+                <path d="M198 143 204 109 208 87 211 67"/>
+                <path d="M175 218 220 155 231 129 238 113 244 97"/>
+                <path d="M147 143 173 138 198 143 220 155"/>
+              </g>
+              <g fill="#fff">
+                <circle cx="175" cy="218" r="4"/>
+                <circle cx="140" cy="198" r="3.4"/><circle cx="115" cy="175" r="3.4"/><circle cx="97" cy="155" r="3.4"/><circle cx="83" cy="138" r="3.4"/>
+                <circle cx="147" cy="143" r="3.4"/><circle cx="140" cy="111" r="3.4"/><circle cx="136" cy="89" r="3.4"/><circle cx="133" cy="69" r="3.4"/>
+                <circle cx="173" cy="138" r="3.4"/><circle cx="173" cy="101" r="3.4"/><circle cx="173" cy="77" r="3.4"/><circle cx="173" cy="55" r="3.4"/>
+                <circle cx="198" cy="143" r="3.4"/><circle cx="204" cy="109" r="3.4"/><circle cx="208" cy="87" r="3.4"/><circle cx="211" cy="67" r="3.4"/>
+                <circle cx="220" cy="155" r="3.4"/><circle cx="231" cy="129" r="3.4"/><circle cx="238" cy="113" r="3.4"/><circle cx="244" cy="97" r="3.4"/>
+              </g>
+              <!-- output panel: text then speech -->
+              <rect x="282" y="58" width="100" height="136" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <text x="296" y="80" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.55)" letter-spacing="1">TEXT</text>
+              <text x="296" y="124" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#fff">A</text>
+              <text x="296" y="150" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.55)" letter-spacing="1">SPEECH</text>
+              <path d="M296 166h5l7-6v20l-7-6h-5z" fill="#3ddc84"/>
+              <g stroke="#3ddc84" stroke-width="2.4" stroke-linecap="round">
+                <path d="M318 166v8M324 162v16M330 158v24M336 163v14M342 166v8M348 164v12M354 167v6"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">02</span><span class="sep"></span><span>Jan 2025 to May 2025</span><span class="kind">Deep learning, accessibility</span></div>
+            <h3>Real-Time Sign Language Gestures to Speech Transcription using Deep Learning</h3>
+            <p class="desc">Uses CNNs and Mediapipe for real-time ASL gesture recognition and text-to-speech conversion. MediaPipe finds the hand in each webcam frame, a CNN trained on Sign Language MNIST classifies the gesture (95.72% test accuracy across 24 letters), and the prediction is read aloud, all on a standard laptop and webcam. Supervised by <a href="https://insights.sei.cmu.edu/authors/clarence-worrell/" target="_blank" rel="noopener">Clarence Worrell</a>.</p>
+            <div class="stack"><span>CNN</span><span>MediaPipe</span><span>OpenCV</span><span>Text-to-speech</span></div>
+            <a class="project-link" href="https://arxiv.org/abs/2508.12713v1" target="_blank" rel="noopener">Sign Language to Speech
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ESchools LMS -->
+        <article class="project">
+          <div class="project-media">
+            <div class="cover cover-eschools">
+              <div class="cover-inner">
+                <img class="logo" src="https://eschools.netlify.app/images/eschools.png" alt="ESchools logo" loading="lazy">
+                <img class="room" src="https://eschools.netlify.app/images/class.png" alt="Illustration of a classroom" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">03</span><span class="sep"></span><span>Dec 2022 to Jul 2024</span><span class="kind">Founder, EdTech</span></div>
+            <h3>ESchools LMS</h3>
+            <p class="desc">Online learning platform for crisis-affected Cameroonian students, featuring AI study bots and live classes. High schools, tutors and students carry on learning beyond the four walls of a classroom, with live class recordings, assignments, shared notes, exam management and a revision chatbot. Recognized at the national PremierDev Tech Innovation Challenge 2023 in Yaound&eacute;.</p>
+            <div class="stack"><span>Learning management</span><span>Live classes</span><span>AI study bot</span><span>EdTech</span></div>
+            <a class="project-link" href="https://eschools.netlify.app/" target="_blank" rel="noopener">ESchools LMS
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ClimateSmart -->
+        <article class="project flip">
+          <div class="project-media" aria-hidden="true">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="csSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e3f3ea"/><stop offset="1" stop-color="#fbf6e6"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="250" fill="url(#csSky)"/>
+              <circle cx="318" cy="62" r="36" fill="#f6b73c" opacity="0.22"/>
+              <circle cx="318" cy="62" r="22" fill="#f6b73c"/>
+              <path d="M250 92a14 14 0 0 1 26-6 11 11 0 0 1 18 9h-44z" fill="#fff" opacity="0.9"/>
+              <path d="M0 150Q100 110 200 140T400 128V250H0Z" fill="#a9d79a"/>
+              <path d="M0 175Q120 140 240 168T400 160V250H0Z" fill="#6dbb6a"/>
+              <path d="M0 202Q200 170 400 198V250H0Z" fill="#3f8f4f"/>
+              <g stroke="#2d6e3c" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.85">
+                <path d="M30 250Q120 212 186 189"/><path d="M110 250Q162 214 204 186"/>
+                <path d="M195 250Q208 216 220 185"/><path d="M280 250Q256 214 238 186"/>
+                <path d="M365 250Q306 212 256 189"/>
+              </g>
+              <!-- location and signal -->
+              <ellipse cx="300" cy="166" rx="16" ry="4" fill="#1f4d2b" opacity="0.3"/>
+              <path d="M300 165c-9-12-14-19-14-26a14 14 0 0 1 28 0c0 7-5 14-14 26z" fill="#c4122f"/>
+              <circle cx="300" cy="139" r="5" fill="#fff"/>
+              <g stroke="#c4122f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6">
+                <path d="M286 112a20 20 0 0 1 28 0"/><path d="M279 104a30 30 0 0 1 42 0"/>
+              </g>
+              <!-- data card -->
+              <rect x="18" y="18" width="150" height="94" rx="10" fill="#fff" opacity="0.94" stroke="#d6e8d8"/>
+              <text x="32" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#24412c">Field insight</text>
+              <g font-family="system-ui, sans-serif" font-size="10" fill="#5c6f60">
+                <text x="32" y="62">Soil</text><text x="32" y="80">Rain</text><text x="32" y="98">Temp</text>
+              </g>
+              <rect x="70" y="56" width="84" height="6" rx="3" fill="#e3efe3"/><rect x="70" y="56" width="56" height="6" rx="3" fill="#3f8f4f"/>
+              <rect x="70" y="74" width="84" height="6" rx="3" fill="#e3efe3"/><rect x="70" y="74" width="66" height="6" rx="3" fill="#4b9ad6"/>
+              <rect x="70" y="92" width="84" height="6" rx="3" fill="#e3efe3"/><rect x="70" y="92" width="40" height="6" rx="3" fill="#f0a43a"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">04</span><span class="sep"></span><span>Dec 2023 to May 2024</span><span class="kind">AI for agriculture</span></div>
+            <h3>ClimateSmart: AI driven Smart Agriculture application</h3>
+            <p class="desc">Provides data-driven farming recommendations based on location and environmental data, helping smallholder farmers decide what and when to plant as the climate shifts around them.</p>
+            <div class="stack"><span>Machine learning</span><span>Environmental data</span><span>Location-aware</span><span>Agriculture</span></div>
+            <a class="project-link" href="https://climatesmart.000webhostapp.com/" target="_blank" rel="noopener">ClimateSmart
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- WatchCloud -->
+        <article class="project">
+          <div class="project-media" aria-hidden="true">
+            <div class="cover cover-watchcloud">
+              <div class="cover-inner">
+                <div class="wc-brand">
+                  <svg viewBox="0 0 32 20" fill="none" stroke="#9d90ff" stroke-width="2.4" stroke-linecap="round"><path d="M3 18a13 13 0 0 1 26 0"/><path d="M8 18a8 8 0 0 1 16 0"/><path d="M13 18a3 3 0 0 1 6 0"/></svg>
+                  <span>Watch<b>Cloud</b></span>
+                </div>
+                <div class="wc-card">
+                  <div class="wc-stat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V5a2 2 0 0 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>
+                    <span class="v">24&deg;C</span><span class="l">Temp</span>
+                  </div>
+                  <div class="wc-stat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>
+                    <span class="v">68%</span><span class="l">Humidity</span>
+                  </div>
+                  <div class="wc-stat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></svg>
+                    <span class="v">3.1 m/s</span><span class="l">Wind</span>
+                  </div>
+                  <div class="wc-stat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a5 5 0 0 0-10 0M12 2v7M4.2 10.2l1.4 1.4M1 18h2M21 18h2M18.4 11.6l1.4-1.4M23 22H1M8 6l4-4 4 4"/></svg>
+                    <span class="v">06:12</span><span class="l">Sunrise</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="num">05</span><span class="sep"></span><span>Web app</span><span class="kind">Real-time data</span></div>
+            <h3>WatchCloud: Real-Time Weather Forecasts and Interpretation</h3>
+            <p class="desc">A real-time weather system that forecasts and interprets current conditions for any city. Search a location to see its temperature, humidity, pressure, wind speed, and today's sunrise and sunset, in a light or dark theme.</p>
+            <div class="stack"><span>Real-time weather</span><span>City search</span><span>Dark mode</span></div>
+            <a class="project-link" href="https://watchcloud.netlify.app/" target="_blank" rel="noopener">WatchCloud
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
